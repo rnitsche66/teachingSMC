@@ -1,6 +1,8 @@
 \documentclass{beamer}
 % Example from https://www.overleaf.com/learn/latex/Beamer
+% 
 % 30.06.2021, nitr
+% \usepackage{graphicx}
 \usetheme{Madrid} % ganz angenehmes Theme
 %Information to be included in the title page:
 \title[Sliding Mode Control] %optional
@@ -50,15 +52,8 @@ For the sake of showing an example.
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{Using Columns}
-\begin{columns}
-\column{0.5\textwidth}
-Hello guys
-\column{0.5\textwidth}
-\centering
-\includegraphics[width=0.4\textwidth]{FESTO_RGB_080}
-\end{columns}
-\end{frame}
+
+\include{ExampleUtkin}
+
 
 \end{document}
