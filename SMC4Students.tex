@@ -4,6 +4,15 @@
 % 30.06.2021, nitr
 % \usepackage{graphicx}
 \usetheme{Madrid} % ganz angenehmes Theme
+
+\usepackage[backend=biber]{biblatex} %biblatex mit biber laden
+% \usepackage{biblatex}
+\bibliography{Lit_smc.bib}
+
+% Removes icon in bibliography
+% \setbeamertemplate{bibliography item}{}
+
+
 %Information to be included in the title page:
 \title[Sliding Mode Control] %optional
 {A short Introduction to Sliding Mode Control}
@@ -54,6 +63,14 @@ For the sake of showing an example.
 
 
 \include{ExampleUtkin}
+
+
+% <<FF>> ***************************************************
+\begin{frame}
+\frametitle{References}
+% This prints the bibliography on the slide
+\printbibliography
+\end{frame}
 
 
 \end{document}
