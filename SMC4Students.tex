@@ -9,6 +9,8 @@
 % \usepackage{biblatex}
 \bibliography{Lit_smc.bib}
 
+\usepackage{color}
+
 % Removes icon in bibliography
 % \setbeamertemplate{bibliography item}{}
 
@@ -42,9 +44,27 @@
 
 \frame{\titlepage}
 
+%<<FF>> ***********************************************************************
 \begin{frame}
-\frametitle{Sample frame title}
-This is some text in the first frame. This is some text in the first frame. This is some text in the first frame.
+\frametitle{Sliding Mode Objectives}
+{\bf Objecitves of this class of \textcolor{blue}{nonlinear} control?}
+\begin{itemize}
+ \item Robustness versus uncetrainties / perturbations
+ \item Finite time convergence towards the control objectives
+\end{itemize}
+\pause % *********************************************************************
+{\bf Features for this class of control?}
+\begin{itemize}
+ \item Discontinuous control law
+ \item For standard sliding mode (first order): chattering effect, robustness
+ \item For higher order sliding mode: accuracy, finite time convergence, robustness
+\end{itemize}
+\pause % *********************************************************************
+\begin{block}{Remark} {\bf Sliding mode} as a phenomenon may appear in
+  a dynamic system governed by ordinary differential equation with
+  {\em discontinuous right hand side}
+\end{block}
+
 \end{frame}
 
 %<<FF>> ***********************************************************************
@@ -61,8 +81,10 @@ For the sake of showing an example.
 \end{itemize}
 \end{frame}
 
-
+%<<FF>> *********************************************************************
 \include{ExampleUtkin}
+
+% *****************************************************************
 
 
 % <<FF>> ***************************************************
