@@ -57,3 +57,4 @@ slprj
 *.synctex
 *.toc
 *.idx
+/matlab/slprj

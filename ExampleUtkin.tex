@@ -3,24 +3,38 @@
 \begin{frame}
   \frametitle{A motivating Example for SMC}
 
-  This example is taken from \cite{utkin2020}.
+ % This example is taken from \cite{utkin2020}.
   
  \begin{columns}
    \column{0.5\textwidth}
 
    \begin{example}
-     Sliding mode of the system:
+     Sliding mode of the system \cite{utkin2020}:
 
       \begin{equation}
          \ddot x = \sin(3 t) + u 
        \end{equation}
+       with sliding surface
+       \begin{equation}
+        s = c \dot x + x
+       \end{equation}
+       with control law
+       \begin{equation}
+         u = -M \sgn(s)
+       \end{equation}
     \end{example}   
      \column{0.5\textwidth}
    \centering
-    \includegraphics[height=4cm]{./pictures/SMCutkinRoadmap.pdf}
+   \includegraphics[height=4cm]{./pictures/SMCutkinRoadmap.pdf}
+   Simulation results for $M = 3$ \\ and $c = 1\; \unit{s}^{-1}$
 \end{columns}
- \end{frame}
+\end{frame}
 
+\begin{block}{Remark}
+  If the system is in sliding mode, \ie. $s=0$, the dynamics is
+  $\dot s = \dot x + x =0$ and therefore indepentend of system
+  parameters or disturbance $\leadsto$ robust !
+\end{block}
 
 % <<FF>> *************************************************************
 

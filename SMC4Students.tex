@@ -10,6 +10,30 @@
 \bibliography{Lit_smc.bib}
 
 \usepackage{color}
+% bundle for typesetting units and nice fractions
+\usepackage{units}
+%	% Formatierung für Einheiten
+%	\newcommand{\unit}[1]{\, \mathrm{#1}}
+%	\newcommand{\Rang}{\mathrm{Rang}\;}
+
+\usepackage{utilslide}
+
+\usepackage{tikz} % **************************************************************
+% \usetikzlibrary{shapes,arrows} % for the block diagram
+\usetikzlibrary{shapes,arrows,fit,calc,positioning,automata}
+\usetikzlibrary{backgrounds, calc,patterns,angles,quotes, babel} % für TSRL Bild
+ %-------------------TIKZ KONFIGURATION----------------------------------
+ \newcommand{\muxheight}{7em}
+ \newcommand{\muxdist}{\muxheight/7}
+ \newcommand{\blockwidth}{6em}
+ \newcommand{\VarSysWidth}{2.1*\muxheight}
+ \newcommand{\VarSysHeight}{1.2*\muxheight}
+ \newcommand{\VarArrLen}{0.5cm}
+ % for blocks with multiple inputs:
+ \newcommand{\yarrowshift}{\blockwidth/8}
+
+
+
 
 % Removes icon in bibliography
 % \setbeamertemplate{bibliography item}{}
@@ -86,6 +110,7 @@ For the sake of showing an example.
 
 % *****************************************************************
 
+\include{tikzTest}
 
 % <<FF>> ***************************************************
 \begin{frame}

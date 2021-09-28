@@ -27,7 +27,7 @@ legend('x1',...
     'sliding surface'...
     );
 title('Sliding Mode Control')
-ylabel('Sliding surface - x1')
+ylabel('Sliding surface and x1')
 xlabel('time [sec]')
 
 axis([0 8 -0.2 1.2])
