@@ -1,12 +1,13 @@
 % <<FF>> ***********************************************************************
 % https://www.overleaf.com/learn/latex/Beamer_Presentations:_A_Tutorial_for_Beginners_(Part_2)%E2%80%94Lists,_Columns,_Pictures,_Descriptions_and_Tables#The_Description_Environment
+\section{Simple Example}
 \begin{frame}
   \frametitle{A motivating Example for SMC}
 
  % This example is taken from \cite{utkin2020}.
   
  \begin{columns}
-   \column{0.5\textwidth}
+   \column{0.5\textwidth} % ************************
 
    \begin{example}
      Sliding mode of the system \cite{utkin2020}:
@@ -23,18 +24,21 @@
          u = -M \sgn(s)
        \end{equation}
     \end{example}   
-     \column{0.5\textwidth}
+     \column{0.5\textwidth} % ************************
    \centering
    \includegraphics[height=4cm]{./pictures/SMCutkinRoadmap.pdf}
    Simulation results for $M = 3$ \\ and $c = 1\; \unit{s}^{-1}$
 \end{columns}
-\end{frame}
 
-\begin{block}{Remark}
+\vspace*{2mm}
+
+% \begin{block}{Remark}
   If the system is in sliding mode, \ie. $s=0$, the dynamics is
-  $\dot s = \dot x + x =0$ and therefore indepentend of system
+  $s = \dot x + x =0$ and therefore indepentend of system
   parameters or disturbance $\leadsto$ robust !
-\end{block}
+% \end{block}
+
+\end{frame}
 
 % <<FF>> *************************************************************
 

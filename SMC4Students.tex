@@ -5,6 +5,20 @@
 % \usepackage{graphicx}
 \usetheme{Madrid} % ganz angenehmes Theme
 
+
+% **********************************************************************
+\setbeamercolor{section in head/foot}{fg=white,bg=black}
+
+\makeatletter
+\setbeamertemplate{headline}{%
+    \begin{beamercolorbox}[ht=2.25ex,dp=3.75ex]{section in head/foot}
+        \insertnavigation{\paperwidth}
+    \end{beamercolorbox}%
+}%
+\makeatother
+% **********************************************************************
+
+
 \usepackage[backend=biber]{biblatex} %biblatex mit biber laden
 % \usepackage{biblatex}
 \bibliography{Lit_smc.bib}
@@ -63,11 +77,12 @@
 {Control Methods in Robotics, August 2021}
 
 % \logo{\includegraphics[height=1cm]{overleaf-logo}}
-\logo{\includegraphics[height=2mmm]{FESTO_RGB_080}}
+\logo{\includegraphics[height=2mmm]{FESTO_RGB_080}\vspace{200pt}}
 \begin{document}
 
 \frame{\titlepage}
 
+\section{Introduction}
 %<<FF>> ***********************************************************************
 \begin{frame}
 \frametitle{Sliding Mode Objectives}
@@ -91,6 +106,7 @@
 
 \end{frame}
 
+\section{Some Remarks on SMC}
 %<<FF>> ***********************************************************************
 \begin{frame}
 \frametitle{Some Remarks on SMC}
