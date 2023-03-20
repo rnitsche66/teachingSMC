@@ -1,0 +1,40 @@
+*****************************************************************
+Review of
+
+Energy-efficient scheduling problem under speed-scaling and
+power-saving machine states
+
+*****************************************************************
+
+This paper deals of an optimization approach applied to an
+energy-efficient scheduling problem of a machine in a production
+process.
+
+The approach is novel in the sense that it takes the
+speed-scalability, the multi-machine states in a suitable combination
+with a total energy for the optimazation objective into account.
+
+It combines a geneteic approach with a local gradient based
+optimization approach to find a near optimal solution. This approach
+is very effective and efficient.
+
+The paper has a well structured literature review and
+furthermore introduces a model of a production process of a single
+machine.
+
+The paper is well structured and the appraoch is well motivated by
+explaining and modelling the single machines process.  The description
+of the approach is understandable and the presented results are good.
+
+However, the Taguchi settings for the parameter settings is not so
+clear, since in Fig. 5 the signal-to-noise ratio is illustrated with a
+remark that 'smaller is better' and in the text, it is mentioned that
+'highest ratio represents beter performance'. Isn't this a
+contradiction?
+
+Since the paper has 7 pages (paper limit is 6), maybe the literature
+review part could be shortened.
+
+
+
+ 
