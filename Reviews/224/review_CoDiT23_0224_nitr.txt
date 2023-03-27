@@ -1,39 +1,59 @@
 *****************************************************************
 Review of
 
-Energy-efficient scheduling problem under speed-scaling and
-power-saving machine states
+Adoption of Big Data and AI in UAE SMEs in
+Unpredictable Environment
+
 
 *****************************************************************
 
-This paper deals of an optimization approach applied to an
-energy-efficient scheduling problem of a machine in a production
-process.
+This paper describes advantages using 'big data' and 'artificial
+intelligence' (AI) technology especially for small and medium-sized
+enterprises (SMEs) focussing on the United Arabic Emirates (UAE).
 
-The approach is novel in the sense that it takes the
-speed-scalability, the multi-machine states in a suitable combination
-with a total energy for the optimazation objective into account.
+The paper focuses mainly on a literature review for the digital
+transformation using Big Data and AI.
 
-It combines a geneteic approach with a local gradient based
-optimization approach to find a near optimal solution. This approach
-is very effective and efficient.
+This review is clearly structured: starting with a theoretical
+background, a good overview is given in which step of the production
+development progress Big Data and AI makes sense and can help SMEs to
+deal with further crisis such as a COVID-19 pandemic.
 
-The paper has a well structured literature review and
-furthermore introduces a model of a production process of a single
-machine.
+The paper was easy to read and very interesting topics in it.  Big
+Data and AI can really help SMEs to improve the product development
+process. It is an extension but not a replacement to the current
+processes. And in some areas it really has the potential to replace
+the actual processes.
 
-The paper is well structured and the appraoch is well motivated by
-explaining and modelling the single machines process.  The description
-of the approach is understandable and the presented results are good.
+However some questions still arises:
+************************************
 
-However, the Taguchi settings for the parameter settings is not so
-clear, since in Fig. 5 the signal-to-noise ratio is illustrated with a
-remark that 'smaller is better' and in the text, it is mentioned that
-'highest ratio represents beter performance'. Isn't this a
-contradiction?
+- Are the data collected during the COVID-19 pandemic really be used
+as a basis for ANY other crisis, which will appear in the future?
+See: 'As a result, a business model that incorporates AI could improve
+operations for a company amid any economic crisis [14]' or 'The use of
+big data allows organizations to improve strategic decision-making in
+the face of any crisis, such as COVID-19'.
+=> Those statements should be critically checked.
 
-Since the paper has 7 pages (paper limit is 6), maybe the literature
-review part could be shortened.
+- In Chapter IV 'LIMITATIONS AND FUTURE WORK', no real limitations can
+  be found. But the are some limitations: AI is a kind of a black-box
+  approach, can the collected data really be used as a basis of any
+  future crises (is extrapolation possible or even reasonable?)
+
+- Can we blindly really on the models build out of those big data,
+  which we have no real insight and understanding of the models?
+  
+
+
+Remarks:
+********
+There are a lot of abbreveations in the text, which are mostly
+explained somewhere troughout the text, but often not before or when
+they appear for the first time. Maybe an abbreviation table makes sense.
+
+Not all references listd in the reference chapter are explained or
+referenced in the paper.
 
 
 

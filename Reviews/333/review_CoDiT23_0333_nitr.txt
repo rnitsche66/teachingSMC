@@ -1,0 +1,37 @@
+*****************************************************************
+Review of
+
+Towards an ontology-based fault detection and
+diagnosis framework - a semantic approach
+
+
+*****************************************************************
+
+The paper deals with an approach of fault detection in continuously
+changing systems by combining several fault detection approaches with
+the help of semantic technologies.
+
+The paper gives a good overview of those techniques and can serve as a
+guide line which combination is best for which issue.
+
+First a brief overview for ontology-based reasoning and some relevant
+semantic technologies are given.
+
+FTA corresponds here to RCA ??
+
+Figure 2 gives a good overview of the approach and the workflow is
+well explained int Ch. II.
+Which also includes a feedback loop
+How does Fig. 3 fits into Fig. 2 - this is not really clear, is it?
+ 
+Well structured paper, starting with the defintion of methods (and
+introducing the used abbrevations).
+
+
+
+Concerns:
+********
+The approach seems to be very complex, (too) many aspects are
+considered (e.g. six ontology parts, ....). Is this complexity
+applicable already in a first stage at once?
+Or is this just a proposal...
