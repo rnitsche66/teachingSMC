@@ -1,0 +1,42 @@
+*****************************************************************
+Review of
+
+Simulating the dynamic behavior of heat exchange
+
+*****************************************************************
+
+The paper regards Thermally Activated Building Systems (TABS).  It
+develops a simulation model to efficientely compute the heat exchange
+behaviour of those TABS.
+
+Approach: based on transfer functions rather than FEM -> faster
+ simulation But this is clear, the questions which accuracy is
+ requiered for this purpose?
+
+First a FEM model (in COMSOL, multiphysik simulation) is
+introduced. The model introduction is a bit confusing. No clear
+introduction, hard to follow.
+
+
+- strange non-proper layout
+   # too many pages (7 pages)
+   # a lot of typos
+   # no clear structuer - hard to read
+   # Eq. (5) - (7) not explained at all
+   # Fig. 5 and Fig. 6 not explained at all
+   # Fig. 7, pseudo-random binary signal (SPAB): without units...
+   # Fig. 8, no units - interpretation of the results unclear ....
+   # Languages mixed up - english and french:
+      'Cosinus à fréquence variable sur multi expériences'
+
+
+reject the paper...
+
+
+Figure 1: poor picture, not all states explained in the text appears
+in the figure, therefore it is hard to understand.
+
+
+Remarks:
+********
+- 7 pages: paper too long

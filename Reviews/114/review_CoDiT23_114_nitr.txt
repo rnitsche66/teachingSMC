@@ -6,6 +6,12 @@ power-saving machine states
 
 *****************************************************************
 
+The paper can be accepted.  Some minor changes are suggested (see
+comments to the author) to make the paper more clear and readable.
+
+*****************************************************************
+
+
 This paper deals of an optimization approach applied to an
 energy-efficient scheduling problem of a machine in a production
 process.
