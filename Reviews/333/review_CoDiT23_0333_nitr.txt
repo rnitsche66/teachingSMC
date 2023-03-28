@@ -7,31 +7,38 @@ diagnosis framework - a semantic approach
 
 *****************************************************************
 
-The paper deals with an approach of fault detection in continuously
-changing systems by combining several fault detection approaches with
+The paper deals with an approach to fault detection in continuously
+changing systems by combining several fault detection approach with
 the help of semantic technologies.
 
-The paper gives a good overview of those techniques and can serve as a
-guide line which combination is best for which issue.
+The paper gives a good overview of those techniques and can serve as 
+a guideline of which combination is best for which issue.
 
-First a brief overview for ontology-based reasoning and some relevant
+First a brief overview of ontology-based reasoning and some relevant
 semantic technologies are given.
 
-FTA corresponds here to RCA ??
+Well-structured paper, starting with the definition of methods (and
+introducing the used abbreviations).
 
 Figure 2 gives a good overview of the approach and the workflow is
-well explained int Ch. II.
-Which also includes a feedback loop
-How does Fig. 3 fits into Fig. 2 - this is not really clear, is it?
- 
-Well structured paper, starting with the defintion of methods (and
-introducing the used abbrevations).
+well explained in Chapter II.
+
+How does Fig. 3 fit into Fig. 2 - this is not clear, is it?
+
+A simple example (wiring process) illustrates the functioning of the
+method pretty clearly.
+
+Regarding Fig. 5: is it possible that any cross dependencies exist? In this
+example, there are only bottom-to-top dependencies.
 
 
+Is such a huge framework for a bigger application maintainable?
 
-Concerns:
-********
-The approach seems to be very complex, (too) many aspects are
-considered (e.g. six ontology parts, ....). Is this complexity
-applicable already in a first stage at once?
-Or is this just a proposal...
+
+Is this approach applicable to real-world (industrial) problems?  This
+should be stated and motivated first, before the theory or approach
+will be extended.
+
+Another question which arises is whether this approach is really
+scalable.  This proof must first be provided, before extending the
+approach.
