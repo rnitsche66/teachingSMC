@@ -6,4 +6,90 @@ Modeling, Control, Simulation and Prototyping of Tracked Mobile Robot
 
 *****************************************************************
 
-The paper deals with
+The paper deals with modelling, controlling and trajectory planning
+for a mobile robot with sliding wheels and differential traction.
+
+Some investigations are made in simulation and also experiment.
+
+SolidWorks, Mathematica and Matlab/Simulink is used...
+
+The derivation of the model for model-based control design is a bit
+confusing and should be reworked to be better understandable.
+
+A lot of remarks are directly addressed to the author to come up with
+a better derivation.
+
+The controller design method based on back-stepping is feasible for
+this control task.
+
+7 pages - paper too long
+
+
+=> Solid paper ....
+
+************
+
+
+
+Is there really a way to export a Simulink model for system simulation
+out of a Solid Works model??
+
+The derivation of the formulas for the dynamics of the mobile robot is
+sometimes hard to follow, since a lot of Parameters or states are only
+loosely explained (e.g. what is \dot q or \dot p).
+
+What is the motivation to introduce the Matrix B(q)?
+
+What is the motivation to have the eq. of differential kinematics and
+the inverse differential kinematics? What is it good for - motivation?
+
+Page 3: D(q) is not a function of q it's just D!
+- Why is u_d an input? I think the control input is \tau (see eq. (21))
+
+Page 4:
+Concerning (24), this is not a model, this are the error dynamics
+which is non-linear.
+
+Note: Lyapunov function candidate may also be negative semi-definit
+(Condition 4).  Then one can use La Salle's Theorem to ensure
+stability!
+
+
+A block diagram of the control structure would be very helpful !
+- What is the system to be controlled?
+- What are the in-/outputs
+- How does the control loop looks like?
+- Which sensor signals does the controller need?
+=> Fig. 4 can be used as a basis, and extented on the controllre module side by which eq. is used in which block?
+
+Remarks:
+*******
+
+Figure 1 uses capital R for the index and in the text / equations lower r are used => inconsistent
+
+- Please put a . after the formulas, if the sentence ends after the
+  formula
+
+- d, the distance between the left and right wheel is explained too
+  late in the text. This parameter is used in some formulas before it
+  is explained.
+
+- Don't start a sentence with a variable - this is unusual and hard to
+  read (e.g. last sentences 2nd page, left column)
+
+- in the sentence in the abstract:
+'Also, as mentioned before, SolidWorks
+for the project and simulation of the robot’s mechanical
+components (Simscape application for multibody mechanical
+systems)' the verb is missing.
+
+- page 3 in the middle: why is there a 1) before  'Non-holonomic constraints'
+- Langrangean should be Langrangian
+- Some more typos are throughout the papaer - please recheck!
+
+No SI-units in Table 1.
+No SI-units in the speed trajectorie Section IV.B.
+
+Table II: the sliding wheel length l does not appear in the dynamic model ?
+On page 6 the moment of inertia is denotes with a I and no longer with J - why ?
+
