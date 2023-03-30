@@ -1,0 +1,22 @@
+*****************************************************************
+Review of
+
+Deep Reinforcement Learning-Based Pitch Control for Floating
+Offshore Wind Turbines
+
+*****************************************************************
+
+'only' Simulation results are shown
+
+
+Reinforcement Learning (RL) is based on rewarding expecting
+behaviour! But wWhat happens, if something unexpected happens, which
+one didn't think of so far, but is feasible, anyway?
+
+
+Page 1:
+what is operating area III / operating zone III
+
+But what is the control objective - this is not clarified in the
+Introduction!
+I think it's a so-called pitch controller!
