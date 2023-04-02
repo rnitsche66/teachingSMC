@@ -1,0 +1,15 @@
+*****************************************************************
+Review of
+
+The double inverted pendulum with real mass distribution stabilization
+
+
+*****************************************************************
+
+
+
+
+
+Gravitation vector is missing in Fig. 1
+
+The paper has 7 pages, ...
