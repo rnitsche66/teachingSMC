@@ -1,0 +1,160 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5946,        152]
+NotebookOptionsPosition[      4553,        122]
+NotebookOutlinePosition[      4956,        138]
+CellTagsIndexPosition[      4913,        135]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Beobachtbarkeits Analyse von Kathrins Beobachter im Paper", "Section",
+ CellChangeTimes->{{3.8893712194129996`*^9, 3.8893712679543266`*^9}, {
+  3.8893729374654493`*^9, 
+  3.889373004251355*^9}},ExpressionUUID->"fbeede1c-7b51-4f60-b066-\
+aba24977b4d6"],
+
+Cell["01.04.2023, Rainer Nitsche", "Text",
+ CellChangeTimes->{{3.8893733295145717`*^9, 
+  3.889373335076375*^9}},ExpressionUUID->"92bba40d-61c1-4281-a42c-\
+a3f4e225969e"],
+
+Cell[CellGroupData[{
+
+Cell["Erstellung der Beobachtbarkeitsmatrix", "Subsubsection",
+ CellChangeTimes->{{3.8893730767494183`*^9, 
+  3.8893730941695604`*^9}},ExpressionUUID->"c1ef80c8-7d1a-430b-a984-\
+551c084720f2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MatAs", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "a"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}]}], ";", 
+  RowBox[{"MatCs", "=", 
+   RowBox[{"SymbMan`RowVec", "[", 
+    RowBox[{"1", ",", "0", ",", "0"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8893712194129996`*^9, 3.8893712679543266`*^9}, {
+  3.8893729374654493`*^9, 3.889372948106655*^9}, {3.889411636173237*^9, 
+  3.8894116597921405`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"b376d514-00da-4186-85a8-38433238f64a"],
+
+Cell[BoxData[
+ RowBox[{"MatQbs", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{"MatCs", ",", " ", 
+    RowBox[{"MatCs", ".", "MatAs"}], ",", " ", 
+    RowBox[{"MatCs", ".", "MatAs", ".", "MatAs"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.8893726106440372`*^9, 3.8893726111712914`*^9}, {
+  3.8893726574005084`*^9, 3.8893727050927625`*^9}, {3.88941977230597*^9, 
+  3.889419781281971*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"04f86ba3-acc8-40f6-a7de-8f2551dfac1d"],
+
+Cell[BoxData[
+ RowBox[{"MatrixRank", "[", "MatQbs", "]"}]], "Input",
+ CellChangeTimes->{{3.8893726509925284`*^9, 3.889372652570106*^9}, {
+  3.8893728566873417`*^9, 3.8893728786534853`*^9}},
+ FontWeight->"Plain",
+ CellLabel->"In[3]:=",ExpressionUUID->"9f3f4007-dab7-47c5-95e1-788e3ebd9317"],
+
+Cell[BoxData[{
+ RowBox[{"MatrixForm", "[", "MatAs", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"MatrixForm", "[", "MatCs", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"MatrixForm", "[", "MatQbs", "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.8893731123648767`*^9, 3.8893731778816175`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"4f333005-5070-4b53-8985-d6f54ca1ffdb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "oder besser mit Ralfs Tools\n",
+ StyleBox["Achtung im SiSo Case muss man den C-Vektor als Matrix eingeben, \
+sonst tut es nicht. Also nochmal CurlyBrackets setzen!! (02.04.2023)", "Text"]
+}], "Subsubsection",
+ CellChangeTimes->{{3.8894199322398524`*^9, 3.889419953998539*^9}, {
+  3.8894212085803328`*^9, 3.8894212723072248`*^9}, {3.8894213032306194`*^9, 
+  3.8894213047754498`*^9}},ExpressionUUID->"fbfbccd8-22fe-4a53-bfea-\
+6ff791de6522"],
+
+Cell[BoxData[
+ RowBox[{"MatCrr", " ", "=", " ", 
+  RowBox[{"{", "MatCs", "}"}]}]], "Input",
+ CellChangeTimes->{{3.8894200881435556`*^9, 3.8894201181528587`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"6191bf86-8aab-4c8d-875b-78b74d984375"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ObservabilityMatrixQB", "[", 
+   RowBox[{"MatAs", ",", " ", 
+    RowBox[{"{", "MatCs", "}"}], ",", " ", 
+    RowBox[{"VerbosityObserver", " ", "->", " ", "True"}]}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.8894199711673293`*^9, 3.889420075647978*^9}, {
+   3.8894201258355618`*^9, 3.889420126168234*^9}, 3.889420299887654*^9, {
+   3.8894210984385085`*^9, 3.889421110112274*^9}, 3.8894215880163727`*^9},
+ CellLabel->"In[8]:=",ExpressionUUID->"00719bc7-f1e6-4e26-9cad-196d59d87511"],
+
+Cell[BoxData[
+ RowBox[{"?", "ObservabilityMatrixQB"}]], "Input",
+ CellChangeTimes->{{3.889421651941614*^9, 3.889421656924777*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"002110d4-da43-4040-9699-dcae6e8295b3"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{571., 445.5},
+WindowMargins->{{Automatic, 138}, {Automatic, 5.5}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (June 19, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8fc12749-94ab-4907-9735-93cf99e915bc"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 257, 4, 105, "Section",ExpressionUUID->"fbeede1c-7b51-4f60-b066-aba24977b4d6"],
+Cell[840, 28, 170, 3, 35, "Text",ExpressionUUID->"92bba40d-61c1-4281-a42c-a3f4e225969e"],
+Cell[CellGroupData[{
+Cell[1035, 35, 192, 3, 45, "Subsubsection",ExpressionUUID->"c1ef80c8-7d1a-430b-a984-551c084720f2"],
+Cell[1230, 40, 683, 17, 48, "Input",ExpressionUUID->"b376d514-00da-4186-85a8-38433238f64a"],
+Cell[1916, 59, 464, 9, 28, "Input",ExpressionUUID->"04f86ba3-acc8-40f6-a7de-8f2551dfac1d"],
+Cell[2383, 70, 289, 5, 28, "Input",ExpressionUUID->"9f3f4007-dab7-47c5-95e1-788e3ebd9317"],
+Cell[2675, 77, 377, 5, 86, "Input",ExpressionUUID->"4f333005-5070-4b53-8985-d6f54ca1ffdb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3089, 87, 457, 8, 91, "Subsubsection",ExpressionUUID->"fbfbccd8-22fe-4a53-bfea-6ff791de6522"],
+Cell[3549, 97, 239, 4, 28, "Input",ExpressionUUID->"6191bf86-8aab-4c8d-875b-78b74d984375"],
+Cell[3791, 103, 523, 10, 48, "Input",ExpressionUUID->"00719bc7-f1e6-4e26-9cad-196d59d87511"],
+Cell[4317, 115, 208, 3, 28, "Input",ExpressionUUID->"002110d4-da43-4040-9699-dcae6e8295b3"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
