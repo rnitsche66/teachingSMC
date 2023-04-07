@@ -8,29 +8,38 @@ The double inverted pendulum with real mass distribution stabilization
 
 The model of an Acrobot is introduced and several control methods are
 explained to control the system in upper position. The system dynamics
-can be designed or changed to to alter the mass distribution.
-This appraoch is quite interessting.
-Several control design methods are introduced,
+can be designed or changed by altering the mass distribution.  This
+appraoch is quite interessting.  Several control design methods are
+introduced, but not really explained nor discussed.
+
+The paper has 7 pages, and some typos.
+
+It is a fair paper.
+
+Some remarks to improve the quality of the paper are written in the
+section to the authors.
+
+*****
 
 
-A lot of recaps in the paper. i.e. references to former or other
-papers. But this is the on of the subjects of the papaer -> ok.
+A lot of recaps are the paper, i.e. references to former or other
+papers. This is sometimes really hard to follow.
 
-Gravitation vector is missing in Fig. 1
+Please add the gravitation vector in Fig. 1
 
-The paper has 7 pages, ...
 
-Some Remarks:
-*************
+
+Addidional Remarks:
+******************
 
 Page 3:
 quartuple => quadruple
 
-II.C: which state transformation in normal form (dim 3) with a zero
+Section II.C: which state transformation in normal form (dim 3) with a zero
       dynamics. Which state is in the zero dynamics?? Is this
       explained in [3] ?
       
-II.C.1: there a lot of references to [3] - sometimes hard to follow -
+Section II.C.1: there a lot of references to [3] - sometimes hard to follow -
         but ok.
 Strange numbering of subsection 1 ??
 
