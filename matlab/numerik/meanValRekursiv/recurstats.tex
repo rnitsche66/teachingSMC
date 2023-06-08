@@ -1,0 +1,128 @@
+% !TEX TS-program = xelatex
+%
+% Created by Paolo Bosetti on 2017-01-10.
+% Copyright (c) 2017 University of Trento.
+\documentclass{article}
+
+\usepackage{polyglossia}
+\usepackage{hyperref}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{algpseudocode}
+\usepackage{algorithmicx}
+
+\hypersetup
+{
+  pdftitle   = {Recursion Formulas for Statistics},
+  pdfsubject = {Subject},
+  pdfauthor  = {Paolo Bosetti}
+}
+
+\title{Recursion Formulas for Statistics --- Sample Mean and Sample Variance}
+\author{Paolo Bosetti}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  This memo reports the calculation scheme that can be adopted for
+  calculating sample mean and variance statistics by using a pair of
+  recurrence formulas. This approach comes handy whenever you have to
+  perform a continuous, inline assessment of those indicators with
+  minimum memory footprint (e.g. on microcontrollers), without the
+  need of storing the whole set of sample values.
+\end{abstract}
+
+\newcommand{\inv}[1]{\frac{1}{#1}}
+\section{Sample Mean}
+This is an easy one: given the stochastic variable $x$ and by
+indicating its sample mean for a set of $i$ observations as
+$\bar x_i$, we have:
+\begin{eqnarray}
+  \bar x_1 :=& x_1 \\
+  \bar x_n =& \inv{n}\sum_{i=1}^{n} x_i \\
+  =& \frac{n-1}{n} \left(\sum_{i=1}^{n-1}\frac{x_i}{n-1}\right) + \frac{x_n}{n} \\
+  =& \inv{n}\left((n-1) \bar x_{n-1} + x_n\right) \label{eq:recurmean}
+\end{eqnarray}
+where $x_n$ is the current observation (after $n$ events), and $x_1$
+is the very first observation.
+
+By using Eq.~\ref{eq:recurmean}, the sample mean value $\bar x_n$ can
+be continuously updated at every acquisition using only the last
+observation $x_n$, the previous value of the sample mean
+$\bar x_{n-1}$, and the total number of observations $n$. There is
+\emph{no need for storing the whole set of observations}, and the
+algorithm complexity is $O(1)$.
+
+
+\section{Sample Variance} % (fold)
+\label{sec:sample_variance}
+The recurrence formula for sample variance is a little more complex,
+and care must be payed in the formulation in order to avoid
+differences between small quantities, which may bring to large
+rounding errors.
+
+By definition of sample variance for $n$ observations, $s_n^2$:
+\begin{align}
+  s_n^2 =& \sum_{i=1}^{n}\frac{(\bar x_n - x_i)^2}{n-1} = \frac{SS_n}{n-1} \\
+  s_n   =& \sqrt{\inv{n-1}\left(\sum_{i=1}^{n}x_i^2 - \inv{n}\left(\sum_{i=1}^{n} x_i\right)^2\right)}
+\end{align}
+where $SS_n$ is the \emph{sum of squares} of the $n$ observations,
+which is the product of the sample variance times the number of
+degrees of freedom.
+
+The sum of squares (which is the only part in the definition of sample
+variance that is depending on previous values) can be more
+conveniently expressed as:
+\begin{align}
+  SS_n = \left(\sum_{i=1}^{n}x_i^2 - \inv{n}\left(\sum_{i=1}^{n} x_i\right)^2\right)
+\end{align}
+so that the increment in sum of squares can be obtained:
+\begin{multline}
+  SS_n - SS_{n-1} = \sum_{1=1}^n x_i^2 - \inv{n}\left(\sum_{1=1}^n x_i\right)^2 - \sum_{1=1}^{n-1} x_i^2 + \inv{n-1}\left(\sum_{1=1}^{n-1} x_i\right)^2
+\end{multline}
+where we can substitute:
+\begin{align}
+  \sum_{1=1}^n x_i &= n \bar x_n \\
+  \sum_{1=1}^{n-1} x_i &= \sum_{1=1}^n x_i - x_n = n \bar x_n - x_n \\
+  \sum_{1=1}^{n} x_i^2 - \sum_{1=1}^{n-1} x_i^2 &= x_n^2
+\end{align}
+thus having:
+\begin{align}
+  SS_n - SS_{n-1} &= x_n^2 - \inv{n}(n \bar x_n)^2 + \inv{n-1}(n \bar x_n -x_n)^2 \\
+  &= x_n^2 - n\bar x_n^2 + \inv{n-1}(n^2 \bar x_n^2 - 2n \bar x_n x_n + x_n^2) \\
+  &= \inv{n-1}(n x_n^2 + n \bar x_n^2 - 2 n \bar x_n x_n) \\
+  &= \frac{n}{n-1}(\bar x_n - x_n)^2
+\end{align}
+after which we have the recurrence formula for the sum of squares:
+\begin{align}
+  SS_n &= SS_{n-1} + \frac{n}{n-1}(\bar x_n - x_n)^2
+\end{align}
+
+Accordingly, the recurrence formula for the sample standard deviation
+(square root of variance) is:
+\begin{align}
+  s_1 &:= 0 \\
+  s_n &= \sqrt{\inv{n-1} \left( (n-2) s_{n-1}^2 + \frac{n}{n-1}(\bar x_n - x_n)^2 \right)} \label{eq:recursd}
+\end{align}
+
+In conclusion, a typical pseudocode for running calculation of
+$\bar x$ and $s$ indicators is as follows:
+
+\begin{algorithmic}[1]
+  \Require $\mathtt{read\_value}()$: returns a new observation of $x$ at each call
+  \State $\bar x \gets \mathtt{read\_value}()$ \Comment{Initializations}
+  \State $s \gets 0$
+  \State $n \gets 1$
+  \Repeat \Comment{Main loop}
+    \State $n \gets n+1$
+    \State $x \gets \mathtt{read\_value}()$
+    \State $\bar x \gets \inv{n}\left((n-1) \bar x + x\right)$ \Comment{Update sample mean}
+    \State $s \gets \sqrt{\inv{n-1} \left( (n-2) s^2 + \frac{n}{n-1}(\bar x - x)^2\right)}$ \Comment{Update sample std.~dev.}
+    \State Perform operations on $\bar x$ and $s$
+  \Until{exit condition is true}
+\end{algorithmic}
+
+% section sample_variance (end)
+
+\end{document}
