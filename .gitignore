@@ -62,3 +62,7 @@ slprj
 *.run.xml
 *.snm
 /matlab/slprj
+
+# Unnecessary Files #
+# # # # # # # # # # #
+/literature/Robotics/notValid
