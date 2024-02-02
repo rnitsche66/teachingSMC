@@ -61,49 +61,59 @@
 \subtitle{How-to implement a FFT in Real Time}
 
 \author[Rainer Nitsche] % (optional, for multiple authors)
-{Dr.~Rainer~Nitsche\inst{1}} % \and J.~Doe\inst{2}}
+{Rainer~Nitsche / February 2024 %\inst{1}
+} % \and J.~Doe\inst{2}}
 
-\institute[Festo SE \& Co. KG] % (optional)
-{
-  \inst{1}%
-  Dept. Robotics\\
- System Design Group
-  % \and
-  % \inst{2}%
-  % Faculty of Chemistry\\
-  % Very Famous University
-}
+ \institute[Festo SE \& Co. KG] % (optional)
+ {
+  % February 2024
+   % \inst{1}%
+  %  Model-Based Methods in Systems Engineering % \\
+%    System Design Group
+%   % \and
+%   % \inst{2}%
+%   % Faculty of Chemistry\\
+%   % Very Famous University
+ }
 
-\date[ \today] % (optional)
-{Control Methods for Industrial Applications, August 2021}
+ \vspace*{0.2cm}
 
+ \date[ \today] % (optional)
+ {% Control Methods for Industrial Applications, February 2024 % }
+   \centering
+   \includegraphics[height=3cm]{./pictures/FFTcoverPic.jpg}
+ }
 % \logo{\includegraphics[height=1cm]{overleaf-logo}}
 \logo{\includegraphics[height=2mmm]{FESTO_RGB_080}\vspace{200pt}}
 \begin{document}
 
 \frame{\titlepage}
 
-\section{Introduction}
-%<<FF>> ***********************************************************************
-\begin{frame}
-\frametitle{FFT Objectives}
-{\bf Objecitves of this class of \textcolor{blue}{nonlinear} control?}
-\begin{itemize}
- \item Robustness versus uncertainties / perturbations
- \item Finite time convergence towards the control objectives
+ \section{Introduction}
+% %<<FF>> ***********************************************************************
+ \begin{frame}
+ \frametitle{FFT Objectives}
+{\bf General objectives of the \textcolor{blue}{discrete} fourier transformation}
+ \begin{itemize}
+   \item Numerisch effiziente Methode zur Berechnung einer diskreten Fouriertransformation
+   \item Mein FFT Arbeitsverzeichnis f\"ur die Simulationen liegt % \\
+    % \begin{verbatim}
+       \texttt{C:/workspace/1027\_pJoint\_squeakVEAE/SCALEXIO/myDevelop}
+    %\end{verbatim}
+   bzw. \texttt{FFT4dSpace.slx} und Postprocessing \texttt{VisFFTsimResults.m}
 \end{itemize}
-\pause % *********************************************************************
-{\bf Features for this class of control?}
-\begin{itemize}
- \item Discontinuous control law
- \item For standard sliding mode (first order): chattering effect, robustness
- \item For higher order sliding mode: accuracy, finite time convergence, robustness
-\end{itemize}
-\pause % *********************************************************************
-\begin{block}{Remark} {\bf Sliding mode} as a phenomenon may appear in
-  a dynamic system governed by ordinary differential equation with
-  {\em discontinuous right hand side}
-\end{block}
+% \pause % *********************************************************************
+% {\bf Features for this class of control?}
+% \begin{itemize}
+%  \item Discontinuous control law
+%  \item For standard sliding mode (first order): chattering effect, robustness
+%  \item For higher order sliding mode: accuracy, finite time convergence, robustness
+% \end{itemize}
+% \pause % *********************************************************************
+% \begin{block}{Remark} {\bf Sliding mode} as a phenomenon may appear in
+%   a dynamic system governed by ordinary differential equation with
+%   {\em discontinuous right hand side}
+% \end{block}
 
 \end{frame}
 
@@ -114,13 +124,24 @@
 This is a text in second frame. 
 For the sake of showing an example.
 
+See also \cite{brunton2022data}
+
 \begin{itemize}
-\item<1-> Good youtube video from Ali Nasir:
-  \href{https://www.youtube.com/watch?v=1Nji_sJkLvw&t=1540s}{\beamergotobutton{Link}} 
- \item<2-> Text visible on slide 2
- \item<3> Text visible on slide 3
+\item<1-> Good youtube videos from Steve Brunton about Fourier Transformations:
+  \href{https://www.youtube.com/watch?v=jNC0jxb0OxE&list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC&index=1s}{\beamergotobutton{Link}} 
+\item<2-> Good help from dSpace home page...\\
+    \href{https://www.dspace.com/de/gmb/home/news/engineers-insights/fast-fourier-ttf-controldesk.cfm}{\beamergotobutton{Link}} 
+  \item<3-> Simulink Implementations% Text visible on slide 3
+    \item<3-> Plotting results as post processing tool
  \item<4-> Text visible on slide 4
 \end{itemize}
+
+The goal is to analyze to following signal:
+
+\begin{equation}
+\boxed{ A(t) = c+ a_1 \sin(\omega t) + a_2 \cos(\omega t) }
+  \end{equation}
+
 \end{frame}
 
 %<<FF>> *********************************************************************
