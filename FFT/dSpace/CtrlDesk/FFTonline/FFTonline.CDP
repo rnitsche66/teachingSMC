@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root>
+	<creator type="key">ControlDesk 7.4p3</creator>
+	<majorversion type="key">7</majorversion>
+	<minorversion type="key">4</minorversion>
+	<maintenanceversion type="key">0</maintenanceversion>
+	<specialbuildversion type="key">p3</specialbuildversion>
+	<releasename type="key">2021-A</releasename>
+	<project>
+		<Creator type="key">ControlDesk</Creator>
+		<MigrationHistory type="key"/>
+		<Name type="key">FFTonline.CDP</Name>
+		<DisplayName type="key">FFTonline</DisplayName>
+		<Flags type="key">4096</Flags>
+		<Type type="key">1</Type>
+		<UniqueID type="key">796615798</UniqueID>
+		<EntityID type="key">{9AF40756-9935-424A-A3A5-8B604DB2BEF3}</EntityID>
+		<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+		<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+		<ItemInfoDescr type="key"/>
+		<ItemInfoAddInfoDb type="key"/>
+		<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+		<item>
+			<Targets type="key">project</Targets>
+			<Name type="key">FFTonline</Name>
+			<DisplayName type="key">FFTonline</DisplayName>
+			<Path type="key">..</Path>
+			<Flags type="key">4100</Flags>
+			<Type type="key">3</Type>
+			<UniqueID type="key">919384776</UniqueID>
+			<EntityID type="key">{C93012E2-9D86-47BC-9464-54440D671C17}</EntityID>
+			<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<item>
+				<Docs type="key">.doc,.docx,.pdf</Docs>
+				<Name type="key">Specifications</Name>
+				<DisplayName type="key">Specifications</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">455188241</UniqueID>
+				<EntityID type="key">{904020D8-0B9C-45DD-8D9C-F75E2BCE3D92}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.doc,.docx,.pdf</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.mpp</Docs>
+				<Name type="key">Project Plans</Name>
+				<DisplayName type="key">Project Plans</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">755086690</UniqueID>
+				<EntityID type="key">{A64930AB-FDF2-4B6D-82A3-7F11870B2B78}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.mpp</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">variablesmanagement</Targets>
+				<Name type="key">Variable Descriptions</Name>
+				<DisplayName type="key">Variable Descriptions</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">256</Flags>
+				<ExtendedFlags type="key">4</ExtendedFlags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">411070967</UniqueID>
+				<EntityID type="key">{526FAC1F-6602-4D44-9638-9B19945B2FCE}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">.vfe</Targets>
+				<Name type="key">Variable Filters</Name>
+				<DisplayName type="key">Variable Filters</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">2304</Flags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">515164650</UniqueID>
+				<EntityID type="key">{1494AD58-3136-4BF6-9DD2-A9DF034E578C}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">.lab</Targets>
+				<Docs type="key">.lab,.txt</Docs>
+				<Name type="key">Label Lists</Name>
+				<DisplayName type="key">Label Lists</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">879245624</UniqueID>
+				<EntityID type="key">{7978BAA4-A4D2-4299-8701-CD22BFB5D453}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.lab,.txt</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">interpreter,.py</Targets>
+				<Docs type="key">.py</Docs>
+				<Name type="key">Python Scripts</Name>
+				<DisplayName type="key">Python Scripts</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">256</Flags>
+				<ExtendedFlags type="key">4224</ExtendedFlags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">584751155</UniqueID>
+				<EntityID type="key">{E0A20771-0B3E-48FD-967D-0FC8B6CE9FEA}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.py</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">signaleditor</Targets>
+				<Name type="key">Signal Description Sets</Name>
+				<DisplayName type="key">Signal Description Sets</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">256</Flags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">783298768</UniqueID>
+				<EntityID type="key">{AE37F102-339A-431E-A87E-3197381FEC37}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+		</item>
+		<item>
+			<Name type="key">AutomationCustomData.json</Name>
+			<DisplayName type="key">AutomationCustomData.json</DisplayName>
+			<Path type="key">.</Path>
+			<Flags type="key">4</Flags>
+			<Type type="key">4</Type>
+			<UniqueID type="key">258207982</UniqueID>
+			<EntityID type="key">{D46A1FC8-F25A-4E22-8307-15571AD6E405}</EntityID>
+			<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+		</item>
+		<item>
+			<Name type="key">Events</Name>
+			<DisplayName type="key">Events</DisplayName>
+			<Path type="key">.</Path>
+			<Flags type="key">4</Flags>
+			<ExtendedFlags type="key">4</ExtendedFlags>
+			<Type type="key">3</Type>
+			<UniqueID type="key">681577811</UniqueID>
+			<EntityID type="key">{E8156681-C16F-447A-8702-20D8EBF0716F}</EntityID>
+			<ItemInfoDate type="key">06.02.2024 16:51:16</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<item>
+				<Name type="key">Project.events</Name>
+				<DisplayName type="key">Project.events</DisplayName>
+				<Path type="key">.\Events</Path>
+				<Flags type="key">4</Flags>
+				<Type type="key">52</Type>
+				<UniqueID type="key">484400406</UniqueID>
+				<EntityID type="key">{28D3EF29-3FCC-4B18-B591-0F553AEB8CCA}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:16</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+		</item>
+	</project>
+	<experiments>
+		<experiment>
+			<Creator type="key">ControlDesk</Creator>
+			<MigrationHistory type="key"/>
+			<Name type="key">RTkolloq.CDE</Name>
+			<DisplayName type="key">RTkolloq</DisplayName>
+			<Path type="key">.\RTkolloq</Path>
+			<Flags type="key">4096</Flags>
+			<Type type="key">2</Type>
+			<UniqueID type="key">215433461</UniqueID>
+			<EntityID type="key">{9BA81801-3B8A-4F3B-9E67-ED1715ABB51C}</EntityID>
+			<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+		</experiment>
+	</experiments>
+	<BusNavigator/>
+	<VariablesManagement/>
+	<UserManager/>
+	<XILAPIEESPort/>
+	<SignalEditor/>
+	<Interpreter>
+		<PythonVersion type="key">3.9</PythonVersion>
+	</Interpreter>
+	<ProjectExperiment>
+		<LastActiveExperiment type="key">RTkolloq</LastActiveExperiment>
+	</ProjectExperiment>
+	<Instrumentation Version="1">
+		<UniqueIds Version="3">
+			<Count type="key">1</Count>
+			<File1 type="key">RTkolloq/Layout1</File1>
+			<Id1 type="key">0</Id1>
+		</UniqueIds>
+	</Instrumentation>
+	<DiagnosticsManagement/>
+	<PlatformManagement/>
+	<MeasurementConfiguration/>
+	<MeasureDataManagement/>
+	<DataSetManager>
+		<Version>
+			<Version type="key">2</Version>
+		</Version>
+		<Work/>
+		<ActiveWork/>
+		<Reference/>
+		<ActiveReference/>
+		<Master/>
+		<ActiveMaster/>
+		<InitialMaster/>
+		<Incomplete/>
+		<IncompleteReadonly/>
+		<DataSet/>
+		<Readonly/>
+		<AutomaticDownload/>
+	</DataSetManager>
+</Root>

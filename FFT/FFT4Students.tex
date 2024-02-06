@@ -17,6 +17,42 @@
 }%
 \makeatother
 % **********************************************************************
+\usepackage{listings}
+% https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+%------------------settings für listings----------------
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+% https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+\lstset{frame=none,
+	aboveskip=3mm,
+	belowskip=5mm,
+	captionpos=b,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	numbersep=5pt,
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3,
+	inputpath = ./Matlab/
+}
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}1
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+}
+\renewcommand{\lstlistingname}{Listing}
+\renewcommand{\lstlistlistingname}{Skriptverzeichnis}
 
 
 % \usepackage[backend=biber]{biblatex} %biblatex mit biber laden
@@ -24,7 +60,7 @@
 % \usepackage{biblatex}
 \bibliography{Lit_FFT.bib}
 
-\usepackage{color}
+\usepackage{xcolor}
 % bundle for typesetting units and nice fractions
 \usepackage{units}
 %	% Formatierung für Einheiten
@@ -84,38 +120,22 @@
    \includegraphics[height=3cm]{./pictures/FFTcoverPic.jpg}
  }
 % \logo{\includegraphics[height=1cm]{overleaf-logo}}
-\logo{\includegraphics[height=2mmm]{FESTO_RGB_080}\vspace{200pt}}
+ \logo{\includegraphics[height=2mmm]{FESTO_RGB_080}\vspace{200pt}}
+
+ % <<FF>> *****************************************************
+% \includeonly{intro}
+%\includeonly{ExampleFFT}
+ % *****************************************************************
 \begin{document}
 
 \frame{\titlepage}
 
- \section{Introduction}
-% %<<FF>> ***********************************************************************
- \begin{frame}
- \frametitle{FFT Objectives}
-{\bf General objectives of the \textcolor{blue}{discrete} fourier transformation}
- \begin{itemize}
-   \item Numerisch effiziente Methode zur Berechnung einer diskreten Fouriertransformation
-   \item Mein FFT Arbeitsverzeichnis f\"ur die Simulationen liegt % \\
-    % \begin{verbatim}
-       \texttt{C:/workspace/1027\_pJoint\_squeakVEAE/SCALEXIO/myDevelop}
-    %\end{verbatim}
-   bzw. \texttt{FFT4dSpace.slx} und Postprocessing \texttt{VisFFTsimResults.m}
-\end{itemize}
-% \pause % *********************************************************************
-% {\bf Features for this class of control?}
-% \begin{itemize}
-%  \item Discontinuous control law
-%  \item For standard sliding mode (first order): chattering effect, robustness
-%  \item For higher order sliding mode: accuracy, finite time convergence, robustness
-% \end{itemize}
-% \pause % *********************************************************************
-% \begin{block}{Remark} {\bf Sliding mode} as a phenomenon may appear in
-%   a dynamic system governed by ordinary differential equation with
-%   {\em discontinuous right hand side}
-% \end{block}
 
-\end{frame}
+
+%<<FF>> *********************************************************************
+\include{intro}
+
+
 
 \section{Some Remarks on FFT}
 %<<FF>> ***********************************************************************
@@ -127,12 +147,16 @@ For the sake of showing an example.
 See also \cite{brunton2022data}
 
 \begin{itemize}
-\item<1-> Good youtube videos from Steve Brunton about Fourier Transformations:
+\item<1-> Good youtube videos from Steve Brunton about Fourier Transform:
   \href{https://www.youtube.com/watch?v=jNC0jxb0OxE&list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC&index=1s}{\beamergotobutton{Link}} 
+\item<1-> Understanding the Discrete Fourier Transform and the FFT...\\
+  % \href{https://www.youtube.com/watch?v=QmgJmh2I3Fw&t=851s}{\beamergotobutton{Link}}
+    \href{https://youtu.be/QmgJmh2I3Fw?si=d6riOv1da7t8W_4K}{\beamergotobutton{Link}} 
 \item<2-> Good help from dSpace home page...\\
-    \href{https://www.dspace.com/de/gmb/home/news/engineers-insights/fast-fourier-ttf-controldesk.cfm}{\beamergotobutton{Link}} 
+  \href{https://www.dspace.com/de/gmb/home/news/engineers-insights/fast-fourier-ttf-controldesk.cfm}{\beamergotobutton{Link}}
+ 
   \item<3-> Simulink Implementations% Text visible on slide 3
-    \item<3-> Plotting results as post processing tool
+ \item<3-> Plotting results as post processing tool
  \item<4-> Text visible on slide 4
 \end{itemize}
 
@@ -145,7 +169,10 @@ The goal is to analyze to following signal:
 \end{frame}
 
 %<<FF>> *********************************************************************
-\include{ExampleUtkin}
+\include{ListingVis}
+
+%<<FF>> *********************************************************************
+\include{ExampleFFT}
 
 % *****************************************************************
 

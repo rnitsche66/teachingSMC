@@ -1,0 +1,67 @@
+\section{Introduction}
+% %<<FF>> ***********************************************************************
+ \begin{frame}
+ \frametitle{DFT / FFT Objectives}
+{\bf General objectives of the \textcolor{blue}{discrete} fourier transformation}
+\begin{itemize}
+  \item Analyzing a time domain signa in the frequncy domain $\leadsto$ Fourier Transform
+   \item The fast fouriet transform (FFT) is an efficient method to numerically compute a dicrete fourier transform (DFT)
+   % \item Mein FFT Arbeitsverzeichnis f\"ur die Simulationen liegt % \\
+   %  % \begin{verbatim}
+   %  %     \texttt{C:/workspace/1027\_pJoint\_squeakVEAE/SCALEXIO/myDevelop}
+   % \texttt{C:/workspace/teachingSMC/FFT/Matlab/}     
+   %  %\end{verbatim}
+   %  %    bzw. \texttt{FFT4dSpace.slx} und Postprocessing \texttt{VisFFTsimResults.m}
+   % bzw. \texttt{FFT4dSpace\_rtKolloq.slx} und Postprocessing \texttt{VisFFTsimResults\_rtKolloq.m}
+
+   
+  \item     The goal is to analyze to following signal:
+
+ \begin{eqnarray*}
+ %  \boxed{
+   x(t) &=& c+ a_1 \sin(\omega_1 t) + a_2 \cos(\omega_2 t);
+   % }
+  \\          
+   \text{discrete time}
+   \\
+  \textcolor{blue}{
+   x[n]}       &\textcolor{blue}{=}&  \textcolor{blue}{c + a_1 \sin(\omega_1 n \ind{T}{s}) + a_2 \sin(\omega_2 n \ind{T}{s}), \quad n=0,1,2,\ldots
+    }
+  \end{eqnarray*}
+with sample time $\ind{T}{s}$ or sample frequency $\ind{f}{s} = \frac{1}{\ind{T}{s}}$ .
+\end{itemize}
+% \pause % *********************************************************************
+% {\bf Features for this class of control?}
+% \begin{itemize}
+%  \item Discontinuous control law
+%  \item For standard sliding mode (first order): chattering effect, robustness
+%  \item For higher order sliding mode: accuracy, finite time convergence, robustness
+% \end{itemize}
+% \pause % *********************************************************************
+% \begin{block}{Remark} {\bf Sliding mode} as a phenomenon may appear in
+%   a dynamic system governed by ordinary differential equation with
+%   {\em discontinuous right hand side}
+% \end{block}
+
+\end{frame}
+
+
+% <<FF>> ************************************************************
+\begin{frame}
+  \frametitle{Overview}
+  \begin{itemize}
+  \item Objectives: time domain to frequency domain
+  \item time signal - discrete time signal - DFT - FFT
+  \item Sample Time / Number of  Samples / Bin Width / Nyquist Frequency / Leackage effect
+  \item Simulink Simulation
+  \item dSpace Implementation in Real Time
+   
+  \end{itemize}
+\end{frame}
+% *****************************************************************
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "FFT4Students"
+%%% End:

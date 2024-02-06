@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root>
+	<creator type="key">ControlDesk 7.4p3</creator>
+	<majorversion type="key">7</majorversion>
+	<minorversion type="key">4</minorversion>
+	<maintenanceversion type="key">0</maintenanceversion>
+	<specialbuildversion type="key">p3</specialbuildversion>
+	<releasename type="key">2021-A</releasename>
+	<experiment>
+		<Creator type="key">ControlDesk</Creator>
+		<MigrationHistory type="key"/>
+		<Name type="key">RTkolloq.CDE</Name>
+		<DisplayName type="key">RTkolloq</DisplayName>
+		<Path type="key">.\RTkolloq</Path>
+		<Flags type="key">4096</Flags>
+		<Type type="key">2</Type>
+		<UniqueID type="key">215433461</UniqueID>
+		<EntityID type="key">{9BA81801-3B8A-4F3B-9E67-ED1715ABB51C}</EntityID>
+		<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+		<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+		<ItemInfoDescr type="key"/>
+		<ItemInfoAddInfoDb type="key"/>
+		<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+		<item>
+			<Targets type="key">experiment</Targets>
+			<Name type="key">RTkolloq</Name>
+			<DisplayName type="key">RTkolloq</DisplayName>
+			<Path type="key">..</Path>
+			<Flags type="key">4100</Flags>
+			<Type type="key">3</Type>
+			<UniqueID type="key">655869615</UniqueID>
+			<EntityID type="key">{F41D052D-2BF7-435D-B273-C552C126F2EB}</EntityID>
+			<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<item>
+				<Targets type="key">instrumentation</Targets>
+				<Name type="key">Experiment Layouts</Name>
+				<DisplayName type="key">Experiment Layouts</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">256</Flags>
+				<ExtendedFlags type="key">4224</ExtendedFlags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">21928719</UniqueID>
+				<EntityID type="key">{7E7B3D58-1DE5-454A-A7DB-0ED64E8C985A}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+				<item>
+					<Name type="key">RTkolloq.cdc</Name>
+					<DisplayName type="key">RTkolloq.cdc</DisplayName>
+					<Path type="key">.\Experiment Layouts</Path>
+					<Flags type="key">4100</Flags>
+					<Type type="key">4</Type>
+					<UniqueID type="key">193291759</UniqueID>
+					<EntityID type="key">{562E7537-6D58-47D8-85DC-A367E7FEB25A}</EntityID>
+					<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+				</item>
+				<item>
+					<Component type="key">Instrumentation</Component>
+					<Name type="key">Layout1.lay</Name>
+					<DisplayName type="key">Layout1.lay</DisplayName>
+					<Path type="key">.\Experiment Layouts</Path>
+					<Flags type="key">16448</Flags>
+					<Type type="key">10</Type>
+					<UniqueID type="key">627136160</UniqueID>
+					<EntityID type="key">{F653AA12-A472-4410-B5CD-AAA28348FA09}</EntityID>
+					<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+				</item>
+			</item>
+			<item>
+				<Targets type="key">devicemanagement,platformmanagement,diagnosticsmanagement</Targets>
+				<Name type="key">Hardware Configurations</Name>
+				<DisplayName type="key">Hardware Configurations</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">256</Flags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">348694881</UniqueID>
+				<EntityID type="key">{7E45DB59-A8D2-4F2A-94C7-2D579734A3B1}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+				<item>
+					<Component type="key">PlatformManagement</Component>
+					<Targets type="key">Device::bd70308d-2b76-4b20-a8e3-dfe46b89b429</Targets>
+					<RestoreInfopmdn type="key">Platform</RestoreInfopmdn>
+					<RestoreInfopmid type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</RestoreInfopmid>
+					<Name type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</Name>
+					<DisplayName type="key">Platform [SCALEXIO Platform, assigned to 'SCALEXIO']</DisplayName>
+					<Flags type="key">128</Flags>
+					<ExtendedFlags type="key">3072</ExtendedFlags>
+					<Type type="key">6</Type>
+					<UniqueID type="key">1025750118</UniqueID>
+					<EntityID type="key">{EE46CBA8-659C-44E7-8706-F2490FC7183B}</EntityID>
+					<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+				</item>
+			</item>
+			<item>
+				<Targets type="key">datasetmanager</Targets>
+				<Name type="key">Data Sets</Name>
+				<DisplayName type="key">Data Sets</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">4</Flags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">582385589</UniqueID>
+				<EntityID type="key">{37156C91-5159-4F55-B31F-CEFA7DAFAD07}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">measuredatamanagement</Targets>
+				<Name type="key">Measurement Data</Name>
+				<DisplayName type="key">Measurement Data</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">256</Flags>
+				<ExtendedFlags type="key">4224</ExtendedFlags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">260009138</UniqueID>
+				<EntityID type="key">{87F01965-D4C1-4761-975B-3B40202A8037}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">.rtf,.pdf,.html,.xml,.txt,.csv</Targets>
+				<Docs type="key">.rtf,.pdf,.html,.txt,.csv</Docs>
+				<Name type="key">Reports</Name>
+				<DisplayName type="key">Reports</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">692703996</UniqueID>
+				<EntityID type="key">{FB484B82-8EC8-4A4F-A53E-9C6F4ACE8BC3}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.rtf,.pdf,.html,.txt,.csv</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">interpreter,.py</Targets>
+				<Docs type="key">.py</Docs>
+				<Name type="key">Python Scripts</Name>
+				<DisplayName type="key">Python Scripts</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">256</Flags>
+				<ExtendedFlags type="key">4224</ExtendedFlags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">468375048</UniqueID>
+				<EntityID type="key">{254B9CFC-20B8-48E6-8931-CE04D855DE9F}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.py</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">signaleditor</Targets>
+				<Name type="key">Signal Generators</Name>
+				<DisplayName type="key">Signal Generators</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">256</Flags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">861600276</UniqueID>
+				<EntityID type="key">{CA56A0A2-46EC-4C1C-A928-E80F5C31FF27}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">busnavigator,.xml</Targets>
+				<Name type="key">BusNavigator</Name>
+				<DisplayName type="key">BusNavigator</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">260</Flags>
+				<ExtendedFlags type="key">256</ExtendedFlags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">585429144</UniqueID>
+				<EntityID type="key">{EA89E4BA-6433-46DE-8A8C-72D52B43045D}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Targets type="key">xilapieesport</Targets>
+				<Name type="key">XIL API EESPorts</Name>
+				<DisplayName type="key">XIL API EESPorts</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">256</Flags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">553091209</UniqueID>
+				<EntityID type="key">{4A779B8A-58EE-44EC-A6B8-5003A48F0ED9}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+		</item>
+		<item>
+			<Name type="key">AutomationCustomData.json</Name>
+			<DisplayName type="key">AutomationCustomData.json</DisplayName>
+			<Path type="key">.</Path>
+			<Flags type="key">4</Flags>
+			<Type type="key">4</Type>
+			<UniqueID type="key">633892763</UniqueID>
+			<EntityID type="key">{88662932-CE29-42CC-9FD4-D99BE295487B}</EntityID>
+			<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+		</item>
+		<item>
+			<Name type="key">Events</Name>
+			<DisplayName type="key">Events</DisplayName>
+			<Path type="key">.</Path>
+			<Flags type="key">4</Flags>
+			<ExtendedFlags type="key">4</ExtendedFlags>
+			<Type type="key">3</Type>
+			<UniqueID type="key">181859945</UniqueID>
+			<EntityID type="key">{6B9BDBEA-E727-4DD1-AC4C-C9FC78F89B66}</EntityID>
+			<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<item>
+				<Name type="key">Experiment.events</Name>
+				<DisplayName type="key">Experiment.events</DisplayName>
+				<Path type="key">.\Events</Path>
+				<Flags type="key">4</Flags>
+				<Type type="key">52</Type>
+				<UniqueID type="key">778056841</UniqueID>
+				<EntityID type="key">{B8D1AA3C-90E5-4C9A-9F3B-46676836C59B}</EntityID>
+				<ItemInfoDate type="key">06.02.2024 16:51:15</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+		</item>
+	</experiment>
+	<BusNavigator/>
+	<VariablesManagement>
+		<Favorites>
+			<Labels/>
+		</Favorites>
+	</VariablesManagement>
+	<UserManager/>
+	<XILAPIEESPort>
+		<XILAPIEESPort>
+			<EESPorts type="key">&lt;EESPorts /&gt;</EESPorts>
+		</XILAPIEESPort>
+	</XILAPIEESPort>
+	<SignalEditor/>
+	<Interpreter>
+		<PythonVersion type="key">3.9</PythonVersion>
+	</Interpreter>
+	<ProjectExperiment/>
+	<Instrumentation Version="1"/>
+	<DiagnosticsManagement/>
+	<PlatformManagement>
+		<SimulationTimeGroupSupported type="key">-1</SimulationTimeGroupSupported>
+		<DeviceFactory>
+			<Device>
+				<DeviceName type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</DeviceName>
+				<DisplayName type="key">Platform</DisplayName>
+				<DeviceType type="key">240</DeviceType>
+				<DeviceConfiguration/>
+				<applications/>
+				<AssignmentConfiguration>
+					<AssignmentInfo>
+						<AliasName type="key"/>
+						<BoardName type="key"/>
+						<ConnectionType type="key">1</ConnectionType>
+						<MACAddress type="key"/>
+						<Mode type="key">1</Mode>
+						<Children type="key">1</Children>
+						<NetClient type="key"/>
+						<PlatformType type="key">22</PlatformType>
+						<PortAddress type="key">0</PortAddress>
+						<ProcessorName type="key"/>
+						<SerialNumber type="key"/>
+						<TopologyCheck type="key">0</TopologyCheck>
+						<AssignmentProperties>
+							<AssignmentProperty>
+								<Name type="key">PlatformType</Name>
+								<Value type="key">22</Value>
+								<Type type="key">System.Int32</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">Mode</Name>
+								<Value type="key">1</Value>
+								<Type type="key">System.Int32</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">ConnectionType</Name>
+								<Value type="key">1</Value>
+								<Type type="key">System.Int32</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">Children</Name>
+								<Value type="key">1</Value>
+								<Type type="key">System.Int32</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">BoardName</Name>
+								<Value type="key"/>
+								<Type type="key">System.String</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">MACAddress</Name>
+								<Value type="key"/>
+								<Type type="key">System.String</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">NetClient</Name>
+								<Value type="key"/>
+								<Type type="key">System.String</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">PortAddress</Name>
+								<Value type="key">0</Value>
+								<Type type="key">System.Int32</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">SerialNumber</Name>
+								<Value type="key"/>
+								<Type type="key">System.String</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">ProcessorName</Name>
+								<Value type="key"/>
+								<Type type="key">System.String</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">TopologyCheck</Name>
+								<Value type="key">False</Value>
+								<Type type="key">System.Boolean</Type>
+							</AssignmentProperty>
+							<AssignmentProperty>
+								<Name type="key">AliasName</Name>
+								<Value type="key"/>
+								<Type type="key">System.String</Type>
+							</AssignmentProperty>
+						</AssignmentProperties>
+						<AssignmentInfo>
+							<AliasName type="key"/>
+							<BoardName type="key"/>
+							<ConnectionType type="key">1</ConnectionType>
+							<MACAddress type="key"/>
+							<Mode type="key">1</Mode>
+							<Children type="key">0</Children>
+							<NetClient type="key">10.12.92.68</NetClient>
+							<PlatformType type="key">22</PlatformType>
+							<PortAddress type="key">0</PortAddress>
+							<ProcessorName type="key"/>
+							<SerialNumber type="key">1082553</SerialNumber>
+							<TopologyCheck type="key">0</TopologyCheck>
+							<AssignmentProperties>
+								<AssignmentProperty>
+									<Name type="key">PlatformType</Name>
+									<Value type="key">22</Value>
+									<Type type="key">System.Int32</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">Mode</Name>
+									<Value type="key">1</Value>
+									<Type type="key">System.Int32</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">ConnectionType</Name>
+									<Value type="key">1</Value>
+									<Type type="key">System.Int32</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">Children</Name>
+									<Value type="key">0</Value>
+									<Type type="key">System.Int32</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">BoardName</Name>
+									<Value type="key"/>
+									<Type type="key">System.String</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">MACAddress</Name>
+									<Value type="key"/>
+									<Type type="key">System.String</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">NetClient</Name>
+									<Value type="key">10.12.92.68</Value>
+									<Type type="key">System.String</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">PortAddress</Name>
+									<Value type="key">0</Value>
+									<Type type="key">System.Int32</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">SerialNumber</Name>
+									<Value type="key">1082553</Value>
+									<Type type="key">System.String</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">ProcessorName</Name>
+									<Value type="key"/>
+									<Type type="key">System.String</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">TopologyCheck</Name>
+									<Value type="key">False</Value>
+									<Type type="key">System.Boolean</Type>
+								</AssignmentProperty>
+								<AssignmentProperty>
+									<Name type="key">AliasName</Name>
+									<Value type="key"/>
+									<Type type="key">System.String</Type>
+								</AssignmentProperty>
+							</AssignmentProperties>
+						</AssignmentInfo>
+					</AssignmentInfo>
+				</AssignmentConfiguration>
+				<GeneralSettings>
+					<StartOnlineCalibrationBehavior type="key">5</StartOnlineCalibrationBehavior>
+					<DeviceEnableResynchonisation type="key">1</DeviceEnableResynchonisation>
+					<MeasurementService type="key">1</MeasurementService>
+					<ResumeOnlineCalibrationBehaviour type="key">5</ResumeOnlineCalibrationBehaviour>
+					<DisplayStatusInformation type="key">-1</DisplayStatusInformation>
+					<DisplayAutomaticReconnectBehavior type="key">1</DisplayAutomaticReconnectBehavior>
+					<EnablePlatform type="key">1</EnablePlatform>
+					<StartRTA type="key">1</StartRTA>
+					<EnforceStartingRTA type="key">1</EnforceStartingRTA>
+					<IgnoreSmartHardwareScanResult type="key">0</IgnoreSmartHardwareScanResult>
+				</GeneralSettings>
+				<SubstituteFactory/>
+			</Device>
+		</DeviceFactory>
+	</PlatformManagement>
+	<MeasurementConfiguration>
+		<NextUniqueKey type="key">2</NextUniqueKey>
+		<SortedColumn type="key">4</SortedColumn>
+		<SortAscending type="key">-1</SortAscending>
+		<SignalList/>
+		<Platforms>
+			<Platform>
+				<Name type="key">Calculated</Name>
+				<FilteredRastersView type="key">1</FilteredRastersView>
+				<UseDefaultRasterForParameters type="key">0</UseDefaultRasterForParameters>
+				<Rasters/>
+				<EnabledHardwarePollingRasters/>
+				<PlatformTriggers/>
+			</Platform>
+		</Platforms>
+		<DurationTriggers/>
+		<SampleCountTriggers/>
+		<Acquisition>
+			<MeasurementBufferSize type="key">60</MeasurementBufferSize>
+			<BufferOverflowWarningEnabled type="key">0</BufferOverflowWarningEnabled>
+			<BufferOverflowWarningTime type="key">10</BufferOverflowWarningTime>
+			<SaveMeasurementBuffer>
+				<AddToExperimentEnabled type="key">-1</AddToExperimentEnabled>
+				<AutomaticSaveDialogEnabled type="key">0</AutomaticSaveDialogEnabled>
+				<AutomaticExportEnabled type="key">0</AutomaticExportEnabled>
+				<AutomaticExportFileNamePrefix type="key">bufexp_</AutomaticExportFileNamePrefix>
+				<AutomaticExportFileType type="key">ASAM MDF 4.1 Files (*.mf4)</AutomaticExportFileType>
+				<AutomaticExportFolder type="key"/>
+				<AutomaticNamingEnabled type="key">-1</AutomaticNamingEnabled>
+				<AutomaticNamingMinimunDigits type="key">3</AutomaticNamingMinimunDigits>
+				<AutomaticNamingStartIndex type="key">1</AutomaticNamingStartIndex>
+				<Description type="key"/>
+				<FileNamePrefix type="key">buf_</FileNamePrefix>
+				<OpenInMeasurementDataPoolEnabled type="key">0</OpenInMeasurementDataPoolEnabled>
+				<RecordingFileType type="key">ASAM MDF 4.1 Files (*.mf4)</RecordingFileType>
+				<MeasurementTimestampsEnabled type="key">0</MeasurementTimestampsEnabled>
+			</SaveMeasurementBuffer>
+			<SaveDisplayedData>
+				<AddToExperimentEnabled type="key">-1</AddToExperimentEnabled>
+				<AutomaticSaveDialogEnabled type="key">0</AutomaticSaveDialogEnabled>
+				<AutomaticExportEnabled type="key">0</AutomaticExportEnabled>
+				<AutomaticExportFileNamePrefix type="key">sddexp_</AutomaticExportFileNamePrefix>
+				<AutomaticExportFileType type="key">ASAM MDF 4.1 Files (*.mf4)</AutomaticExportFileType>
+				<AutomaticExportFolder type="key"/>
+				<AutomaticNamingEnabled type="key">-1</AutomaticNamingEnabled>
+				<AutomaticNamingMinimunDigits type="key">3</AutomaticNamingMinimunDigits>
+				<AutomaticNamingStartIndex type="key">1</AutomaticNamingStartIndex>
+				<Description type="key"/>
+				<FileNamePrefix type="key">sdd_</FileNamePrefix>
+				<OpenInMeasurementDataPoolEnabled type="key">0</OpenInMeasurementDataPoolEnabled>
+				<RecordingFileType type="key">ASAM MDF 4.1 Files (*.mf4)</RecordingFileType>
+				<MeasurementTimestampsEnabled type="key">0</MeasurementTimestampsEnabled>
+			</SaveDisplayedData>
+			<SaveFlightRecorderData>
+				<AddToExperimentEnabled type="key">-1</AddToExperimentEnabled>
+				<AutomaticSaveDialogEnabled type="key">0</AutomaticSaveDialogEnabled>
+				<AutomaticExportEnabled type="key">0</AutomaticExportEnabled>
+				<AutomaticExportFileNamePrefix type="key">flightrecexp_</AutomaticExportFileNamePrefix>
+				<AutomaticExportFileType type="key">ASAM MDF 4.1 Files (*.mf4)</AutomaticExportFileType>
+				<AutomaticExportFolder type="key"/>
+				<AutomaticNamingEnabled type="key">-1</AutomaticNamingEnabled>
+				<AutomaticNamingMinimunDigits type="key">3</AutomaticNamingMinimunDigits>
+				<AutomaticNamingStartIndex type="key">1</AutomaticNamingStartIndex>
+				<Description type="key"/>
+				<FileNamePrefix type="key">flightrec_</FileNamePrefix>
+				<OpenInMeasurementDataPoolEnabled type="key">0</OpenInMeasurementDataPoolEnabled>
+				<RecordingFileType type="key">ASAM MDF 4.1 Files (*.mf4)</RecordingFileType>
+			</SaveFlightRecorderData>
+		</Acquisition>
+		<Recorders>
+			<Recorder>
+				<Name type="key">Recorder 1</Name>
+				<UniqueKey type="key">1</UniqueKey>
+				<AutomaticSignalConfigurationEnabled type="key">-1</AutomaticSignalConfigurationEnabled>
+				<WriteToFileEnabled type="key">-1</WriteToFileEnabled>
+				<MeasurementTimestampsEnabled type="key">0</MeasurementTimestampsEnabled>
+				<StartAudioSignalEnabled type="key">0</StartAudioSignalEnabled>
+				<StopAudioSignalEnabled type="key">0</StopAudioSignalEnabled>
+				<Active type="key">-1</Active>
+				<StartCondition>
+					<Enabled type="key">0</Enabled>
+					<RecordingCycleCount type="key">1</RecordingCycleCount>
+					<SelectedTriggerRule type="key"/>
+					<TriggerDelay type="key">0</TriggerDelay>
+				</StartCondition>
+				<StopCondition>
+					<RecordingStopWarningEnabled type="key">0</RecordingStopWarningEnabled>
+					<RecordingStopWarningTime type="key">60</RecordingStopWarningTime>
+					<SelectedTriggerRule type="key"/>
+					<Type type="key">0</Type>
+					<TimeLimit type="key">3600</TimeLimit>
+					<TriggerDelay type="key">0</TriggerDelay>
+				</StopCondition>
+				<StorageInformation>
+					<AddToExperimentEnabled type="key">-1</AddToExperimentEnabled>
+					<AutomaticSaveDialogEnabled type="key">0</AutomaticSaveDialogEnabled>
+					<AutomaticExportEnabled type="key">0</AutomaticExportEnabled>
+					<AutomaticExportFileNamePrefix type="key">exp1_</AutomaticExportFileNamePrefix>
+					<AutomaticExportFileType type="key">ASAM MDF 4.1 Files (*.mf4)</AutomaticExportFileType>
+					<AutomaticExportFolder type="key"/>
+					<AutomaticNamingEnabled type="key">-1</AutomaticNamingEnabled>
+					<AutomaticNamingMinimunDigits type="key">3</AutomaticNamingMinimunDigits>
+					<AutomaticNamingStartIndex type="key">1</AutomaticNamingStartIndex>
+					<Description type="key"/>
+					<FileNamePrefix type="key">rec1_</FileNamePrefix>
+					<OpenInMeasurementDataPoolEnabled type="key">0</OpenInMeasurementDataPoolEnabled>
+					<RecordingFileType type="key">ASAM MDF 4.1 Files (*.mf4)</RecordingFileType>
+				</StorageInformation>
+				<SignalList/>
+			</Recorder>
+		</Recorders>
+	</MeasurementConfiguration>
+	<MeasureDataManagement>
+		<TriggerRules>
+			<Version type="key">2</Version>
+		</TriggerRules>
+		<BookmarkTypes>
+			<BookmarkType>
+				<TypeID type="key">1</TypeID>
+				<RecordingActive type="key">1</RecordingActive>
+				<VisualizationActive type="key">1</VisualizationActive>
+			</BookmarkType>
+			<BookmarkType>
+				<TypeID type="key">2</TypeID>
+				<RecordingActive type="key">1</RecordingActive>
+				<VisualizationActive type="key">1</VisualizationActive>
+			</BookmarkType>
+			<BookmarkType>
+				<TypeID type="key">3</TypeID>
+				<RecordingActive type="key">1</RecordingActive>
+				<VisualizationActive type="key">1</VisualizationActive>
+			</BookmarkType>
+			<BookmarkType>
+				<TypeID type="key">5</TypeID>
+				<RecordingActive type="key">0</RecordingActive>
+				<VisualizationActive type="key">0</VisualizationActive>
+			</BookmarkType>
+			<BookmarkType>
+				<TypeID type="key">6</TypeID>
+				<RecordingActive type="key">0</RecordingActive>
+				<VisualizationActive type="key">0</VisualizationActive>
+			</BookmarkType>
+			<BookmarkType>
+				<TypeID type="key">8</TypeID>
+				<RecordingActive type="key">1</RecordingActive>
+				<VisualizationActive type="key">1</VisualizationActive>
+			</BookmarkType>
+			<BookmarkType>
+				<TypeID type="key">9</TypeID>
+				<RecordingActive type="key">1</RecordingActive>
+				<VisualizationActive type="key">1</VisualizationActive>
+			</BookmarkType>
+			<BookmarkType>
+				<TypeID type="key">12</TypeID>
+				<RecordingActive type="key">1</RecordingActive>
+				<VisualizationActive type="key">1</VisualizationActive>
+			</BookmarkType>
+			<BookmarkType>
+				<TypeID type="key">13</TypeID>
+				<RecordingActive type="key">1</RecordingActive>
+				<VisualizationActive type="key">1</VisualizationActive>
+			</BookmarkType>
+			<BookmarkType>
+				<TypeID type="key">14</TypeID>
+				<RecordingActive type="key">1</RecordingActive>
+				<VisualizationActive type="key">1</VisualizationActive>
+			</BookmarkType>
+			<BookmarkType>
+				<TypeID type="key">15</TypeID>
+				<RecordingActive type="key">1</RecordingActive>
+				<VisualizationActive type="key">1</VisualizationActive>
+			</BookmarkType>
+		</BookmarkTypes>
+		<ProjectExperimentSettings>
+			<ShowMeasurementLinks type="key">0</ShowMeasurementLinks>
+		</ProjectExperimentSettings>
+	</MeasureDataManagement>
+	<DataSetManager>
+		<Version>
+			<Version type="key">2</Version>
+		</Version>
+		<Work/>
+		<ActiveWork/>
+		<Reference/>
+		<ActiveReference/>
+		<Master/>
+		<ActiveMaster/>
+		<InitialMaster/>
+		<Incomplete/>
+		<IncompleteReadonly/>
+		<DataSet/>
+		<Readonly/>
+		<AutomaticDownload/>
+	</DataSetManager>
+</Root>
