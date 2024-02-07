@@ -21,7 +21,9 @@ end
 
 % ******************************************************
 figure(10); mesh(t)
-
+xlabel('Index k')
+ylabel('Runs')
+zlabel('|X(k)|')
 f_vec = [0:1:length(matFFT(:,1))-1]*1/Ts/length(matFFT);
 
 LW=1.5;

@@ -79,6 +79,118 @@
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
 				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+				<item>
+					<Component type="key">VariablesManagement</Component>
+					<Name type="key">FFTonline.vdb</Name>
+					<DisplayName type="key">C:\workspace\teachingSMC\FFT\dSpace\CtrlDesk\FFTonline\Variable Descriptions\FFTonline.vdb</DisplayName>
+					<Path type="key">.\Variable Descriptions</Path>
+					<Flags type="key">276</Flags>
+					<Type type="key">18</Type>
+					<UniqueID type="key">891126870</UniqueID>
+					<EntityID type="key">{325F1DB2-6E72-49B4-BC87-22CCAF341347}</EntityID>
+					<ItemInfoDate type="key">07.02.2024 08:37:24</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+				</item>
+				<item>
+					<Component type="key">VariablesManagement</Component>
+					<Name type="key">App_FFT4dSpace_1.sdf</Name>
+					<DisplayName type="key">App_FFT4dSpace_1.sdf</DisplayName>
+					<Path type="key">.\Variable Descriptions\App_FFT4dSpace_1.sdf</Path>
+					<Flags type="key">18704</Flags>
+					<Type type="key">7</Type>
+					<UniqueID type="key">501424525</UniqueID>
+					<EntityID type="key">{6C6F0CE9-2F6E-42C0-9C9C-92586B298B96}</EntityID>
+					<ItemInfoDate type="key">07.02.2024 08:08:52</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoLog type="key">
+Original file added from ..\..\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf [2024-02-07 07:05:51 (UTC)]
+
+Variable description reloaded on 07.02.2024 08:37:23 (C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf)
+Original file added from ..\..\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf [2024-02-07 07:28:02 (UTC)]
+
+Variable description reloaded on 07.02.2024 09:08:18 (C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf)
+Original file added from ..\..\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf [2024-02-07 08:08:02 (UTC)]
+
+Variable description reloaded on 07.02.2024 10:01:57 (C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf)
+Original file added from ..\..\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf [2024-02-07 09:01:19 (UTC)]
+
+Variable description reloaded on 07.02.2024 10:27:27 (C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf)
+Original file added from ..\..\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf [2024-02-07 09:05:53 (UTC)]
+
+Variable description reloaded on 07.02.2024 10:53:26 (C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf)
+Original file added from ..\..\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build Results\App_FFT4dSpace_1.sdf [2024-02-07 09:51:06 (UTC)]
+</ItemInfoLog>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">FFT4dSpace_1.trc</Name>
+						<DisplayName type="key">FFT4dSpace_1.trc</DisplayName>
+						<Path type="key">.\Variable Descriptions\App_FFT4dSpace_1.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">4</Type>
+						<UniqueID type="key">42173918</UniqueID>
+						<EntityID type="key">{EC8416A1-1E89-4D37-B908-6735E5080B70}</EntityID>
+						<ItemInfoDate type="key">07.02.2024 10:53:26</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					</item>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">FFT4dSpace_1.map</Name>
+						<DisplayName type="key">FFT4dSpace_1.map</DisplayName>
+						<Path type="key">.\Variable Descriptions\App_FFT4dSpace_1.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">4</Type>
+						<UniqueID type="key">565954703</UniqueID>
+						<EntityID type="key">{CB4D29CA-B2B4-4361-BC5E-040560C0FEC9}</EntityID>
+						<ItemInfoDate type="key">07.02.2024 10:53:26</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					</item>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">App_FFT4dSpace_1.rta</Name>
+						<DisplayName type="key">App_FFT4dSpace_1.rta</DisplayName>
+						<Path type="key">.\Variable Descriptions\App_FFT4dSpace_1.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">30</Type>
+						<UniqueID type="key">598539901</UniqueID>
+						<EntityID type="key">{918012B6-19D0-49A8-A67F-DB80CEF52C07}</EntityID>
+						<ItemInfoDate type="key">07.02.2024 10:53:26</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					</item>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Name type="key">FFT4dSpace_1.expswcfg</Name>
+						<DisplayName type="key">FFT4dSpace_1.expswcfg</DisplayName>
+						<Path type="key">.\Variable Descriptions\App_FFT4dSpace_1.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<Type type="key">4</Type>
+						<UniqueID type="key">797513800</UniqueID>
+						<EntityID type="key">{5C5CB105-528F-412F-887D-2F40F5F89D33}</EntityID>
+						<ItemInfoDate type="key">07.02.2024 10:53:26</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					</item>
+				</item>
 			</item>
 			<item>
 				<Targets type="key">.vfe</Targets>

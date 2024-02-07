@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root>
+	<creator type="key">ConfigurationDesk 6.7</creator>
+	<majorversion type="key">6</majorversion>
+	<minorversion type="key">7</minorversion>
+	<maintenanceversion type="key">0</maintenanceversion>
+	<specialbuildversion type="key"/>
+	<releasename type="key">2021-A</releasename>
+	<project>
+		<Creator type="key">ConfigurationDesk</Creator>
+		<MigrationHistory type="key"/>
+		<Name type="key">Proj_FFT4dSpace_1.CDP</Name>
+		<DisplayName type="key">Proj_FFT4dSpace_1</DisplayName>
+		<Flags type="key">4096</Flags>
+		<Type type="key">1</Type>
+		<UniqueID type="key">236243897</UniqueID>
+		<EntityID type="key">{0E105862-1B82-4245-AA9F-BB668507ADD9}</EntityID>
+		<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+		<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+		<ItemInfoDescr type="key"/>
+		<ItemInfoAddInfoDb type="key"/>
+		<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+		<item>
+			<Targets type="key">project</Targets>
+			<Name type="key">Proj_FFT4dSpace_1</Name>
+			<DisplayName type="key">Proj_FFT4dSpace_1</DisplayName>
+			<Path type="key">..</Path>
+			<Flags type="key">4100</Flags>
+			<Type type="key">3</Type>
+			<UniqueID type="key">945294912</UniqueID>
+			<EntityID type="key">{F2AC2749-4179-43F5-9DC5-B44D1A14EA8A}</EntityID>
+			<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<item>
+				<Docs type="key">.doc,.docx,.txt,.pdf,.xls,.xlsx,.csv,.rtf</Docs>
+				<Name type="key">Specifications</Name>
+				<DisplayName type="key">Specifications</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">883677113</UniqueID>
+				<EntityID type="key">{BF4168E3-BE89-4A17-B89D-92C5520B0B1B}</EntityID>
+				<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.doc,.docx,.txt,.pdf,.xls,.xlsx,.csv,.rtf</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.mpp,.mppx</Docs>
+				<Name type="key">Project Plans</Name>
+				<DisplayName type="key">Project Plans</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">108082936</UniqueID>
+				<EntityID type="key">{E7F7E2B6-1834-449E-934E-524D992497AF}</EntityID>
+				<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.mpp,.mppx</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.slx,.mdl,.sic,.fmu,.ctlgz,.vecu,.bsc,.mcd,.mtfx</Docs>
+				<Name type="key">Models</Name>
+				<DisplayName type="key">Models</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">5747937</UniqueID>
+				<EntityID type="key">{81D5B307-4E13-4EF3-906B-B5E5FFA468A4}</EntityID>
+				<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.slx,.mdl,.sic,.fmu,.ctlgz,.vecu,.bsc,.mcd,.mtfx</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.arxml,.ldf,.dbc,.xml</Docs>
+				<Name type="key">Communication Matrices</Name>
+				<DisplayName type="key">Communication Matrices</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">130981726</UniqueID>
+				<EntityID type="key">{7DA375E0-FA09-4A04-B8ED-93B419F99B50}</EntityID>
+				<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.arxml,.ldf,.dbc,.xml</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.xml,.cpp,.c,.h,.o,.so,.py,.pyc</Docs>
+				<Name type="key">CustomFunctions</Name>
+				<DisplayName type="key">CustomFunctions</DisplayName>
+				<Path type="key">.</Path>
+				<Type type="key">3</Type>
+				<UniqueID type="key">69187018</UniqueID>
+				<EntityID type="key">{27993CA3-727D-48C6-9857-14ABCC5D8D3D}</EntityID>
+				<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.xml,.cpp,.c,.h,.o,.so,.py,.pyc</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+			<item>
+				<Docs type="key">.json</Docs>
+				<Name type="key">Metadata</Name>
+				<DisplayName type="key">Metadata</DisplayName>
+				<Path type="key">.</Path>
+				<Flags type="key">4</Flags>
+				<Type type="key">3</Type>
+				<UniqueID type="key">1037441542</UniqueID>
+				<EntityID type="key">{EB729BB7-19C2-4398-8977-FB020B4B6EF3}</EntityID>
+				<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key">.json</ItemInfoDocs>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAddInfoDb type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			</item>
+		</item>
+		<item>
+			<Name type="key">AssociatedStorage.json</Name>
+			<DisplayName type="key">AssociatedStorage.json</DisplayName>
+			<Path type="key">.</Path>
+			<Flags type="key">260</Flags>
+			<Type type="key">4</Type>
+			<UniqueID type="key">847027163</UniqueID>
+			<EntityID type="key">{71DFB4B0-B7E4-4E59-A5C3-F4B088E7FBD9}</EntityID>
+			<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+		</item>
+		<item>
+			<Component type="key">ProjectApplication</Component>
+			<Name type="key">App_FFT4dSpace_1.CDL</Name>
+			<DisplayName type="key">App_FFT4dSpace_1</DisplayName>
+			<Path type="key">.\App_FFT4dSpace_1</Path>
+			<Flags type="key">41216</Flags>
+			<Type type="key">14</Type>
+			<UniqueID type="key">377601774</UniqueID>
+			<EntityID type="key">{30BA9B68-64A9-4CC0-8353-F10FC3FCC4B5}</EntityID>
+			<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+		</item>
+	</project>
+	<experiments/>
+	<UserManager/>
+	<Interpreter>
+		<PythonVersion type="key">3.9</PythonVersion>
+	</Interpreter>
+	<ProjectExperiment/>
+	<ProjectApplication>
+		<applications>
+			<application>
+				<Name type="key">App_FFT4dSpace_1.CDL</Name>
+				<DisplayName type="key">App_FFT4dSpace_1</DisplayName>
+				<Path type="key">.\App_FFT4dSpace_1</Path>
+				<Component type="key">ProjectApplication</Component>
+				<Type type="key">14</Type>
+				<ApplicationType type="key">3</ApplicationType>
+				<Flags type="key">41216</Flags>
+				<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key"/>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+				<Log type="key"/>
+				<AddInfoDb type="key"/>
+				<DatabaseID type="key">-1</DatabaseID>
+				<EntityID type="key">{30BA9B68-64A9-4CC0-8353-F10FC3FCC4B5}</EntityID>
+			</application>
+		</applications>
+		<LastActiveApplication type="key">App_FFT4dSpace_1</LastActiveApplication>
+	</ProjectApplication>
+	<PlatformManagement/>
+</Root>

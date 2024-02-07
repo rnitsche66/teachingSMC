@@ -1,0 +1,15 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+Status=Start
+File=App_FFT4dSpace_1.rta
+RTP=1
+
+[1]
+ID=8cbec47b-5420-4cec-8b64-bc198424daaa
+Type=DSRTPC
+ServiceID=1
+TraceFile=FFT4dSpace_1.trc
+

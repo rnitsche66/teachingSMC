@@ -36,6 +36,7 @@
 			<ItemInfoAddInfoDb type="key"/>
 			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
 			<item>
+				<Component type="key">Instrumentation</Component>
 				<Targets type="key">instrumentation</Targets>
 				<Name type="key">Experiment Layouts</Name>
 				<DisplayName type="key">Experiment Layouts</DisplayName>
@@ -110,6 +111,29 @@
 					<ItemInfoDescr type="key"/>
 					<ItemInfoAddInfoDb type="key"/>
 					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					<item>
+						<Component type="key">VariablesManagement</Component>
+						<Targets type="key">,VariableDescription::App_FFT4dSpace_1.sdf</Targets>
+						<Flags type="key">18736</Flags>
+						<ExtendedFlags type="key">1</ExtendedFlags>
+						<UniqueID type="key">874322583</UniqueID>
+						<LinkedItem type="key">501424525</LinkedItem>
+						<item>
+							<Component type="key">DataSetManager</Component>
+							<Name type="key">Data Sets</Name>
+							<DisplayName type="key">Data Sets</DisplayName>
+							<Path type="key">.\Data Sets</Path>
+							<Flags type="key">65798</Flags>
+							<ExtendedFlags type="key">132</ExtendedFlags>
+							<Type type="key">3</Type>
+							<UniqueID type="key">46666237</UniqueID>
+							<EntityID type="key">{42A35839-A651-4FB7-9B93-279DED5D739A}</EntityID>
+							<ItemInfoDate type="key">07.02.2024 08:08:53</ItemInfoDate>
+							<ItemInfoDescr type="key"/>
+							<ItemInfoAddInfoDb type="key"/>
+							<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+						</item>
+					</item>
 				</item>
 			</item>
 			<item>
@@ -207,6 +231,36 @@
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
 				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+				<item>
+					<Component type="key">BusNavigator</Component>
+					<Name type="key">App_FFT4dSpace_1.sdf</Name>
+					<DisplayName type="key">App_FFT4dSpace_1.sdf</DisplayName>
+					<Path type="key">.\BusNavigator</Path>
+					<Flags type="key">16644</Flags>
+					<Type type="key">3</Type>
+					<UniqueID type="key">731661670</UniqueID>
+					<EntityID type="key">{C946DF78-6B89-4CB4-9B32-BF677D2B77E6}</EntityID>
+					<ItemInfoDate type="key">07.02.2024 08:37:23</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					<item>
+						<Component type="key">BusNavigator</Component>
+						<Name type="key">BusConfiguration.xml</Name>
+						<DisplayName type="key">BusConfiguration.xml</DisplayName>
+						<Path type="key">.\BusNavigator\App_FFT4dSpace_1.sdf</Path>
+						<Flags type="key">18692</Flags>
+						<Type type="key">4</Type>
+						<UniqueID type="key">119197957</UniqueID>
+						<EntityID type="key">{689C6671-F784-4365-9233-E5CB2265A5F6}</EntityID>
+						<ItemInfoDate type="key">07.02.2024 08:37:23</ItemInfoDate>
+						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+						<ItemInfoDescr type="key"/>
+						<ItemInfoAddInfoDb type="key"/>
+						<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					</item>
+				</item>
 			</item>
 			<item>
 				<Targets type="key">xilapieesport</Targets>
@@ -272,6 +326,13 @@
 	<VariablesManagement>
 		<Favorites>
 			<Labels/>
+			<Favorite>
+				<VariableName type="key">Ts</VariableName>
+				<VariableUniqueName type="key">Tunable Parameters/Ts</VariableUniqueName>
+				<VariableDescriptionName type="key">App_FFT4dSpace_1.sdf</VariableDescriptionName>
+				<PlatformId type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</PlatformId>
+				<PlatformDisplayName type="key">Platform</PlatformDisplayName>
+			</Favorite>
 		</Favorites>
 	</VariablesManagement>
 	<UserManager/>
@@ -467,21 +528,87 @@
 		</DeviceFactory>
 	</PlatformManagement>
 	<MeasurementConfiguration>
-		<NextUniqueKey type="key">2</NextUniqueKey>
+		<NextUniqueKey type="key">4</NextUniqueKey>
 		<SortedColumn type="key">4</SortedColumn>
 		<SortAscending type="key">-1</SortAscending>
-		<SignalList/>
+		<SignalList>
+			<Variable>
+				<Name type="key">Model Root/Asin1/Out1</Name>
+				<Platform type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</Platform>
+				<Active type="key">-1</Active>
+				<Signal>
+					<Raster type="key">Periodic Task 1</Raster>
+				</Signal>
+			</Variable>
+			<Variable>
+				<Name type="key">Model Root/MATLAB Function1/y_sin</Name>
+				<Platform type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</Platform>
+				<Active type="key">-1</Active>
+				<Signal>
+					<Raster type="key">Periodic Task 1</Raster>
+				</Signal>
+			</Variable>
+		</SignalList>
 		<Platforms>
+			<Platform>
+				<Name type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</Name>
+				<FilteredRastersView type="key">1</FilteredRastersView>
+				<UseDefaultRasterForParameters type="key">0</UseDefaultRasterForParameters>
+				<DefaultRaster type="key">Periodic Task 1</DefaultRaster>
+				<Rasters>
+					<PlatformTriggered>
+						<Name type="key">Periodic Task 1</Name>
+						<AutoRepeatEnabled type="key">1</AutoRepeatEnabled>
+						<AutoRepeatBehavior type="key">1</AutoRepeatBehavior>
+						<MultiCaptureHistoryEnabled type="key">0</MultiCaptureHistoryEnabled>
+						<DownsamplingFactor type="key">1</DownsamplingFactor>
+						<StartTrigger type="key">2</StartTrigger>
+						<StopTrigger type="key">3</StopTrigger>
+					</PlatformTriggered>
+				</Rasters>
+				<EnabledHardwarePollingRasters/>
+				<PlatformTriggers>
+					<PlatformTrigger>
+						<UniqueKey type="key">2</UniqueKey>
+						<Name type="key">Platform Trigger 1</Name>
+						<Condition type="key">posedge ( MATLAB_Function1_y_sin, 0.5 )</Condition>
+						<Delay type="key">-0.01</Delay>
+						<Enabled type="key">-1</Enabled>
+						<Timeout type="key">0</Timeout>
+						<TimeoutEnabled type="key">0</TimeoutEnabled>
+						<VariableMappings>
+							<Platform type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</Platform>
+							<VariableMapping>
+								<Symbol type="key">MATLAB_Function1_y_sin</Symbol>
+								<Signal type="key">Model Root/MATLAB Function1/y_sin</Signal>
+							</VariableMapping>
+						</VariableMappings>
+					</PlatformTrigger>
+				</PlatformTriggers>
+			</Platform>
 			<Platform>
 				<Name type="key">Calculated</Name>
 				<FilteredRastersView type="key">1</FilteredRastersView>
 				<UseDefaultRasterForParameters type="key">0</UseDefaultRasterForParameters>
-				<Rasters/>
+				<Rasters>
+					<Raster>
+						<Name type="key">Merged</Name>
+						<MinimumSamplingPeriod type="key">0.001</MinimumSamplingPeriod>
+					</Raster>
+				</Rasters>
 				<EnabledHardwarePollingRasters/>
 				<PlatformTriggers/>
 			</Platform>
 		</Platforms>
-		<DurationTriggers/>
+		<DurationTriggers>
+			<DurationTrigger>
+				<UniqueKey type="key">3</UniqueKey>
+				<Name type="key">Duration Trigger 1</Name>
+				<Delay type="key">0</Delay>
+				<Duration type="key">0.01</Duration>
+				<Enabled type="key">-1</Enabled>
+			</DurationTrigger>
+		</DurationTriggers>
 		<SampleCountTriggers/>
 		<Acquisition>
 			<MeasurementBufferSize type="key">60</MeasurementBufferSize>
@@ -574,7 +701,26 @@
 					<OpenInMeasurementDataPoolEnabled type="key">0</OpenInMeasurementDataPoolEnabled>
 					<RecordingFileType type="key">ASAM MDF 4.1 Files (*.mf4)</RecordingFileType>
 				</StorageInformation>
-				<SignalList/>
+				<SignalList>
+					<Variable>
+						<Name type="key">Model Root/Asin1/Out1</Name>
+						<Platform type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</Platform>
+						<PlatformDisplayName type="key">Platform</PlatformDisplayName>
+						<Recorded type="key">-1</Recorded>
+						<Signal>
+							<Raster type="key">Periodic Task 1</Raster>
+						</Signal>
+					</Variable>
+					<Variable>
+						<Name type="key">Model Root/MATLAB Function1/y_sin</Name>
+						<Platform type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</Platform>
+						<PlatformDisplayName type="key">Platform</PlatformDisplayName>
+						<Recorded type="key">-1</Recorded>
+						<Signal>
+							<Raster type="key">Periodic Task 1</Raster>
+						</Signal>
+					</Variable>
+				</SignalList>
 			</Recorder>
 		</Recorders>
 	</MeasurementConfiguration>

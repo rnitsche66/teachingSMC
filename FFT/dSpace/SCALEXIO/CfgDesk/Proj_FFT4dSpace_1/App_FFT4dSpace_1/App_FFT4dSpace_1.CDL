@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root>
+	<creator type="key">ConfigurationDesk 6.7</creator>
+	<application>
+		<Name type="key">App_FFT4dSpace_1.CDL</Name>
+		<DisplayName type="key">App_FFT4dSpace_1</DisplayName>
+		<Path type="key">.\App_FFT4dSpace_1</Path>
+		<Component type="key">ProjectApplication</Component>
+		<Type type="key">14</Type>
+		<ApplicationType type="key">3</ApplicationType>
+		<Flags type="key">41216</Flags>
+		<ItemInfoDate type="key">07.02.2024 07:54:00</ItemInfoDate>
+		<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+		<ItemInfoDocs type="key"/>
+		<ItemInfoDescr type="key"/>
+		<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+		<Log type="key"/>
+		<AddInfoDb type="key"/>
+		<DatabaseID type="key">-1</DatabaseID>
+		<EntityID type="key">{30BA9B68-64A9-4CC0-8353-F10FC3FCC4B5}</EntityID>
+		<item>
+			<Name type="key">WindowConfiguration.xml</Name>
+			<DisplayName type="key">WindowConfiguration.xml</DisplayName>
+			<Path type="key">.</Path>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">260</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">4</Type>
+			<ItemInfoDate type="key">07.02.2024 07:54:18</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{967DC232-5E46-4A7F-A068-D17FD4164FE5}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<DisplayName type="key">Device Topology</DisplayName>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">131328</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">33</Type>
+			<ItemInfoDate type="key">07.02.2024 07:54:18</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{D7412447-7FC4-4669-806A-25C27929ABCF}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<DisplayName type="key">Hardware Topology</DisplayName>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">256</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">19</Type>
+			<ItemInfoDate type="key">07.02.2024 07:54:18</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{1FF0C4DC-2899-4B09-854A-038D4AA1ADD3}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<DisplayName type="key">Model Topology</DisplayName>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">256</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">31</Type>
+			<ItemInfoDate type="key">07.02.2024 07:54:18</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key">Model location:
+C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\FFT4dSpace_1.slx
+</Log>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{619CF4F6-7631-437E-BCD2-29013A8CD302}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<DisplayName type="key">Communication Matrices</DisplayName>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">131328</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">70</Type>
+			<ItemInfoDate type="key">07.02.2024 07:54:18</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{6274FBC6-932E-43D8-A089-473F1C062824}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<DisplayName type="key">External Cable Harness</DisplayName>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">131328</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">32</Type>
+			<ItemInfoDate type="key">07.02.2024 07:54:18</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{55B41F4F-23A7-4EE0-8198-7134842BE139}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<Name type="key">Application.cfgx</Name>
+			<DisplayName type="key">Core Application</DisplayName>
+			<Path type="key">.</Path>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">260</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">20</Type>
+			<ItemInfoDate type="key">07.02.2024 07:54:18</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{207775A3-549D-404F-AC0F-C5E680616788}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<Name type="key">Build Results</Name>
+			<DisplayName type="key">Build Results</DisplayName>
+			<Path type="key">.</Path>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">256</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">58</Type>
+			<ItemInfoDate type="key">07.02.2024 12:57:48</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{95A18E3C-F934-4E43-BC57-B44F95A78137}</EntityID>
+			<Targets/>
+			<item>
+				<Name type="key">Build Results</Name>
+				<DisplayName type="key">itSDFROOT</DisplayName>
+				<Path type="key">.</Path>
+				<Component type="key">ProjectApplication</Component>
+				<Flags type="key">260</Flags>
+				<ExtendedFlags type="key">0</ExtendedFlags>
+				<Type type="key">29</Type>
+				<ItemInfoDate type="key">07.02.2024 12:57:48</ItemInfoDate>
+				<ItemInfoPath type="key"/>
+				<ItemInfoDocs type="key"/>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+				<ItemInfoAddInfoDb type="key"/>
+				<Log type="key"/>
+				<DatabaseID type="key">-1</DatabaseID>
+				<EntityID type="key">{EBD7C12F-E8AF-4189-A213-31C82E0BE3BE}</EntityID>
+				<Targets/>
+				<item>
+					<Name type="key">App_FFT4dSpace_1.dsbuildinfo</Name>
+					<DisplayName type="key">App_FFT4dSpace_1.dsbuildinfo</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">260</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">4</Type>
+					<ItemInfoDate type="key">07.02.2024 12:57:48</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{1BFC2BF9-D91D-4271-B6BA-4BAA95E94294}</EntityID>
+					<Targets/>
+				</item>
+				<item>
+					<Name type="key">App_FFT4dSpace_1.rta</Name>
+					<DisplayName type="key">App_FFT4dSpace_1.rta</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">256</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">37</Type>
+					<ItemInfoDate type="key">07.02.2024 12:57:48</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{93AF29E5-EC47-44CE-8952-1F7A60FF29D6}</EntityID>
+					<Targets/>
+				</item>
+				<item>
+					<Name type="key">App_FFT4dSpace_1.sdf</Name>
+					<DisplayName type="key">App_FFT4dSpace_1.sdf</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">256</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">35</Type>
+					<ItemInfoDate type="key">07.02.2024 12:57:48</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{2A5F148A-28C9-4954-BF48-1904F31578F2}</EntityID>
+					<Targets/>
+				</item>
+				<item>
+					<Name type="key">FFT4dSpace_1.expswcfg</Name>
+					<DisplayName type="key">FFT4dSpace_1.expswcfg</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">256</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">71</Type>
+					<ItemInfoDate type="key">07.02.2024 12:57:48</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{31898B2A-9D56-4F91-92F9-4AFCBAB053FF}</EntityID>
+					<Targets/>
+				</item>
+				<item>
+					<Name type="key">FFT4dSpace_1.map</Name>
+					<DisplayName type="key">FFT4dSpace_1.map</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">256</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">36</Type>
+					<ItemInfoDate type="key">07.02.2024 12:57:48</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{CBC979F9-F9DC-4F6B-9120-9A627B273CC9}</EntityID>
+					<Targets/>
+				</item>
+				<item>
+					<Name type="key">FFT4dSpace_1.trc</Name>
+					<DisplayName type="key">FFT4dSpace_1.trc</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">256</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">34</Type>
+					<ItemInfoDate type="key">07.02.2024 12:57:48</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">nitr</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{3B55E598-691E-4199-8F49-48717F0154F1}</EntityID>
+					<Targets/>
+				</item>
+			</item>
+		</item>
+	</application>
+</Root>

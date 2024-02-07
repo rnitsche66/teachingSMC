@@ -1,0 +1,1087 @@
+-- ****************************************************************************
+--
+--  Trace file: FFT4dSpace_1.trc
+--
+--  4.5 (02-May-2021)
+--  Wed Feb  7 10:50:06 2024
+--
+--  Copyright 2024, dSPACE GmbH. All rights reserved.
+--
+-- ****************************************************************************
+
+
+-- Type definitions for structures
+
+struct FFT4dSpace_1_struct_HWeianez4jK7RhAtAn8PqF
+{
+  array-incr: -1
+}
+    structField0 
+    {
+      alias:   "sinFreq_Hz_1"
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    structField1 
+    {
+      alias:   "Asin_1"
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    structField2 
+    {
+      alias:   "thres4peak"
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+
+-- Type definitions for arrays
+typedef FFT4dSpace_1_ArrayDT16_3 uint(64)[3]
+typedef FFT4dSpace_1_ArrayDT0_2048_1_Col col flt(64,IEEE)[2048][1]
+typedef FFT4dSpace_1_ArrayDT0_1024_1_Col col flt(64,IEEE)[1024][1]
+typedef FFT4dSpace_1_ArrayDT0_3 flt(64,IEEE)[3]
+typedef FFT4dSpace_1_ArrayDT0_1024 flt(64,IEEE)[1024]
+typedef FFT4dSpace_1_ArrayDT0_2 flt(64,IEEE)[2]
+typedef FFT4dSpace_1_ArrayDT7_3 uint(32)[3]
+typedef FFT4dSpace_1_ArrayDT0_2048 flt(64,IEEE)[2048]
+
+
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+	group "Clock" -- block-group
+	{
+	 block: "Clock"
+	}
+		p_0_FFT4dSpace_1_real_T_2[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Clock"
+
+	group "Complex to\nMagnitude-Angle" -- block-group
+	{
+	 block: "ComplexToMagnitudeAngle"
+	}
+		p_0_FFT4dSpace_1_real_T_2[1028]
+		{
+		 type:    FFT4dSpace_1_ArrayDT0_1024_1_Col*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Complex to\nMagnitude-Angle"
+
+	group "Constant" -- block-group
+	{
+	 block: "Constant"
+	}
+		-- Skipping output Out1
+		trcref0_mdlPara
+		{
+		 refgroup: "/Tunable Parameters"
+		 refvar:   "mdlPara"
+		 refelem:  ".sinFreq_Hz_1"
+		 alias:    "mdlPara.sinFreq_Hz_1"
+		}
+		trcref0_Value
+		{
+		 refgroup: "/Tunable Parameters"
+		 refvar:   "mdlPara"
+		 refelem:  ".sinFreq_Hz_1"
+		 alias:    "Value"
+		 flags:    DEPRECATED|HIDDEN
+		}
+
+
+	endgroup -- block-group "Constant"
+
+	group "Constant1" -- block-group
+	{
+	 block: "Constant"
+	}
+		-- Skipping output Out1
+		p_1_FFT4dSpace_1_real_T_1[6]
+		{
+		 type:    FFT4dSpace_1_ArrayDT0_1024*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant1"
+
+	group "Constant7" -- block-group
+	{
+	 block: "Constant"
+	}
+		-- Skipping output Out1
+		p_1_FFT4dSpace_1_real_T_1[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant7"
+
+	group "From9" -- block-group
+	{
+	 block: "From"
+	}
+		p_0_FFT4dSpace_1_real_T_2[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "From9"
+
+	group "Asin1" -- block-group
+	{
+	 block: "Gain"
+	}
+		p_0_FFT4dSpace_1_real_T_2[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+		trcref0_mdlPara
+		{
+		 refgroup: "/Tunable Parameters"
+		 refvar:   "mdlPara"
+		 refelem:  ".Asin_1"
+		 alias:    "mdlPara.Asin_1"
+		}
+		trcref0_Gain
+		{
+		 refgroup: "/Tunable Parameters"
+		 refvar:   "mdlPara"
+		 refelem:  ".Asin_1"
+		 alias:    "Gain"
+		 flags:    DEPRECATED|HIDDEN
+		}
+
+
+	endgroup -- block-group "Asin1"
+
+	group "Cclock_gain" -- block-group
+	{
+	 block: "Gain"
+	}
+		p_0_FFT4dSpace_1_real_T_2[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_FFT4dSpace_1_real_T_1[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Cclock_gain"
+
+	group "Gain1" -- block-group
+	{
+	 block: "Gain"
+	}
+		p_0_FFT4dSpace_1_real_T_1[2048]
+		{
+		 type:    FFT4dSpace_1_ArrayDT0_2048_1_Col*
+		 alias:   "Out1"
+		 desc:    "Complex"
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_FFT4dSpace_1_real_T_1[4]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain1"
+
+	group "Gain2" -- block-group
+	{
+	 block: "Gain"
+	}
+		p_0_FFT4dSpace_1_real_T_2[2055]
+		{
+		 type:    FFT4dSpace_1_ArrayDT0_1024*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+		trcref0_Ts_1kHz
+		{
+		 refgroup: "/Tunable Parameters"
+		 refvar:   "Ts_1kHz"
+		 alias:    "Ts_1kHz"
+		}
+		-- Skipping parameter "Gain"
+
+
+	endgroup -- block-group "Gain2"
+
+	group "Gain3" -- block-group
+	{
+	 block: "Gain"
+	}
+		p_0_FFT4dSpace_1_uint64_T_0[0]
+		{
+		 type:    FFT4dSpace_1_ArrayDT16_3*
+		 alias:   "Out1"
+		 desc:    "Uniform Fixed-Point"
+		 scale:   [2^-32, 0.0]
+		 bitmask: 0:63
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_FFT4dSpace_1_uint32_T_2[0]
+		{
+		 type:    uint(32)*
+		 alias:   "Gain"
+		 desc:    "Uniform Fixed-Point"
+		 scale:   [2^-32, 0.0]
+		 bitmask: 0:31
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Gain3"
+
+	group "normalize FFT" -- block-group
+	{
+	 block: "Gain"
+	}
+		p_0_FFT4dSpace_1_real_T_1[4096]
+		{
+		 type:    FFT4dSpace_1_ArrayDT0_2048_1_Col*
+		 alias:   "Out1"
+		 desc:    "Complex"
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_FFT4dSpace_1_real_T_1[5]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Gain"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "normalize FFT"
+
+	group "Goto9" -- block-group
+	{
+	 block: "Goto"
+	}
+		p_0_FFT4dSpace_1_real_T_2[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "In1"
+		 flags:   READONLY
+		}
+
+
+
+	endgroup -- block-group "Goto9"
+
+	group "FFT" -- block-group
+	{
+	 block: "S-Function"
+	}
+		p_0_FFT4dSpace_1_real_T_1[0]
+		{
+		 type:    FFT4dSpace_1_ArrayDT0_2048_1_Col*
+		 alias:   "Out1"
+		 desc:    "Complex"
+		 flags:   OUTPUT|READONLY
+		}
+
+
+
+	endgroup -- block-group "FFT"
+
+	group "Peak Finder" -- block-group
+	{
+	 block: "S-Function"
+	}
+		p_0_FFT4dSpace_1_uint32_T_3[0]
+		{
+		 type:    uint(32)*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_FFT4dSpace_1_uint32_T_3[1]
+		{
+		 type:    FFT4dSpace_1_ArrayDT7_3*
+		 alias:   "Out2"
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_FFT4dSpace_1_real_T_2[2052]
+		{
+		 type:    FFT4dSpace_1_ArrayDT0_3*
+		 alias:   "Out3"
+		 flags:   OUTPUT|READONLY
+		}
+
+
+
+	endgroup -- block-group "Peak Finder"
+
+	group "Zero-Order\nHold" -- block-group
+	{
+	 block: "ZeroOrderHold"
+	}
+		p_0_FFT4dSpace_1_real_T_2[3]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "Zero-Order\nHold"
+
+	group "Buffer" -- block-group
+	{
+	 block: "Buffer"
+	}
+		p_0_FFT4dSpace_1_real_T_2[4]
+		{
+		 type:    FFT4dSpace_1_ArrayDT0_1024_1_Col*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+		p_1_FFT4dSpace_1_real_T_1[3]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "ic"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Buffer"
+
+	group "PWMs" -- block-group
+	{
+	 block: "Scope"
+	}
+
+
+
+	endgroup -- block-group "PWMs"
+
+  
+  
+	group "I2C_Communication" -- subsystem-group
+
+
+
+		group "Data2Write_W1" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1034]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "Data2Write_W1"
+
+		group "Data2Write_W2" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1036]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "Data2Write_W2"
+
+		group "Data2Write_W3" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1038]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "Data2Write_W3"
+
+		group "Data2Write_W4" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1040]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "Data2Write_W4"
+
+		group "DeviceADDR" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1030]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "DeviceADDR"
+
+		group "Global_Enable" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1045]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "Global_Enable"
+
+		group "WIPER0ADDR_READ" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1041]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "WIPER0ADDR_READ"
+
+		group "WIPER0ADDR_WRITE" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1033]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "WIPER0ADDR_WRITE"
+
+		group "WIPER1ADDR_READ" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1042]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "WIPER1ADDR_READ"
+
+		group "WIPER1ADDR_WRITE" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1035]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "WIPER1ADDR_WRITE"
+
+		group "WIPER2ADDR_READ" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1043]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "WIPER2ADDR_READ"
+
+		group "WIPER2ADDR_WRITE" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1037]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "WIPER2ADDR_WRITE"
+
+		group "WIPER3ADDR_READ" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1044]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "WIPER3ADDR_READ"
+
+		group "WIPER3ADDR_WRITE" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1039]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "WIPER3ADDR_WRITE"
+
+		group "WIPER_Nr1_4" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1032]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "WIPER_Nr1_4"
+
+		group "Write1Read2" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_FFT4dSpace_1_real_T_1[1031]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+			}
+
+
+		endgroup -- block-group "Write1Read2"
+
+		group "Demux" -- block-group
+		{
+		 block: "Demux"
+		}
+			p_0_FFT4dSpace_1_real_T_2[3085]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 flags:   OUTPUT|READONLY
+			}
+			p_0_FFT4dSpace_1_real_T_2[3086]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out2"
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Demux"
+
+		group "Multiport\nSwitch1" -- block-group
+		{
+		 block: "MultiPortSwitch"
+		}
+			p_0_FFT4dSpace_1_real_T_2[3082]
+			{
+			 type:    FFT4dSpace_1_ArrayDT0_2*
+			 alias:   "Out1"
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Multiport\nSwitch1"
+
+		group "Multiport\nSwitch2" -- block-group
+		{
+		 block: "MultiPortSwitch"
+		}
+			p_0_FFT4dSpace_1_real_T_2[3081]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Out1"
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Multiport\nSwitch2"
+
+		group "Multiport\nSwitch6" -- block-group
+		{
+		 block: "MultiPortSwitch"
+		}
+			p_0_FFT4dSpace_1_real_T_2[3079]
+			{
+			 type:    FFT4dSpace_1_ArrayDT0_2*
+			 alias:   "Out1"
+			 flags:   OUTPUT|READONLY
+			}
+
+
+		endgroup -- block-group "Multiport\nSwitch6"
+
+		group "Mux1" -- block-group
+		{
+		 block: "Mux"
+		}
+			-- Skipping output
+
+
+		endgroup -- block-group "Mux1"
+
+		group "Mux2" -- block-group
+		{
+		 block: "Mux"
+		}
+			-- Skipping output
+
+
+		endgroup -- block-group "Mux2"
+
+		group "Mux3" -- block-group
+		{
+		 block: "Mux"
+		}
+			-- Skipping output
+
+
+		endgroup -- block-group "Mux3"
+
+		group "Mux4" -- block-group
+		{
+		 block: "Mux"
+		}
+			-- Skipping output
+
+
+		endgroup -- block-group "Mux4"
+
+		group "Mux5" -- block-group
+		{
+		 block: "Mux"
+		}
+			-- Skipping output
+
+
+		endgroup -- block-group "Mux5"
+
+  
+  
+		group "SER Setup (1)" -- subsystem-group
+
+
+		endgroup -- subsystem-group "SER Setup (1)"
+  
+  
+		group "Sequence1_In [SER I2C Master (1)]" -- subsystem-group
+
+			p_0_FFT4dSpace_1_real_T_2[3087]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Status1"
+			 flags:   OUTPUT|READONLY
+			}
+
+		endgroup -- subsystem-group "Sequence1_In [SER I2C Master (1)]"
+  
+  
+		group "Sequence1_Out [SER I2C Master (1)]" -- subsystem-group
+
+
+		endgroup -- subsystem-group "Sequence1_Out [SER I2C Master (1)]"
+  
+  
+		group "Sequence2_In [SER I2C Master (1)]" -- subsystem-group
+
+			p_0_FFT4dSpace_1_real_T_2[3084]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Status2"
+			 flags:   OUTPUT|READONLY
+			}
+			p_0_FFT4dSpace_1_real_T_2[3085]
+			{
+			 type:    FFT4dSpace_1_ArrayDT0_2*
+			 alias:   "RX_Bytes2"
+			 flags:   OUTPUT|READONLY
+			}
+
+		endgroup -- subsystem-group "Sequence2_In [SER I2C Master (1)]"
+  
+  
+		group "Sequence2_Out [SER I2C Master (1)]" -- subsystem-group
+
+
+		endgroup -- subsystem-group "Sequence2_Out [SER I2C Master (1)]"
+
+		p_0_FFT4dSpace_1_real_T_2[3086]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "DataRead"
+		 origin:  "FFT4dSpace_1/I2C_Communication/Demux/Out2"
+		 flags:   READONLY
+		}
+		p_0_FFT4dSpace_1_real_T_2[3085]
+		{
+		 type:    FFT4dSpace_1_ArrayDT0_2*
+		 alias:   "out_ma_read"
+		 origin:  "FFT4dSpace_1/I2C_Communication/Sequence2_In [SER I2C Master (1)]/RX_Bytes2"
+		 flags:   READONLY
+		}
+		p_0_FFT4dSpace_1_real_T_2[3084]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "status_ma_read"
+		 origin:  "FFT4dSpace_1/I2C_Communication/Sequence2_In [SER I2C Master (1)]/Status2"
+		 flags:   READONLY
+		}
+		p_0_FFT4dSpace_1_real_T_2[3087]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "status_ma_write"
+		 origin:  "FFT4dSpace_1/I2C_Communication/Sequence1_In [SER I2C Master (1)]/Status1"
+		 flags:   READONLY
+		}
+
+	endgroup -- subsystem-group "I2C_Communication"
+  
+  
+	group "PA_tools_RepoInfo1" -- subsystem-group
+
+
+
+		group "Ground" -- block-group
+		{
+		 block: "Ground"
+		}
+			-- Skipping output Out1
+
+
+		endgroup -- block-group "Ground"
+
+
+
+	endgroup -- subsystem-group "PA_tools_RepoInfo1"
+  
+  
+	group "RML_tools_RepoInfo" -- subsystem-group
+
+
+
+		group "Ground" -- block-group
+		{
+		 block: "Ground"
+		}
+			-- Skipping output Out1
+
+
+		endgroup -- block-group "Ground"
+
+
+
+	endgroup -- subsystem-group "RML_tools_RepoInfo"
+  
+  
+	group "RTI Data" -- subsystem-group
+
+
+
+  
+  
+		group "RTI Data Store" -- subsystem-group
+
+
+
+  
+  
+			group "RTI Data Store" -- subsystem-group
+
+
+
+  
+  
+				group "RTI Data Store" -- subsystem-group
+
+
+
+  
+  
+					group "RTI Data Store" -- subsystem-group
+
+
+
+
+
+					endgroup -- subsystem-group "RTI Data Store"
+
+
+				endgroup -- subsystem-group "RTI Data Store"
+
+
+			endgroup -- subsystem-group "RTI Data Store"
+
+
+		endgroup -- subsystem-group "RTI Data Store"
+
+
+	endgroup -- subsystem-group "RTI Data"
+  
+  
+	group "MATLAB Function1" -- subsystem-group
+
+		p_0_FFT4dSpace_1_real_T_2[3088]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "y_sin"
+		 flags:   OUTPUT|READONLY
+		}
+
+
+
+
+	endgroup -- subsystem-group "MATLAB Function1"
+
+	p_0_FFT4dSpace_1_uint32_T_3[1]
+	{
+	 type:    FFT4dSpace_1_ArrayDT7_3*
+	 alias:   "FFT_idx"
+	 origin:  "FFT4dSpace_1/Peak Finder/Out2"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_uint64_T_0[0]
+	{
+	 type:    FFT4dSpace_1_ArrayDT16_3*
+	 alias:   "Peak_Freq_FFT"
+	 scale:   [2^-32, 0.0]
+	 bitmask: 0:63
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "FFT4dSpace_1/Gain3/Out1"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_real_T_2[1028]
+	{
+	 type:    FFT4dSpace_1_ArrayDT0_1024_1_Col*
+	 alias:   "absFFTout"
+	 origin:  "FFT4dSpace_1/Complex to\nMagnitude-Angle/Out1"
+	 flags:   READONLY
+	}
+	-- Skipping label "abscissa"
+
+	p_0_FFT4dSpace_1_real_T_2[2055]
+	{
+	 type:    FFT4dSpace_1_ArrayDT0_1024*
+	 alias:   "f_vec"
+	 origin:  "FFT4dSpace_1/Gain2/Out1"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_real_T_2[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "mycurrentTime"
+	 origin:  "FFT4dSpace_1/Clock/Out1"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_real_T_2[2]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "sin4FFT"
+	 origin:  "FFT4dSpace_1/Asin1/Out1"
+	 flags:   READONLY
+	}
+
+
+endgroup -- "Model Root"
+-- ******** Tunable Parameters ************************************************
+
+group "Tunable Parameters"
+
+	p_1_FFT4dSpace_1_struct_HWeianez4jK7RhAtAn8PqF_0[0]
+	{
+	 type:    struct FFT4dSpace_1_struct_HWeianez4jK7RhAtAn8PqF*
+	 alias:   "mdlPara"
+	 flags:   PARAM
+	}
+	p_1_FFT4dSpace_1_real_T_1[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "Ts_1kHz"
+	 flags:   PARAM
+	}
+
+endgroup
+
+-- ******** State Machine Data ************************************************
+
+group "State Machine Data"
+
+
+endgroup
+
+
+-- ******** Labels ************************************************************
+
+group "Labels"
+
+	p_0_FFT4dSpace_1_real_T_2[3086]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "DataRead"
+	 origin:  "FFT4dSpace_1/I2C_Communication/Demux/Out2"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_uint32_T_3[1]
+	{
+	 type:    FFT4dSpace_1_ArrayDT7_3*
+	 alias:   "FFT_idx"
+	 origin:  "FFT4dSpace_1/Peak Finder/Out2"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_uint64_T_0[0]
+	{
+	 type:    FFT4dSpace_1_ArrayDT16_3*
+	 alias:   "Peak_Freq_FFT"
+	 scale:   [2^-32, 0.0]
+	 bitmask: 0:63
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "FFT4dSpace_1/Gain3/Out1"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_real_T_2[1028]
+	{
+	 type:    FFT4dSpace_1_ArrayDT0_1024_1_Col*
+	 alias:   "absFFTout"
+	 origin:  "FFT4dSpace_1/Complex to\nMagnitude-Angle/Out1"
+	 flags:   READONLY
+	}
+	-- Skipping label "abscissa"
+
+	p_0_FFT4dSpace_1_real_T_2[2055]
+	{
+	 type:    FFT4dSpace_1_ArrayDT0_1024*
+	 alias:   "f_vec"
+	 origin:  "FFT4dSpace_1/Gain2/Out1"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_real_T_2[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "mycurrentTime"
+	 origin:  "FFT4dSpace_1/Clock/Out1"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_real_T_2[3085]
+	{
+	 type:    FFT4dSpace_1_ArrayDT0_2*
+	 alias:   "out_ma_read"
+	 origin:  "FFT4dSpace_1/I2C_Communication/Sequence2_In [SER I2C Master (1)]/RX_Bytes2"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_real_T_2[2]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "sin4FFT"
+	 origin:  "FFT4dSpace_1/Asin1/Out1"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_real_T_2[3084]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "status_ma_read"
+	 origin:  "FFT4dSpace_1/I2C_Communication/Sequence2_In [SER I2C Master (1)]/Status2"
+	 flags:   READONLY
+	}
+	p_0_FFT4dSpace_1_real_T_2[3087]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "status_ma_write"
+	 origin:  "FFT4dSpace_1/I2C_Communication/Sequence1_In [SER I2C Master (1)]/Status1"
+	 flags:   READONLY
+	}
+
+endgroup
+
+
+-- ******** User variables from model_usr.trc *********************************
+
+-- RTI_USR_TRC_BEGIN
+
+-- No user file FFT4dSpace_1_usr.trc found.
+
+-- RTI_USR_TRC_END
+
+-- ******** [EOF] *************************************************************
+

@@ -27,7 +27,15 @@
 					<ViewFlags type="key">1</ViewFlags>
 					<item>
 						<Name type="key">bd70308d-2b76-4b20-a8e3-dfe46b89b429</Name>
-						<ViewFlags type="key">1</ViewFlags>
+						<ViewFlags type="key">5</ViewFlags>
+						<item>
+							<Name type="key">App_FFT4dSpace_1.sdf</Name>
+							<ViewFlags type="key">1</ViewFlags>
+							<item>
+								<Name type="key">Data Sets</Name>
+								<ViewFlags type="key">1</ViewFlags>
+							</item>
+						</item>
 					</item>
 				</item>
 				<item>
@@ -53,6 +61,14 @@
 				<item>
 					<Name type="key">BusNavigator</Name>
 					<ViewFlags type="key">1</ViewFlags>
+					<item>
+						<Name type="key">App_FFT4dSpace_1.sdf</Name>
+						<ViewFlags type="key">1</ViewFlags>
+						<item>
+							<Name type="key">BusConfiguration.xml</Name>
+							<ViewFlags type="key">1</ViewFlags>
+						</item>
+					</item>
 				</item>
 				<item>
 					<Name type="key">XIL API EESPorts</Name>

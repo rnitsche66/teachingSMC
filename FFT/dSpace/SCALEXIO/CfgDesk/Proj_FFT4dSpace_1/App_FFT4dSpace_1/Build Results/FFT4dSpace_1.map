@@ -1,0 +1,1033 @@
+<*GNU-Linker-generated-mapfile*> 
+generated for DSx86_32 platform 
+collect2 version 5.5.0
+c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/../../../../i686-linux-gnu/bin/ld.exe -plugin c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../libexec/gcc/i686-linux-gnu/5.5.0/liblto_plugin-0.dll -plugin-opt=c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../libexec/gcc/i686-linux-gnu/5.5.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\nitr\AppData\Local\Temp\ccDYSSr6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=c:\appl\dspace\dspace rcphil 2021-a\compiler\linux440_550\target\i686-linux-gnu\bin\../ --build-id --eh-frame-hdr -m elf_i386 -dynamic-linker /lib/ld-linux.so.2 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o -Lc:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0 -Lc:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc -Lc:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/../../../../i686-linux-gnu/lib -Lc:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib -v --unresolved-symbols=ignore-all -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+GNU ld (GNU Binutils) 2.26.20160125
+Archive member included to satisfy reference by file (symbol)
+
+C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtmdlfcn.o86)
+                              dssimengine_accesspoint.o86 (FFT4dSpace_1_DSRTInitMdl)
+C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrttf.o86)
+                              rtosal_task.o86 (FFT4dSpace_1_DSRTMdlOutputs0)
+C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+                              C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrttf.o86) (FFT4dSpace_1_output)
+C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_data.o86)
+                              C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86) (FFT4dSpace_1_ConstP)
+C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtvdf.o86)
+                              C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86) (FFT4dSpace_1_rti_init_trc_pointers)
+C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rt_nonfinite.o86)
+                              C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86) (rt_InitInfAndNaN)
+C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetInf.o86)
+                              C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rt_nonfinite.o86) (rtGetInf)
+C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetNaN.o86)
+                              C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rt_nonfinite.o86) (rtGetNaN)
+C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+                              c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o (__libc_csu_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libDsRealTimeTestingRP.so.1   rtosal_task.o86 (dsrtt_script_service_post_computation)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 mdladapter_mdlfunctions.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 mdlCode_ap.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 data_in_ap.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 data_out_ap.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 fm_entry_ap.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 fm_exit_ap.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 dssimengine_accesspoint.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 dssimengine_api.o86
+ .group         0x0000000000000000        0x8 dssimengine_main.o86
+ .group         0x0000000000000000        0x8 dssimengine_main.o86
+ .group         0x0000000000000000        0x8 dssimengine_main.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 dssimengine_main.o86
+ .group         0x0000000000000000        0x8 rtosal_task.o86
+ .group         0x0000000000000000        0x8 rtosal_task.o86
+ .group         0x0000000000000000        0x8 rtosal_task.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 rtosal_task.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 rtosal_taskap.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 rtosal_simengineap.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 IOCode_Data.o86
+ .note.GNU-stack
+                0x0000000000000000        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtmdlfcn.o86)
+ .note.GNU-stack
+                0x0000000000000000        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrttf.o86)
+ .note.GNU-stack
+                0x0000000000000000        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+ .note.GNU-stack
+                0x0000000000000000        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_data.o86)
+ .note.GNU-stack
+                0x0000000000000000        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtvdf.o86)
+ .note.GNU-stack
+                0x0000000000000000        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rt_nonfinite.o86)
+ .note.GNU-stack
+                0x0000000000000000        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetInf.o86)
+ .note.GNU-stack
+                0x0000000000000000        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetNaN.o86)
+ .group         0x0000000000000000        0x8 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+LOAD c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+LOAD c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+                0x0000000000000000                _DSPACE_START = 0x0
+                0x0000000000000000                _DSPACE_START_ = 0x0
+                0x00000000000009ce                DS_TARGET_PLATFORM = 0x9ce
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib/libpthread.so
+START GROUP
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libpthread.so.0
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libpthread_nonshared.a
+END GROUP
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib/librt.so
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib/libdl.so
+START GROUP
+LOAD mdladapter_mdlfunctions.o86
+LOAD mdlCode_ap.o86
+LOAD data_in_ap.o86
+LOAD data_out_ap.o86
+LOAD fm_entry_ap.o86
+LOAD fm_exit_ap.o86
+LOAD dssimengine_accesspoint.o86
+LOAD dssimengine_api.o86
+LOAD dssimengine_main.o86
+LOAD rtosal_task.o86
+LOAD rtosal_taskap.o86
+LOAD rtosal_simengineap.o86
+LOAD IOCode_Data.o86
+LOAD C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\SCALEXIO\Lib/libdscandrv.so
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\SCALEXIO\Lib/libdslindrv.so
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\SCALEXIO\Lib/libdsethernetinterfacemanagementdrv.so
+END GROUP
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\SCALEXIO\Lib/libDsRtLib.so
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\SCALEXIO\Lib\libm_fastpow.a
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\i686-linux-gnu\lib/libstdc++.so
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib/libm.so
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\i686-linux-gnu\lib/libgcc_s.so
+LOAD c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0\libgcc.a
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib/libc.so
+START GROUP
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc.so.6
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\ld-linux.so.2
+END GROUP
+LOAD C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\i686-linux-gnu\lib/libgcc_s.so
+LOAD c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0\libgcc.a
+LOAD c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+LOAD c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+                [!provide]                        PROVIDE (__executable_start, 0x8048000)
+                0x0000000008048134                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp         0x0000000008048134       0x13
+ *(.interp)
+ .interp        0x0000000008048134       0x13 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.note.ABI-tag   0x0000000008048148       0x20
+ .note.ABI-tag  0x0000000008048148       0x20 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.note.gnu.build-id
+                0x0000000008048168       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000008048168       0x24 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.hash           0x000000000804818c      0x180
+ *(.hash)
+ .hash          0x000000000804818c      0x180 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x000000000804830c      0x390
+ *(.dynsym)
+ .dynsym        0x000000000804830c      0x390 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.dynstr         0x000000000804869c      0x7d0
+ *(.dynstr)
+ .dynstr        0x000000000804869c      0x7d0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.gnu.version    0x0000000008048e6c       0x72
+ *(.gnu.version)
+ .gnu.version   0x0000000008048e6c       0x72 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.gnu.version_d  0x0000000008048ee0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000008048ee0        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.gnu.version_r  0x0000000008048ee0       0x90
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000008048ee0       0x90 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.rel.dyn        0x0000000008048f70       0x20
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000008048f70        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ .rel.text.startup
+                0x0000000008048f70        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ .rel.rodata._ZTI18DsCApplicationMain
+                0x0000000008048f70        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ .rel.rodata._ZTV18DsCApplicationMain
+                0x0000000008048f70        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ .rel.rodata._ZTI24DsCRtosAlPeriodic_Task_1
+                0x0000000008048f70        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ .rel.rodata._ZTV24DsCRtosAlPeriodic_Task_1
+                0x0000000008048f70        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x0000000008048f70        0x8 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x0000000008048f78       0x18 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ *(.rel.ifunc)
+ .rel.eh_frame  0x0000000008048f90        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.rel.plt        0x0000000008048f90      0x158
+ *(.rel.plt)
+ .rel.plt       0x0000000008048f90      0x158 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                [!provide]                        PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x00000000080490e8        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                [!provide]                        PROVIDE (__rel_iplt_end, .)
+
+.init           0x00000000080490e8       0x2d
+ *(SORT(.init))
+ .init          0x00000000080490e8       0x1e c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+                0x00000000080490e8                _init
+ .init          0x0000000008049106        0x5 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ .init          0x000000000804910b        0x5 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+ .init          0x0000000008049110        0x5 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+
+.plt            0x0000000008049120      0x2c0
+ *(.plt)
+ .plt           0x0000000008049120      0x2c0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                0x0000000008049130                _ZN14DsCApplicationC2ER16DsCErrorListPool
+                0x0000000008049140                _Znwj@@GLIBCXX_3.4
+                0x0000000008049150                _ZN7DsCTask18setSimTimeVariableEPd
+                0x0000000008049160                _ZN7DsCTask28setDeadlineViolationFunctionER16DsCErrorListPoolPFvS1_PS_E
+                0x0000000008049170                _ZN12DsCFcnModule6createER16DsCErrorListPoolP14DsCApplicationPKc
+                0x0000000008049180                _ZN14DsCApplication12setSlowStartER16DsCErrorListPooldd
+                0x0000000008049190                _ZN7DsCTaskC2ER16DsCErrorListPoolP14DsCApplicationPKcjjjjjjjPS_j
+                0x00000000080491a0                _ZN23DsNApplicationInterface12registerApplEPv
+                0x00000000080491b0                _ZN23DsNApplicationInterface16registerResourceEPKcPv
+                0x00000000080491c0                main
+                0x00000000080491d0                _ZN7DsCTask10daqServiceEj
+                0x00000000080491e0                _ZN7DsCTask17getOverrunCounterEv
+                0x00000000080491f0                _ZN8DsCTimer6createER16DsCErrorListPoolddPKc
+                0x0000000008049200                dsrtt_script_service_post_computation
+                0x0000000008049210                _ZN7DsCTask16setTaskVariablesER16DsCErrorListPoolP25tagDsSKernelTaskVariables
+                0x0000000008049220                _ZN14DsCApplication4stopEv
+                0x0000000008049230                _ZN14DsCApplicationD2Ev
+                0x0000000008049240                _ZN7DsCTask13bindFcnModuleER16DsCErrorListPoolP12DsCFcnModule
+                0x0000000008049250                _ZN7DsCTask14getDescriptionEv
+                0x0000000008049260                sin@@GLIBC_2.0
+                0x0000000008049270                _ZdlPv@@GLIBCXX_3.4
+                0x0000000008049280                __libc_start_main@@GLIBC_2.0
+                0x0000000008049290                _ZN14DsCApplication12errorMessageEhjjPKcjjS1_S1_z
+                0x00000000080492a0                _Z29DsBusAccessRP_updateAllInputsR16DsCErrorListPool
+                0x00000000080492b0                _ZN14DsCApplication25getFailureSimulationBlockER16DsCErrorListPool
+                0x00000000080492c0                _ZN7DsCTaskD2Ev
+                0x00000000080492d0                __wrap_printf
+                0x00000000080492e0                _Z18dsrtt_set_rtt_taskP7DsCTask
+                0x00000000080492f0                dsrtt_script_service_pre_computation
+                0x0000000008049300                dsrtt_set_step_size
+                0x0000000008049310                _ZN14DsCApplication18getDiagnosticBlockER16DsCErrorListPool
+                0x0000000008049320                _ZN14DsCApplication9terminateEv
+                0x0000000008049330                memset@@GLIBC_2.0
+                0x0000000008049340                __gxx_personality_v0@@CXXABI_1.3
+                0x0000000008049350                _ZN12DsCFcnModule13updateOutputsEv
+                0x0000000008049360                snprintf@@GLIBC_2.0
+                0x0000000008049370                dsrtt_mp_register_config
+                0x0000000008049380                _ZN12DsCFcnModule12updateInputsEv
+                0x0000000008049390                _Z30DsBusAccessRP_updateAllOutputsR16DsCErrorListPool
+                0x00000000080493a0                _Unwind_Resume@@GCC_3.0
+                0x00000000080493b0                _ZN14DsCApplication15createErrorListEv
+                0x00000000080493c0                _ZN7DsCTask14getCallCounterEv
+                0x00000000080493d0                _ZN7DsCTask11bindTriggerER16DsCErrorListPoolP8DsCTimer
+ *(.iplt)
+ .iplt          0x00000000080493e0        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.plt.got        0x00000000080493e0        0x8
+ *(.plt.got)
+ .plt.got       0x00000000080493e0        0x8 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.text           0x00000000080493f0     0x25b3
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely
+                0x00000000080493f0        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ .text.unlikely
+                0x00000000080493f0        0x0 mdladapter_mdlfunctions.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 data_in_ap.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 data_out_ap.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 fm_entry_ap.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 fm_exit_ap.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 dssimengine_api.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 dssimengine_main.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 rtosal_task.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 rtosal_taskap.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 rtosal_simengineap.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 IOCode_Data.o86
+ .text.unlikely
+                0x00000000080493f0        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtmdlfcn.o86)
+ .text.unlikely
+                0x00000000080493f0        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrttf.o86)
+ .text.unlikely
+                0x00000000080493f0        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+ .text.unlikely
+                0x00000000080493f0        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rt_nonfinite.o86)
+ .text.unlikely
+                0x00000000080493f0        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetInf.o86)
+ .text.unlikely
+                0x00000000080493f0        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetNaN.o86)
+ .text.unlikely
+                0x00000000080493f0        0x0 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .text.unlikely
+                0x00000000080493f0        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup  0x00000000080493f0       0x31 dssimengine_main.o86
+                0x00000000080493f0                _Z32__registerApplDsCApplicationMainv
+ *fill*         0x0000000008049421        0xf 
+ .text.startup  0x0000000008049430       0x13 rtosal_simengineap.o86
+                0x0000000008049430                _Z21__registerRTTMPConfigv
+ *fill*         0x0000000008049443        0xd 
+ .text.startup  0x0000000008049450       0x16 IOCode_Data.o86
+                0x0000000008049450                _Z31__registerResourceg_ResourceMapv
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000008049466       0x22 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                0x0000000008049466                _start
+ .text          0x0000000008049488        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+ *fill*         0x0000000008049488        0x8 
+ .gnu.linkonce.t.__x86.get_pc_thunk.bx
+                0x0000000008049490        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+                0x0000000008049490                __x86.get_pc_thunk.bx
+ *fill*         0x0000000008049494        0xc 
+ .text          0x00000000080494a0       0xfb c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ *fill*         0x000000000804959b        0x5 
+ .text          0x00000000080495a0       0x45 mdladapter_mdlfunctions.o86
+                0x00000000080495a0                FFT4dSpace_1_APTerminateSimulation
+                0x00000000080495b0                FFT4dSpace_1_APLastApplStateStopped
+                0x00000000080495d0                FFT4dSpace_1_APStopSimulation
+                0x00000000080495e0                FFT4dSpace_1_APPrintMessage
+ .text          0x00000000080495e5        0x0 mdlCode_ap.o86
+ .text          0x00000000080495e5        0x3 data_in_ap.o86
+                0x00000000080495e5                ap_read_FFT4dSpace_1_DataInport2_P1_S1
+                0x00000000080495e6                ap_read_FFT4dSpace_1_DataInport1_P1_S1
+                0x00000000080495e7                ap_read_FFT4dSpace_1_DataInport1_P2_S1
+ .text          0x00000000080495e8        0x4 data_out_ap.o86
+                0x00000000080495e8                ap_write_FFT4dSpace_1_DataOutport3_P1_S1
+                0x00000000080495e9                ap_write_FFT4dSpace_1_DataOutport1_P1_S1
+                0x00000000080495ea                ap_write_FFT4dSpace_1_DataOutport1_P2_S1
+                0x00000000080495eb                ap_write_FFT4dSpace_1_DataOutport2_P1_S1
+ .text          0x00000000080495ec       0x12 fm_entry_ap.o86
+                0x00000000080495ec                ap_entry_FFT4dSpace_1_SIDRoot_TID1
+ .text          0x00000000080495fe       0x12 fm_exit_ap.o86
+                0x00000000080495fe                ap_exit_FFT4dSpace_1_SIDRoot_TID1
+ .text          0x0000000008049610      0x41c dssimengine_accesspoint.o86
+                0x0000000008049610                ApSimEngineOnInit
+                0x0000000008049672                ApSimEngineOnStart
+                0x00000000080496b6                ApSimEngineOnStop
+                0x00000000080496fa                ApSimEngineOnTerminate
+                0x0000000008049710                ApSimEngineOnUnload
+                0x0000000008049754                ApSimEngineOnInitMdl
+                0x0000000008049761                ApSimEngineOnStartMdl
+                0x000000000804976e                ApSimEngineOnStopMdl
+                0x000000000804977b                ApSimEngineOnTerminateMdl
+                0x0000000008049791                ApSimEngineOnUnloadMdl
+                0x00000000080497a7                ApSimEngineOnInitImc
+                0x00000000080497bd                ApSimEngineOnStartImc
+                0x00000000080497d3                ApSimEngineOnStopImc
+                0x00000000080497e9                ApSimEngineOnTerminateImc
+                0x00000000080497ff                ApSimEngineOnUnloadImc
+                0x0000000008049815                ApSimEngineOnInitIoPreRtosInit
+                0x0000000008049840                ApSimEngineOnInitIoPostRtosInit
+                0x0000000008049859                ApSimEngineOnInitHwDiagnostics
+                0x000000000804991e                ApSimEngineOnStartIo
+                0x0000000008049949                ApSimEngineOnStopIo
+                0x000000000804995f                ApSimEngineOnTerminateIo
+                0x0000000008049975                ApSimEngineOnUnloadIo
+                0x000000000804998b                ApSimEngineOnInitRtos
+                0x00000000080499cf                ApSimEngineOnStartRtos
+                0x00000000080499e6                ApSimEngineOnStopRtos
+                0x00000000080499fc                ApSimEngineOnTerminateRtos
+                0x0000000008049a12                ApSimEngineOnUnloadRtos
+                0x0000000008049a28                ApSimEngineIdle
+                0x0000000008049a2a                _Z22ApSimEngineRunTimeInitR16DsCErrorListPooli
+ *fill*         0x0000000008049a2c        0x4 
+ .text          0x0000000008049a30       0x56 dssimengine_api.o86
+                0x0000000008049a30                _Z25SimEngineLastApplStateGetv
+                0x0000000008049a40                _Z17SimEngineApplStopv
+                0x0000000008049a60                _Z22SimEngineApplTerminatev
+                0x0000000008049a80                _Z16SimEngineApplGetv
+ *fill*         0x0000000008049a86        0xa 
+ .text          0x0000000008049a90      0x193 dssimengine_main.o86
+                0x0000000008049a90                destroyApplication
+                0x0000000008049ab0                getApplicationErrorList
+                0x0000000008049ac0                _ZN18DsCApplicationMainD1Ev
+                0x0000000008049ac0                _ZN18DsCApplicationMainD2Ev
+                0x0000000008049ae0                _ZN18DsCApplicationMainD0Ev
+                0x0000000008049b10                createApplication
+                0x0000000008049b60                _ZN18DsCApplicationMain6onInitER16DsCErrorListPool
+                0x0000000008049b80                _ZN18DsCApplicationMain7onStartER16DsCErrorListPool
+                0x0000000008049ba0                _ZN18DsCApplicationMain6onStopER16DsCErrorListPool
+                0x0000000008049bc0                _ZN18DsCApplicationMain11onTerminateER16DsCErrorListPool
+                0x0000000008049be0                _ZN18DsCApplicationMain8onUnloadER16DsCErrorListPool
+                0x0000000008049bf0                _ZN18DsCApplicationMain6onIdleER16DsCErrorListPool
+                0x0000000008049c00                _ZN18DsCApplicationMainC2ER16DsCErrorListPool
+                0x0000000008049c00                _ZN18DsCApplicationMainC1ER16DsCErrorListPool
+ *fill*         0x0000000008049c23        0xd 
+ .text          0x0000000008049c30      0x2fd rtosal_task.o86
+                0x0000000008049c30                _ZN24DsCRtosAlPeriodic_Task_1D1Ev
+                0x0000000008049c30                _ZN24DsCRtosAlPeriodic_Task_1D2Ev
+                0x0000000008049c40                _ZN24DsCRtosAlPeriodic_Task_1D0Ev
+                0x0000000008049c70                _ZN24DsCRtosAlPeriodic_Task_15onRunER16DsCErrorListPool
+                0x0000000008049cb0                _ZN24DsCRtosAlPeriodic_Task_19onOverrunER16DsCErrorListPool
+                0x0000000008049d40                _ZN24DsCRtosAlPeriodic_Task_1C1ER16DsCErrorListPoolP14DsCApplicationPKcjjjjjjjP7DsCTaskj
+                0x0000000008049d40                _ZN24DsCRtosAlPeriodic_Task_1C2ER16DsCErrorListPoolP14DsCApplicationPKcjjjjjjjP7DsCTaskj
+                0x0000000008049d90                _ZN24DsCRtosAlPeriodic_Task_16createER16DsCErrorListPoolP14DsCApplicationPKcjjjjjjjP7DsCTaskj
+                0x0000000008049e10                _Z37RtosAlDefaultDeadlineViolationHandlerR16DsCErrorListPoolP7DsCTask
+                0x0000000008049e80                _Z35RtosAlProfilerSourcesInitializationv
+                0x0000000008049e90                _Z20RtosAlHandleOverrunsP7DsCTaski
+ *fill*         0x0000000008049f2d        0x3 
+ .text          0x0000000008049f30       0x90 rtosal_taskap.o86
+                0x0000000008049f30                RtosAlTask_01_TaskEntry
+                0x0000000008049f50                RtosAlTask_01_TaskExit
+ .text          0x0000000008049fc0      0x1f4 rtosal_simengineap.o86
+                0x0000000008049fc0                _Z12RtosAlOnInitR16DsCErrorListPool
+                0x000000000804a070                _Z13RtosAlOnStartR16DsCErrorListPool
+ .text          0x000000000804a1b4        0x0 IOCode_Data.o86
+ *fill*         0x000000000804a1b4        0xc 
+ .text          0x000000000804a1c0      0x1a4 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtmdlfcn.o86)
+                0x000000000804a1c0                FFT4dSpace_1_DSRTInitMdl
+                0x000000000804a210                FFT4dSpace_1_DSRTStartMdl
+                0x000000000804a290                FFT4dSpace_1_DSRTStopMdl
+                0x000000000804a2e0                FFT4dSpace_1_DSRTCheckForErrorStatus
+                0x000000000804a320                FFT4dSpace_1_DSRTCheckForSimulationStopCondition
+ *fill*         0x000000000804a364        0xc 
+ .text          0x000000000804a370       0x15 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrttf.o86)
+                0x000000000804a370                FFT4dSpace_1_DSRTMdlOutputs0
+                0x000000000804a380                FFT4dSpace_1_DSRTMdlUpdate0
+ *fill*         0x000000000804a385        0xb 
+ .text          0x000000000804a390     0x1371 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+                0x000000000804a390                MWDSPCG_FFT_Interleave_R2BR_D
+                0x000000000804a530                MWDSPCG_R2DIT_TBLS_Z
+                0x000000000804a7c0                MWDSPCG_FFT_DblLen_Z
+                0x000000000804a9f0                rt_hypotd_snf
+                0x000000000804aac0                FFT4dSpace_1_output
+                0x000000000804b520                FFT4dSpace_1_update
+                0x000000000804b5d0                FFT4dSpace_1_initialize
+                0x000000000804b700                FFT4dSpace_1_terminate
+ .text          0x000000000804b701        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_data.o86)
+ .text          0x000000000804b701       0x63 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtvdf.o86)
+                0x000000000804b75d                FFT4dSpace_1_rti_init_trc_pointers
+ *fill*         0x000000000804b764        0xc 
+ .text          0x000000000804b770      0x12a C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rt_nonfinite.o86)
+                0x000000000804b770                rt_InitInfAndNaN
+                0x000000000804b7e0                rtIsInf
+                0x000000000804b810                rtIsInfF
+                0x000000000804b830                rtIsNaN
+                0x000000000804b870                rtIsNaNF
+ *fill*         0x000000000804b89a        0x6 
+ .text          0x000000000804b8a0       0x37 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetInf.o86)
+                0x000000000804b8a0                rtGetInf
+                0x000000000804b8b0                rtGetInfF
+                0x000000000804b8c0                rtGetMinusInf
+                0x000000000804b8d0                rtGetMinusInfF
+ *fill*         0x000000000804b8d7        0x9 
+ .text          0x000000000804b8e0       0x17 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetNaN.o86)
+                0x000000000804b8e0                rtGetNaN
+                0x000000000804b8f0                rtGetNaNF
+ *fill*         0x000000000804b8f7        0x9 
+ .text          0x000000000804b900       0x62 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+                0x000000000804b900                __libc_csu_init
+                0x000000000804b960                __libc_csu_fini
+ *fill*         0x000000000804b962        0xe 
+ .text          0x000000000804b970       0x33 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+ .text          0x000000000804b9a3        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+ *(.gnu.warning)
+
+.fini           0x000000000804b9a4       0x19
+ *(SORT(.fini))
+ .fini          0x000000000804b9a4        0xf c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+                0x000000000804b9a4                _fini
+ .fini          0x000000000804b9b3        0x5 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ .fini          0x000000000804b9b8        0x5 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+                [!provide]                        PROVIDE (__etext, .)
+                [!provide]                        PROVIDE (_etext, .)
+                [!provide]                        PROVIDE (etext, .)
+
+.rodata         0x000000000804b9c0     0x1bc4
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000000000804b9c0        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                0x000000000804b9c0                _fp_hw
+ .rodata.cst4   0x000000000804b9c4        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                0x000000000804b9c4                _IO_stdin_used
+ .rodata        0x000000000804b9c8        0x8 dssimengine_accesspoint.o86
+ .rodata._ZTS18DsCApplicationMain
+                0x000000000804b9d0       0x15 dssimengine_main.o86
+                0x000000000804b9d0                _ZTS18DsCApplicationMain
+ *fill*         0x000000000804b9e5        0x3 
+ .rodata._ZTI18DsCApplicationMain
+                0x000000000804b9e8        0xc dssimengine_main.o86
+                0x000000000804b9e8                _ZTI18DsCApplicationMain
+ .rodata._ZTV18DsCApplicationMain
+                0x000000000804b9f4       0x28 dssimengine_main.o86
+                0x000000000804b9f4                _ZTV18DsCApplicationMain
+ .rodata.str1.1
+                0x000000000804ba1c       0x26 dssimengine_main.o86
+ .rodata.str1.1
+                0x000000000804ba42       0x22 rtosal_task.o86
+ .rodata.str1.4
+                0x000000000804ba64       0xc6 rtosal_task.o86
+ *fill*         0x000000000804bb2a       0x16 
+ .rodata        0x000000000804bb40       0x46 rtosal_task.o86
+ *fill*         0x000000000804bb86        0x2 
+ .rodata._ZTS24DsCRtosAlPeriodic_Task_1
+                0x000000000804bb88       0x1b rtosal_task.o86
+                0x000000000804bb88                _ZTS24DsCRtosAlPeriodic_Task_1
+ *fill*         0x000000000804bba3        0x1 
+ .rodata._ZTI24DsCRtosAlPeriodic_Task_1
+                0x000000000804bba4        0xc rtosal_task.o86
+                0x000000000804bba4                _ZTI24DsCRtosAlPeriodic_Task_1
+ .rodata._ZTV24DsCRtosAlPeriodic_Task_1
+                0x000000000804bbb0       0x18 rtosal_task.o86
+                0x000000000804bbb0                _ZTV24DsCRtosAlPeriodic_Task_1
+ .rodata.cst4   0x000000000804bbc8        0x4 rtosal_taskap.o86
+ *fill*         0x000000000804bbcc        0x4 
+ .rodata.cst8   0x000000000804bbd0        0x8 rtosal_taskap.o86
+ .rodata.str1.4
+                0x000000000804bbd8       0x62 rtosal_simengineap.o86
+ .rodata.str1.1
+                0x000000000804bc3a       0x36 rtosal_simengineap.o86
+ .rodata        0x000000000804bc70        0xe rtosal_simengineap.o86
+ *fill*         0x000000000804bc7e        0x2 
+ .rodata.cst8   0x000000000804bc80        0x8 rtosal_simengineap.o86
+ .rodata.str1.1
+                0x000000000804bc88        0xe IOCode_Data.o86
+ .rodata.str1.1
+                0x000000000804bc96       0x14 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtmdlfcn.o86)
+ *fill*         0x000000000804bcaa        0x2 
+ .rodata.str1.4
+                0x000000000804bcac       0x24 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtmdlfcn.o86)
+                                         0x23 (size before relaxing)
+ .rodata.str1.1
+                0x000000000804bcd0       0x12 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+ *fill*         0x000000000804bce2        0x2 
+ .rodata        0x000000000804bce4        0x4 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+                0x000000000804bce4                FFT4dSpace_1_M
+ *fill*         0x000000000804bce8        0x8 
+ .rodata.cst16  0x000000000804bcf0       0x20 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+ .rodata.cst8   0x000000000804bd10       0x48 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+                                         0x58 (size before relaxing)
+ *fill*         0x000000000804bd58        0x8 
+ .rodata        0x000000000804bd60     0x1800 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_data.o86)
+                0x000000000804bd60                FFT4dSpace_1_ConstP
+ .rodata.cst8   0x000000000804d560       0x10 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetInf.o86)
+ .rodata.cst4   0x000000000804d570        0x8 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetInf.o86)
+ .rodata.cst8   0x000000000804d578        0x8 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetNaN.o86)
+ .rodata.cst4   0x000000000804d580        0x4 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetNaN.o86)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x000000000804d584      0x35c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x000000000804d584      0x35c mdladapter_mdlfunctions.o86
+                0x000000000804d584                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x000000000804d8e0     0x1038
+ *(.eh_frame)
+ .eh_frame      0x000000000804d8e0       0x3c c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000804d91c       0x54 mdladapter_mdlfunctions.o86
+                                         0x6c (size before relaxing)
+ .eh_frame      0x000000000804d970       0x3c data_in_ap.o86
+                                         0x54 (size before relaxing)
+ .eh_frame      0x000000000804d9ac       0x50 data_out_ap.o86
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000804d9fc       0x1c fm_entry_ap.o86
+                                         0x34 (size before relaxing)
+ .eh_frame      0x000000000804da18       0x1c fm_exit_ap.o86
+                                         0x34 (size before relaxing)
+ .eh_frame      0x000000000804da34      0x428 dssimengine_accesspoint.o86
+                                        0x440 (size before relaxing)
+ .eh_frame      0x000000000804de5c       0x60 dssimengine_api.o86
+                                         0x78 (size before relaxing)
+ .eh_frame      0x000000000804debc      0x1a8 dssimengine_main.o86
+                                        0x1c0 (size before relaxing)
+ .eh_frame      0x000000000804e064      0x274 rtosal_task.o86
+                                        0x2ac (size before relaxing)
+ .eh_frame      0x000000000804e2d8       0x40 rtosal_taskap.o86
+                                         0x58 (size before relaxing)
+ .eh_frame      0x000000000804e318      0x138 rtosal_simengineap.o86
+                                        0x150 (size before relaxing)
+ .eh_frame      0x000000000804e450       0x20 IOCode_Data.o86
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000804e470      0x128 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtmdlfcn.o86)
+                                        0x140 (size before relaxing)
+ .eh_frame      0x000000000804e598       0x28 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrttf.o86)
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000804e5c0      0x1dc C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+                                        0x1f4 (size before relaxing)
+ .eh_frame      0x000000000804e79c       0x28 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtvdf.o86)
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000804e7c4       0x78 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rt_nonfinite.o86)
+                                         0x90 (size before relaxing)
+ .eh_frame      0x000000000804e83c       0x50 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetInf.o86)
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000804e88c       0x28 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetNaN.o86)
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000804e8b4       0x60 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+                                         0x8c (size before relaxing)
+ .eh_frame      0x000000000804e914        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+                0x000000000804e918       0x20
+ *(.gcc_except_table .gcc_except_table.*)
+ .gcc_except_table
+                0x000000000804e918       0x10 dssimengine_main.o86
+ .gcc_except_table
+                0x000000000804e928       0x10 rtosal_task.o86
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x000000000804f000                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x000000000804f000        0x0
+                [!provide]                        PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, .)
+
+.init_array     0x000000000804f000        0x0
+                0x000000000804f000                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x000000000804f000                PROVIDE (__init_array_end, .)
+
+.fini_array     0x000000000804f000        0x0
+                [!provide]                        PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end, .)
+
+.ctors          0x000000000804f000       0x18
+ *crtbegin.o(.ctors)
+ .ctors         0x000000000804f000        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ .ctors         0x000000000804f004        0x8 dssimengine_main.o86
+ .ctors         0x000000000804f00c        0x4 rtosal_simengineap.o86
+ .ctors         0x000000000804f010        0x4 IOCode_Data.o86
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x000000000804f014        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+
+.dtors          0x000000000804f018        0x8
+ *crtbegin.o(.dtors)
+ .dtors         0x000000000804f018        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x000000000804f01c        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+                0x000000000804f01c                __DTOR_END__
+
+.jcr            0x000000000804f020        0x4
+ *(.jcr)
+ .jcr           0x000000000804f020        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ .jcr           0x000000000804f020        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x000000000804f024      0x120
+ *(.dynamic)
+ .dynamic       0x000000000804f024      0x120 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                0x000000000804f024                _DYNAMIC
+
+.got            0x000000000804f144        0x4
+ *(.got)
+ .got           0x000000000804f144        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ *(.igot)
+                0x000000000804f148                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0xc)?0xc:0x0)
+
+.got.plt        0x000000000804f148       0xb8
+ *(.got.plt)
+ .got.plt       0x000000000804f148       0xb8 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                0x000000000804f148                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x000000000804f200        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+
+.data           0x000000000804f200     0x218c
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000804f200        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                0x000000000804f200                __data_start
+                0x000000000804f200                data_start
+ .data          0x000000000804f204        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+ .data          0x000000000804f204        0x4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+                0x000000000804f204                __dso_handle
+ .data          0x000000000804f208        0x0 mdladapter_mdlfunctions.o86
+ .data          0x000000000804f208        0x0 mdlCode_ap.o86
+ .data          0x000000000804f208        0x0 data_in_ap.o86
+ .data          0x000000000804f208        0x0 data_out_ap.o86
+ .data          0x000000000804f208        0x0 fm_entry_ap.o86
+ .data          0x000000000804f208        0x0 fm_exit_ap.o86
+ .data          0x000000000804f208        0x1 dssimengine_accesspoint.o86
+                0x000000000804f208                isFirstSimulation
+ .data          0x000000000804f209        0x0 dssimengine_api.o86
+ *fill*         0x000000000804f209       0x17 
+ .data          0x000000000804f220       0x34 dssimengine_main.o86
+                0x000000000804f220                ApplInfoDsCApplicationMain
+                0x000000000804f248                DsFwIfVersion
+                0x000000000804f24c                DsApplIfVersion
+                0x000000000804f250                SimEngineLastApplState
+ .data          0x000000000804f254        0x0 rtosal_task.o86
+ .data          0x000000000804f254        0x0 rtosal_taskap.o86
+ *fill*         0x000000000804f254        0x4 
+ .data          0x000000000804f258       0x10 rtosal_simengineap.o86
+                0x000000000804f258                ScalingFactor
+                0x000000000804f260                g_dsrtt_comm_enabled
+ *fill*         0x000000000804f268       0x18 
+ .data          0x000000000804f280       0x24 IOCode_Data.o86
+                0x000000000804f280                g_ResourceMap
+ .data          0x000000000804f2a4        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtmdlfcn.o86)
+ .data          0x000000000804f2a4        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrttf.o86)
+ .data          0x000000000804f2a4        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+ *fill*         0x000000000804f2a4       0x1c 
+ .data          0x000000000804f2c0     0x20cc C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_data.o86)
+                0x000000000804f2c0                FFT4dSpace_1_P
+ .data          0x000000000805138c        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtvdf.o86)
+ .data          0x000000000805138c        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rt_nonfinite.o86)
+ .data          0x000000000805138c        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetInf.o86)
+ .data          0x000000000805138c        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetNaN.o86)
+ .data          0x000000000805138c        0x0 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .data          0x000000000805138c        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+ .data          0x000000000805138c        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+
+.tm_clone_table
+                0x000000000805138c        0x0
+ .tm_clone_table
+                0x000000000805138c        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ .tm_clone_table
+                0x000000000805138c        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+
+.data1
+ *(.data1)
+                0x000000000805138c                _edata = .
+                [!provide]                        PROVIDE (edata, .)
+                0x000000000805138c                . = .
+                0x000000000805138c                __bss_start = .
+
+.bss            0x00000000080513a0    0x16378
+ *(.dynbss)
+ .dynbss        0x00000000080513a0       0x3c c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                0x00000000080513a0                _ZTI14DsCApplication
+                0x00000000080513a8                _ZTI7DsCTask
+                0x00000000080513b0                _ZTVN10__cxxabiv120__si_class_type_infoE@@CXXABI_1.3
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000080513dc        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ .bss           0x00000000080513dc        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+ .bss           0x00000000080513dc        0x8 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ .bss           0x00000000080513e4        0x0 mdladapter_mdlfunctions.o86
+ .bss           0x00000000080513e4        0x0 mdlCode_ap.o86
+ .bss           0x00000000080513e4        0x0 data_in_ap.o86
+ .bss           0x00000000080513e4        0x0 data_out_ap.o86
+ .bss           0x00000000080513e4        0x0 fm_entry_ap.o86
+ .bss           0x00000000080513e4        0x0 fm_exit_ap.o86
+ .bss           0x00000000080513e4       0x30 dssimengine_accesspoint.o86
+                0x00000000080513e4                pFuseActualStatus
+                0x00000000080513e8                pFuseRestoreRequest
+                0x00000000080513ec                pFailureSimulationClientConnected
+                0x00000000080513f0                pFailureSimulationFailureConfigured
+                0x00000000080513f4                pFailureSimulationFailureActivated
+                0x00000000080513f8                pFailureSimulationSequenceCount
+                0x00000000080513fc                pFailureSimulationRelaySwitching
+                0x0000000008051400                pXilApiEesPortActiveErrorSet
+                0x0000000008051404                pXilApiEesPortErrorActivated
+                0x0000000008051408                pXilApiEesPortErrorSwitching
+                0x000000000805140c                xilApiEesPortFlags
+                0x0000000008051410                xilApiEesPortTrigger
+ .bss           0x0000000008051414        0x0 dssimengine_api.o86
+ .bss           0x0000000008051414        0x8 dssimengine_main.o86
+                0x0000000008051414                _ZN18DsCApplicationMain11s_pInstanceE
+                0x0000000008051418                ErrorList
+ *fill*         0x000000000805141c        0x4 
+ .bss           0x0000000008051420       0x1c rtosal_task.o86
+                0x0000000008051420                StepCounter_Periodic_Task_1
+                0x0000000008051428                RtosAlTaskSimTime_Periodic_Task_1
+                0x0000000008051430                pRtosAlTimer_Periodic_Task_1
+                0x0000000008051434                pRtosAlPeriodic_Task_1
+                0x0000000008051438                _ZN24DsCRtosAlPeriodic_Task_111m_pInstanceE
+ .bss           0x000000000805143c        0x0 rtosal_taskap.o86
+ *fill*         0x000000000805143c        0x4 
+ .bss           0x0000000008051440       0x50 rtosal_simengineap.o86
+                0x0000000008051440                Periodic_Task_1Vars_OvnCounter
+                0x0000000008051440                Periodic_Task_1Vars
+                0x0000000008051444                Periodic_Task_1Vars_TurnaroundTime
+                0x000000000805144c                Periodic_Task_1Vars_Calls
+                0x0000000008051454                Periodic_Task_1Vars_QueueCounter
+                0x0000000008051458                Periodic_Task_1Vars_AbsoluteTime
+                0x0000000008051488                ScaledTimeInterval
+ .bss           0x0000000008051490        0x4 IOCode_Data.o86
+                0x0000000008051490                fft4dspace_1_fcnModule_SIDRoot_TID1
+ .bss           0x0000000008051494        0x4 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtmdlfcn.o86)
+                0x0000000008051494                DSRTStopSimulation
+ .bss           0x0000000008051498        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrttf.o86)
+ *fill*         0x0000000008051498        0x8 
+ .bss           0x00000000080514a0    0x16228 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+                0x00000000080514a0                FFT4dSpace_1_DW
+                0x00000000080554c0                FFT4dSpace_1_B
+ .bss           0x00000000080676c8        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_data.o86)
+ .bss           0x00000000080676c8       0x24 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtvdf.o86)
+                0x00000000080676c8                p_0_FFT4dSpace_1_uint64_T_0
+                0x00000000080676cc                p_0_FFT4dSpace_1_real_T_1
+                0x00000000080676d0                p_0_FFT4dSpace_1_real_T_2
+                0x00000000080676d4                p_0_FFT4dSpace_1_uint32_T_3
+                0x00000000080676d8                p_1_FFT4dSpace_1_struct_HWeianez4jK7RhAtAn8PqF_0
+                0x00000000080676dc                p_1_FFT4dSpace_1_real_T_1
+                0x00000000080676e0                p_1_FFT4dSpace_1_uint32_T_2
+                0x00000000080676e4                p_2_FFT4dSpace_1_real_T_0
+                0x00000000080676e8                p_2_FFT4dSpace_1_int32_T_2
+ *fill*         0x00000000080676ec        0x4 
+ .bss           0x00000000080676f0       0x28 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rt_nonfinite.o86)
+                0x00000000080676f0                rtNaNF
+                0x00000000080676f4                rtMinusInfF
+                0x00000000080676f8                rtInfF
+                0x0000000008067700                rtNaN
+                0x0000000008067708                rtMinusInf
+                0x0000000008067710                rtInf
+ .bss           0x0000000008067718        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetInf.o86)
+ .bss           0x0000000008067718        0x0 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetNaN.o86)
+ .bss           0x0000000008067718        0x0 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .bss           0x0000000008067718        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+ .bss           0x0000000008067718        0x0 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+ *(COMMON)
+                0x0000000008067718                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000000008067718                . = ALIGN (0x4)
+                0x0000000008067718                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000008067718                . = ALIGN (0x4)
+                0x0000000008067718                _end = .
+                [!provide]                        PROVIDE (end, .)
+                0x0000000008067718                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0x12 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtbegin.o
+ .comment       0x0000000000000011       0x12 mdladapter_mdlfunctions.o86
+ .comment       0x0000000000000011       0x12 mdlCode_ap.o86
+ .comment       0x0000000000000011       0x12 data_in_ap.o86
+ .comment       0x0000000000000011       0x12 data_out_ap.o86
+ .comment       0x0000000000000011       0x12 fm_entry_ap.o86
+ .comment       0x0000000000000011       0x12 fm_exit_ap.o86
+ .comment       0x0000000000000011       0x12 dssimengine_accesspoint.o86
+ .comment       0x0000000000000011       0x12 dssimengine_api.o86
+ .comment       0x0000000000000011       0x12 dssimengine_main.o86
+ .comment       0x0000000000000011       0x12 rtosal_task.o86
+ .comment       0x0000000000000011       0x12 rtosal_taskap.o86
+ .comment       0x0000000000000011       0x12 rtosal_simengineap.o86
+ .comment       0x0000000000000011       0x12 IOCode_Data.o86
+ .comment       0x0000000000000011       0x12 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtmdlfcn.o86)
+ .comment       0x0000000000000011       0x12 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrttf.o86)
+ .comment       0x0000000000000011       0x12 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1.o86)
+ .comment       0x0000000000000011       0x12 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_data.o86)
+ .comment       0x0000000000000011       0x12 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(FFT4dSpace_1_dsrtvdf.o86)
+ .comment       0x0000000000000011       0x12 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rt_nonfinite.o86)
+ .comment       0x0000000000000011       0x12 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetInf.o86)
+ .comment       0x0000000000000011       0x12 C:\workspace\teachingSMC\FFT\dSpace\SCALEXIO\CfgDesk\Proj_FFT4dSpace_1\App_FFT4dSpace_1\Build\FFT4dSpace_1\Compile\FFT4dSpace_1\FFT4dSpace_1.a(rtGetNaN.o86)
+ .comment       0x0000000000000011       0x12 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .comment       0x0000000000000011       0x12 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/gcc/i686-linux-gnu/5.5.0/crtend.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0xb0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x38 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ .debug_aranges
+                0x0000000000000038       0x30 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+ .debug_aranges
+                0x0000000000000068       0x20 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .debug_aranges
+                0x0000000000000088       0x28 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x2e3
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0xf4 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ .debug_info    0x00000000000000f4       0x67 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+ .debug_info    0x000000000000015b      0x121 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .debug_info    0x000000000000027c       0x67 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+
+.debug_abbrev   0x0000000000000000      0x16e
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x52 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ .debug_abbrev  0x0000000000000052       0x12 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+ .debug_abbrev  0x0000000000000064       0xf8 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .debug_abbrev  0x000000000000015c       0x12 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+
+.debug_line     0x0000000000000000      0x1e4
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x7d c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+ .debug_line    0x000000000000007d       0x6d c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+ .debug_line    0x00000000000000ea       0xa1 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .debug_line    0x000000000000018b       0x59 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000      0x25e
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x142 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crt1.o
+                                        0x182 (size before relaxing)
+ .debug_str     0x0000000000000142      0x11c C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+                                        0x16b (size before relaxing)
+
+.debug_loc      0x0000000000000000       0x1f
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x1f C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0x60
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x28 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crti.o
+ .debug_ranges  0x0000000000000028       0x18 C:\Appl\dSPACE\dSPACE RCPHIL 2021-A\Compiler\Linux440_550\target\i686-linux-gnu\lib\libc_nonshared.a(elf-init.oS)
+ .debug_ranges  0x0000000000000040       0x20 c:/appl/dspace/dspace rcphil 2021-a/compiler/linux440_550/target/i686-linux-gnu/bin/../lib/crtn.o
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(FFT4dSpace_1.x86 elf32-i386)

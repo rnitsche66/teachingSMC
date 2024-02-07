@@ -23,6 +23,30 @@
 				<item>
 					<Name type="key">Variable Descriptions</Name>
 					<ViewFlags type="key">0</ViewFlags>
+					<item>
+						<Name type="key">FFTonline.vdb</Name>
+						<ViewFlags type="key">1</ViewFlags>
+					</item>
+					<item>
+						<Name type="key">App_FFT4dSpace_1.sdf</Name>
+						<ViewFlags type="key">0</ViewFlags>
+						<item>
+							<Name type="key">FFT4dSpace_1.trc</Name>
+							<ViewFlags type="key">1</ViewFlags>
+						</item>
+						<item>
+							<Name type="key">FFT4dSpace_1.map</Name>
+							<ViewFlags type="key">1</ViewFlags>
+						</item>
+						<item>
+							<Name type="key">App_FFT4dSpace_1.rta</Name>
+							<ViewFlags type="key">1</ViewFlags>
+						</item>
+						<item>
+							<Name type="key">FFT4dSpace_1.expswcfg</Name>
+							<ViewFlags type="key">1</ViewFlags>
+						</item>
+					</item>
 				</item>
 				<item>
 					<Name type="key">Variable Filters</Name>
