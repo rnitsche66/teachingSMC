@@ -22,7 +22,7 @@ end
 % ******************************************************
 figure(10); mesh(t)
 xlabel('Index k')
-ylabel('Runs')
+ylabel('Blocks')
 zlabel('|X(k)|')
 f_vec = [0:1:length(matFFT(:,1))-1]*1/Ts/length(matFFT);
 
@@ -33,7 +33,7 @@ LW=1.5;
 % ***********************************************
 figure(100); 
 plot(f_vec,matFFT(:,4),'linewidth',LW )
-title('Two-sided FFT')
+title('FFT-Results')
 xlbl = xlabel('Frequency $f = \frac{\omega}{2 \pi}$ [Hz]', 'Interpreter','latex');
 ylabel('Amplitude ')
 xlbl.FontSize= 17;
