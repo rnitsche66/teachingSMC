@@ -571,8 +571,8 @@
 					<PlatformTrigger>
 						<UniqueKey type="key">2</UniqueKey>
 						<Name type="key">Platform Trigger 1</Name>
-						<Condition type="key">posedge ( MATLAB_Function1_y_sin, 0.5 )</Condition>
-						<Delay type="key">-0.01</Delay>
+						<Condition type="key">posedge ( MATLAB_Function1_y_sin, 0 )</Condition>
+						<Delay type="key">0</Delay>
 						<Enabled type="key">-1</Enabled>
 						<Timeout type="key">0</Timeout>
 						<TimeoutEnabled type="key">0</TimeoutEnabled>
