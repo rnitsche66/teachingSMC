@@ -1,0 +1,7 @@
+This is a paper for a special session (not named further).
+
+Manipulability analysis to improve the performance of a 7-DoF serial manipulator
+
+Ali Kanso, Marco Schneider, Rainer Müller
+
+

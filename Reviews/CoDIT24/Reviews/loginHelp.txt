@@ -1,0 +1,8 @@
+Login to PaperCept:
+
+https://controls.papercept.net/conferences/scripts/start.pl
+
+with rnitsche or 15389
+passwd: Han1L
+
+18.03.2024, nitr

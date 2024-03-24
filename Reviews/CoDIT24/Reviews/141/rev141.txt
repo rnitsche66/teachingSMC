@@ -1,0 +1,32 @@
+Commonly Static Synchronous Compensators (STATCOMs) are employed
+extensively as voltage regulators and VAR compensators in transmission
+networks in power systems.
+
+
+A lot of abbreviations not explained already in the abstracts: e.g.:
+
+PV-STATCOM: Photovoltaic Static Synchronous Compensator (PV-STATCOM)
+
+PCC
+
+THD total harmonic distortion (THD)
+
+
+II.A) Fault-tolerant approach...
+What is CTD?
+
+II.B) Figure 1: axis notations in englisch letters and what is U[p.u.], Unit??
+      Figure 2: notations in french....
+
+
+
+
+
++++++++++++
+SOME TYPOS:
++++++++++++
+Literature:
+[6] ....Mikaël Rodrigues, « Diagnostic et commande active tolérante aux
+défauts appliqués aux systèmes décrits par des multi-modèles linéaires
+», THÈSE Doctorale, Université Henri Poinaré,2005
+=> Poincaré
