@@ -1,5 +1,5 @@
 % Init Script for the FFT first steps
-fprintf('initalizing FFT4dSpace ')
+fprintf('initalizing FFT4dSpace ... ')
 Ts =1e-3; % 16kHz Sampling Time
 
 NFFT2 = 2^10;
@@ -8,7 +8,7 @@ NFFT2 = 2^10;
 % (1) ************************
 mdlPara.Bias1 = 0;      % [-]
 mdlPara.a1 = 1.5;         % [-]
-mdlPara.om1 = 2*pi*120; % (rad/sec)
+mdlPara.om1 = 2*pi*100; % (rad/sec)
 
 % Parameters of the sin waves:
 % (2) ************************
