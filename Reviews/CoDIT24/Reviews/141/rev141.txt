@@ -3,14 +3,25 @@ extensively as voltage regulators and VAR compensators in transmission
 networks in power systems.
 
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 A lot of abbreviations not explained already in the abstracts: e.g.:
 
 PV-STATCOM: Photovoltaic Static Synchronous Compensator (PV-STATCOM)
 
 PCC
+point of common coupling (PCC)
 
 THD total harmonic distortion (THD)
 
+Flexible AC Transmission Systems (FACTS)
+From the Internet:
+FACTS devices are static power-electronic devices installed in AC
+transmission networks to increase power transfer capability,
+stability, and controllability of the networks through series and/or
+shunt compensation.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 II.A) Fault-tolerant approach...
 What is CTD?
@@ -18,15 +29,59 @@ What is CTD?
 II.B) Figure 1: axis notations in englisch letters and what is U[p.u.], Unit??
       Figure 2: notations in french....
 
+II.C) Next abbreviations: TCSC, SSSC and UPFC‚Äôs [14] - makes it hard to read and understand.
+
+D) What is MPPT control? It is also referred to [17] and then cited the next abbreviation.
+
+THIS IS NOT A GOOD THING!!
+
+The controller block diagramm is not so clear. It is more a screen
+shot from the Simulink model than a kind of an abstract block diagram
+for explanatory purposes.
 
 
+III: Simulation Results
+III:A: Full STATCOM mode
+Poor description / interpretation of the behaviour and also of the figures.
+- Figure 6 & 7 & 8: no physical units at the axis!
+- Figure 6:  no legend....
+- What is the difference between Fig. 7 and 8, the configuration (inductive, capacitive) ? 
 
+=> STATCOM in full mode works correctly in both configurations
+(inductive, capacitive).  However, how was the plant modelled in the
+simulink model to provide a feasible model to interpret the control
+performance.
+
+
+III.B: PV-STATCOM mode
+Last sentence on page 4:
+
+...the power factor is initially at 0.75 and the PV STATCOM mode is
+enabled between t=5s and t=8s.
+=> should be .... t=0.5s and t=0.8s.
+
+The same holds for the description of Fig. 10 and 11: the activation
+of the STATCOM mode should be at 0.5s, for my understanding.
+
+Please avoid 'see figure below', but use \ref{} in LaTeX.
+
+
+IV: Conclusion
+good conclusion, but very short.
+
+Overall, the simulation results are not really pretty well analyzed
+nor documented, starting with the captions of the figures for the
+simulation results and the axis description (e.g. no physical units)
 
 +++++++++++
 SOME TYPOS:
 +++++++++++
+
+Page 3) In is noted that fault tolerant aspects... => It is noted..... 
+
+
 Literature:
-[6] ....MikaÎl Rodrigues, ´ Diagnostic et commande active tolÈrante aux
-dÈfauts appliquÈs aux systËmes dÈcrits par des multi-modËles linÈaires
-ª, TH»SE Doctorale, UniversitÈ Henri PoinarÈ,2005
-=> PoincarÈ
+[6] ....Mika√´l Rodrigues, ¬´ Diagnostic et commande active tol√©rante aux
+d√©fauts appliqu√©s aux syst√®mes d√©crits par des multi-mod√®les lin√©aires
+¬ª, TH√àSE Doctorale, Universit√© Henri Poinar√©,2005
+=> Poincar√©
