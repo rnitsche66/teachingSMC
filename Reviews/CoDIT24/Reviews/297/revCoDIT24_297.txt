@@ -1,0 +1,37 @@
+Simulator of the Spatial Location of the Knee Axis of Rotation During
+Flexion
+
+only 4 pages...
+
+TO EDITOR:
+A knee simulator (mechanical construction) is introduced, which allows
+not only bending in the direction of walking but also in the
+perpendicular directions of walking directions ("O-legs" and "X-legs").
+
+What is currently available in the market? What is the state of the art.
+For what is this work (it's not really a research) good for?
+Is the model really valid?
+
+
+
+
+TO AUTHOR:
+
+Figure 1: corresponds to which citation [11], [12] or [13]
+
+Figure 3: you should name the rubber washers in one of the pictures a)-c)
+
+III.C: the movement of the mechanism should be illustrated with
+another picture where all importand parts are seen.
+
+III.D: Figure 4: Which rod and which joint corresponds to that one in
+Fig. 2 and or 4 ?
+
+The description of Fig. 4 is not so clear, as well as the labeling of
+the drawing in Fig. 4.
+Which plane do we see in Fig. 4.
+
+What is the result of the analysis? For what do we need this analysis?
+
+III.E: a simple bill of material as a table would be more clear, than
+listing the parts in a text field.
