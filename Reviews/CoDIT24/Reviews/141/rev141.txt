@@ -3,6 +3,31 @@ extensively as voltage regulators and VAR compensators in transmission
 networks in power systems.
 
 
+
+Message to the Editors: *******************************************
+The paper gives a good overview of how to use Static Synchronous
+Compensator (STATCOM) connected to a distributed energy network.  This
+proposed approach considers the recent published Morocan grid code.
+
+The topologie of the systems is well explained and the proposed
+controller structure is brievly introduced. Some simulation results
+shows the performance of the controller. But unfortunately nothing is
+said about the moelling of the power grid and how the closed loop
+system looks like.
+
+Furthermore, in the proposed system desing a fault-tolerant approach
+is mentioned.  But the fault tolerant approach is not really introduce
+or at least not at all discussed in the paper. What is discussed is
+the disturbance attenuation of the proposed controller. But this is
+not an fault-tolerant control approach.
+
+There are a lot of abbreviations through out the paper and only some
+of them are really explained well. The author should use fewer
+abbreviations and then explain them clearly.
+
+However, the paper is well structured and clearly written.
+=> Acceptable
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 A lot of abbreviations not explained already in the abstracts: e.g.:
 
