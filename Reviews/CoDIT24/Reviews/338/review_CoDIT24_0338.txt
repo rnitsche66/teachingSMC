@@ -1,7 +1,75 @@
+**********************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+**********************************************************
+
 This is a paper for a special session (not named further).
 
-Manipulability analysis to improve the performance of a 7-DoF serial manipulator
+Manipulability analysis to improve the performance of a
+7-DoF serial manipulator
 
 Ali Kanso, Marco Schneider, Rainer Müller
 
 
+This paper conducts a kinematic analysis of a 7-DoF manipulator,
+addressing the inverse kinematic problem and discussing
+a method for optimizing the robot configuration.
+
+As the robot configuration has 7 degrees of fredoom, the
+system is redundant and has the possibility to reach a given
+point in the working space by severeal configurations.
+
+The DH notation is used to describe the kinematics.
+
+This paper introduces an  interessting approach to adapt the
+configuration  for  a  given  trajectory. This  is  done  by
+minimizing  the  inaccuracies  in the  force  estimation  by
+ensuring that the condition number of the Jacobian matrix is
+as  low  as  possible.  Note,  that  the  redundancy  angle
+(delta_3,2) is kept constant during motion.
+
+This is an interesting approach. It would be helpful if a
+kind of flow diagram for the necessary computations is added
+to get a better understanding what has to be computed.
+
+Some questions arises, while reading the paper.  Maybe the
+authors can taker them into account in the final iteration
+step of the paper.
+
+
+To the author:
+
+
+Manipulatility is not properly explained....  Do we need to
+calculate the optimal static joint angle of the redundant
+joint for every trajectory?
+
+A flow diagram would be helpful to understand the
+computional tasks better. Which computation leads to which
+decision and one finally comes up with the best (optimal)
+configuration for this trajectory.
+
+
+What exactly is changed in the configuration of the iiwar
+robot after the optimization? At which value was the
+redundancy angle (delta_3,2) before and after the
+optimization?
+
+The best configuration depends on a given trajectory, right?
+So the optimization has to be done after teaching or
+trajectory planning - is that right?
+
+Typos / suggestions:
+
+The dimension of (2) is not so clear. As a consequence, the
+sentence after the introduction of (2), that is 'The vector
+composed ...' is hard to understand.
+
+Page 4: what do you exactly mean with 'isotropic behaviour'?
+
+Fig always with capital letters.
+Use (2) for referencing to eq. not equation 2
+Use \sin , \cos for mathematical funstions in LaTeX
+Use a dot or a semicolon after an equations -> makes the
+paper easier to read
