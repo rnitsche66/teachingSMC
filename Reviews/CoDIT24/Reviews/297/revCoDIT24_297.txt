@@ -1,37 +1,62 @@
-Simulator of the Spatial Location of the Knee Axis of Rotation During
-Flexion
+
+**********************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+**********************************************************
+
+
+Simulator of the Spatial Location of the Knee Axis of
+Rotation During Flexion
 
 only 4 pages...
 
 TO EDITOR:
-A knee simulator (mechanical construction) is introduced, which allows
-not only bending in the direction of walking but also in the
-perpendicular directions of walking directions ("O-legs" and "X-legs").
 
-What is currently available in the market? What is the state of the art.
-For what is this work (it's not really a research) good for?
-Is the model really valid?
+A knee simulator (mechanical construction) is introduced,
+which allows not only bending in the direction of walking
+but also in the perpendicular directions of walking
+directions (genu varum "bowleg" and genu valgum "knock knies").
 
 
+
+What is currently available in the market? What is the state
+of the art.  For what is this work (it's not really a
+research) good for?  Is the model really valid?
+
+As the paper has only 4 papers, it would have been no
+problem to extend the paper to have a more clear, complete
+and scientific description of the considered system. Maybe
+the motivation for the paper was not that great...
+
+The paper is well structured, but unfortunately the
+scientific claim and depth is missing.
 
 
 TO AUTHOR:
 
-Figure 1: corresponds to which citation [11], [12] or [13]
+Figure 1: corresponds to which citation [11], [12] or [13] ?
 
-Figure 3: you should name the rubber washers in one of the pictures a)-c)
+Figure 3: you should name the rubber washers in one of the
+pictures a)-c)
 
-III.C: the movement of the mechanism should be illustrated with
-another picture where all importand parts are seen.
+III.C: the movement of the mechanism should be illustrated
+with another picture where all importand parts are seen.
 
-III.D: Figure 4: Which rod and which joint corresponds to that one in
-Fig. 2 and or 4 ?
+III.D: Figure 4: Which rod and which joint corresponds to
+that one in Fig. 2 and or 4 ?
 
-The description of Fig. 4 is not so clear, as well as the labeling of
-the drawing in Fig. 4.
-Which plane do we see in Fig. 4.
+The description of Fig. 4 is not so clear, as well as the
+labeling of the drawing in Fig. 4.  Which plane do we see in
+Fig. 4.
 
-What is the result of the analysis? For what do we need this analysis?
+For what do we need the equations (1)-(6). How are these
+(10/9 pi) and (11/18 pi) derived?
 
-III.E: a simple bill of material as a table would be more clear, than
-listing the parts in a text field.
+What is the result of the analysis? For what do we need this
+analysis?
+
+III.E: A simple bill of material as a table would be more
+clear, than listing the parts in a text field.
+
+
