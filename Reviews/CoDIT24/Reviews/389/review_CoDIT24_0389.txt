@@ -1,0 +1,79 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+Dynamic Hard Shoulder Running Lane Control
+
+Rodrigo Castelan Carlson, Eduardo Rosa de Lima, Eduardo Rauh M¨uller,
+Felipe Augusto de Souza, and Konstantinos Ampountolas
+
+
+"This paper aims to devise a novel and practical switching
+policy for efficient dynamic HSR lane control. It is based
+on properties of the triangular (piecewise linear)
+fundamental diagram and relies on real-time measurements of
+density only, or its proxies, such as occupancy and speed."
+
+Note: paper currently too long 8pages
+
+To Editors only
+
+This paper endeavours to develop an innovative and
+feasible switching strategy for optimizing dynamic hard
+shoulder running (HSR) lane control. Drawing upon the
+characteristics of the triangular fundamental diagram
+(FD), a piecewise linear model, the approach utilizes
+real-time density measurements or their proxies, such
+as occupancy and speed.
+
+This approach seems to be very applicable since it fits
+some requirements (hysteresis switching, less
+measurement information, robustness issues, ...) to be
+applied to real world scenarios.
+
+Cool approach for robust control strategies in using
+the HSR lane. Not so many applied research can be found
+on this topic.
+
+The discussion and analysis of the control performance
+of the proposed concept is based on the kinematic wave
+theory.
+
+
+However, the paper is currently too long (8 pages) and
+it has to be shortened somehow. Maybe the authors
+should try to focus on the most important, new, and
+challenging issues of this approach.
+
+
+
+
+To the author:
+
+For what is the flow/density diagram good for (Fig.6c)
+?  If Fig 6 is referred, please add also which
+subfigure is meant, e.g. Fig.6c.
+
+The proposed concept is compared to the performance of
+the approach in [23].  It would be helpful for the
+interpretation / comparison of the results if the
+reader has an idea of what is the concept of the
+control stragety in [23]. Maybe more than this is an
+ad-hoc strategy.
+
+
+Typos / suggestions:
+
