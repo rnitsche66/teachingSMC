@@ -1,0 +1,48 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+Model Predictive Control Design for Efficient Air-Cooled
+Thermal Management in Contained Data Centers
+
+Amirreza Zaman, Dina Shona Laila and Wolfgang Birk
+
+Abstract:
+*********
+
+Abbreviations to be clarified:
+
+- CoC ? : -> Certificate of Conformity (damit Waren
+  innerhalb der EU gehandelt/verkauft werden können)
+
+- ASHRAE: American Society of Heating, Refrigerating and
+  Air-Conditioning Engineers ist ein Berufsverband aller
+  in Heizungs-, Kühlungs-, Lüftungs- und Klimaanlagenbau
+  Tätigen in den USA. Sitz der Vereinigung ist Atlanta,
+  Georgia.
+
+
+To Editors only
+
+
+
+
+To the author:
+
+Avoid unclear abbreviations already in the abstract (i.e. CoC and ASHRAE)
+
+Typos / suggestions:
+
