@@ -33,12 +33,17 @@ To Editors only
 
 The focus of this paper is to derive a model of a transfer
 line with mechatronic equipment. The goal of this
-behavior-model is to simulate a assembly line. For this
+behavior-model is to simulate an assembly line. For this
 model a commercial tool, i.e. iPhysics is
 used. Furhtermore, the idea of a Digital-Twin (DT)
 framework is presented, where the structure for data
-exchange is presented.  No simulation results nor any
-model validation results are presented.
+exchange is presented.  The The special feature of the
+proposed designed system lies in the simultaneous
+distribution of tasks to both physical environment and its
+virtual counterpart.
+
+No simulation results nor any model validation results are
+presented.
 
 The paper is well written and clearly structured.  But
 what is new in this research?  What is the scientific part
@@ -53,24 +58,23 @@ also fit to the paper category "work in progress".
 To the author:
 *************
 
-What is the scientific research?
-What is new in this paper?
+The paper is well written and clearly structured. However,
+some questions arises while reading the paper:
 
-How is the link to the development department or manufacturer to
-easily adapt the needed data for the DM and to validate the model.
+As a Digital Twin is so multifaceted, it makes sense to
+firstly what is understood when talking about a DT.
 
-How is the interface to easy and quickly import the data of the system
-components in the DM of iPhysics? Importing the data manually is not
-really an option, or?
+What are the scientific aspects of this work, what is new?
+This should be highlighted more.
 
+How is the interface to easy and quickly import the data
+of the system components in the DM of iPhysics? Importing
+the data manually is not really an option, or?
 
-
-As a Digital Twin is so multifaceted, it makes sense to firstly what
-is understood when talking about a DT.
-
-What is the goal of the the DT approach? Optimizing the process with respect to time?
-
+How does the physical layer looks like? This should be
+described in a little more detail
 
 
-Typos / suggestions:
+
+
 
