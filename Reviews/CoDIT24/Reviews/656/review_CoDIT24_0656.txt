@@ -1,0 +1,107 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+Model Predictive Control Design for Efficient Air-Cooled
+Thermal Management in Contained Data Centers
+
+Amirreza Zaman, Dina Shona Laila and Wolfgang Birk
+
+Abstract:
+*********
+
+Abbreviations to be clarified:
+
+- CoC ? : -> Certificate of Conformity (damit Waren
+  innerhalb der EU gehandelt/verkauft werden können)
+
+- ASHRAE: American Society of Heating, Refrigerating and
+  Air-Conditioning Engineers ist ein Berufsverband aller
+  in Heizungs-, Kühlungs-, Lüftungs- und Klimaanlagenbau
+  Tätigen in den USA. Sitz der Vereinigung ist Atlanta,
+  Georgia.
+
+
+
+
+
+To Editors only
+
+The control design objective is to regulate the server temperature for
+some even scenarios that could happen in real DC center operation,
+while at the same time minimizing the cooling power consumption.
+
+The goal of the control design is to keep the temperature of a
+contained data center (DC) under several disturbances (server load,
+ambient temperature variations) at a desired quasi-constant value. The
+control strategie has to consider power consumption of the cooling
+system and temperature ranges for the devices in the control loop. For
+this a linear time discrete Model Predictive Control (MPC) Strategy is
+proposed.
+
+Simulation studies for various real-world scenarios are presented.
+
+Model is linaer and for the MPC approach in time discrete manner.
+Note, all states are assumed to be measurable!
+Q and R are the tuning variables.
+
+All in all the control performance is quite good and the limits are
+are not violated at any time.
+
+The control strategy is well explained and the paper is clearly
+structured.
+
+The simulation results could be discussed and analyzed a little bit
+more. For example: What happens if the wighting factors Q and R are
+changed.  Why is the reaction of the controlled system in Fig.6 for
+the same disturbance at 5ooo sec and 35ooo sec in steady state mode
+not the same?
+
+It is a solid conference paper and can be accepted.  Some suggestions
+for better readability and to improve the paper a little can be found
+in the section for the authors.
+
+
+
+To the author:
+
+In (2) p(t) is considered as a disturbance - right? How does the MPC
+approach takes this disturbance into account? Since p(t) containes the
+room temperature and server power this two elements are easily
+measurable and can be included as known but time variant parameters.
+
+
+In Fig. 3 Ts,umin and Ts,umax is also depicted put not explained nor
+analyzed. 
+
+In Scenario II, the server power P_s changes due to some special
+effects. Is the server power measured and taken into account in the
+model as a time variant parameter? This is not really clear.
+
+Why is the reaction of the temperature in Fig.6 (Scenario II) at 3.000
+sec and at 35.000 sec not in the same direction? At both times the
+system is in steady state at ~52°C and a disturbance of server power
+consum occures but the temperature tends not in the same direction at
+both times.
+
+
+Avoid unclear abbreviations already in the abstract (i.e. CoC and ASHRAE)
+
+
+
+
+Typos / suggestions:
+
