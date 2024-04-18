@@ -49,25 +49,88 @@ structured, Figures are not explained at all and parameter
 values are without physical units.
 And the paper is too long (8 pages).
 
+
+*********************************************************
+To the Editors only:
+********************
 I recommand to reject the paper. It should be completely
 restructured and rerewritten.
+********************************************************
 
+To the Authors, addidionally:
+*****************************
 
+Very interesting and well structured overview of the
+state-of-the-art of SoH monitoring of Li-ion
+batteries. Maybe a little bit too long.
 
+Data normilization (Sec. III.D) makes sense for
+computations and is always a good idea to increase
+robustness in the sense of robust stability. => good
+idea!!
 
-
-
+The following questions and remarks arises while
+reading the paper:
 
 Are the above mentioned key paramteres the sensitive
 parameters of the model and thus therefore suitable /
-necessary to be identified online.
+necessary to be identified online?
+
+A lot of abbreviations are used throghout the
+paper. Maybe a table with most importand / used
+abbreviations is useful.
+
+Text in the equation is not properly formated:
+e.g. in (1) - kvl => \mathrm
+     (7): where also in mathrm
+This makes the paper easier to read.  
+
+If the temperature is modelled as Arrhenius type this is
+non-linear. How can convergence be ensured for the LSM?
+However, I didn't find the Arrhenius type anywhere in the
+text.
+
+In (10): unity mismatch: s T_s - T_s(0) !! s is the
+Laplace variable [1/sec], one cannot substract these two
+variables due to a unity mismatch?
+
+
+
+For (11) - (14) use subequations => easier to read. And
+please try to present the equations in a more compact and
+proper way.
+E.g. \Phi^T in (13) has another dimension as in (17) ....
+
+
+What are the equations for the ECM in the continuous
+case and in the time discrete case? Please take care of
+a proper description to understand what is how
+computed.
+
+Fig. 2 is not a Figure, it is more a Table.  But the
+parameters in the table have no units! ?
+
+The equations are numbered, but in the text these
+reference to the equation numbers are rarely used. This
+makes the paper very hard to understand.
+
+Fig. 4 to Fig. 9 are not explained or analyzed at all!
+
+For the parameters in the text and in the equations no physical units
+are used at all!!!!
+
+
+The report should be completely revised to improve
+readability and comprehensibility. The approach is
+certainly cool, but unfortunately the benefits and the
+scientific aspect are not highlighted enough.
+
+
 
 Introduction:
 *************
 
-Very interesting and well structured overview of the
-state-of-the-art of SoH monitoring of Li-ion
-batteries. But very long.
+
 
 Main Contribution:
 *****************
@@ -109,36 +172,17 @@ Redaktionel eher schlecht:
 - 
 
 
-Text in the equation is not properly formated:
-e.g. in (1) - kvl => \mathrm
-     (7): where also in mathrm
-This makes the paper easier to read.  
 
-If the temperature is modelled as Arrhenius type this is
-non-linear. How can convergence be ensured for the LSM?
-However, I didn't find the Arrhenius type anywhere in the
-text.
-
-In (10): unity mismatch: s T_s - T_s(0) !! s is the
-Laplace variable [1/sec], one cannot substract these two
-variables due to a unity mismatch?
-
-
-
-For (11) - (14) use subequations => easier to read. And
-please try to present the equations in a more compact and
-proper way.
-E.g. \Phi^T in (13) has another dimension as in (17) ....
 
 Which is the ECM in the continuous case and in the time
-discrete case? Please take care of a proper describtion to
+discrete case? Please take care of a proper description to
 understand what is how computed.
 
 Fig. 2 is not a Figure, it is more a Table.
 But the parameters in the table have no units! ?
 
 The equations are numerized, but in the text these
-reference to the equation number are used seldomely. This
+reference to the equation number are rarely used. This
 makes the paper very hard to understand or even
 impossible.
 
