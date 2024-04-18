@@ -15,90 +15,157 @@ taken from:
 https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
 **********************************************************
 
-Model Predictive Control Design for Efficient Air-Cooled
-Thermal Management in Contained Data Centers
+Lumped-Parameter Modeling: Enabling Real-Time Battery Management
 
-Amirreza Zaman, Dina Shona Laila and Wolfgang Birk
+Mehrdad Babazadeh and W. Dhammika Widanage
+
 
 Abstract:
 *********
 
-Abbreviations to be clarified:
+A lumped parameter approach for Li-ion batteries is used
+to identify the so-called key parameters (sensitive
+parameters?)
 
-- CoC ? : -> Certificate of Conformity (damit Waren
-  innerhalb der EU gehandelt/verkauft werden können)
+The approach to identify the sensitive (?) parameters of
+the LPTM is designed to be computed in
+real-time. Furhtermore the algorithm is designed to be
+robust in the sense of accuracy and reliability for
+several operational scenarios.
 
-- ASHRAE: American Society of Heating, Refrigerating and
-  Air-Conditioning Engineers ist ein Berufsverband aller
-  in Heizungs-, Kühlungs-, Lüftungs- und Klimaanlagenbau
-  Tätigen in den USA. Sitz der Vereinigung ist Atlanta,
-  Georgia.
+The focus of the paper is an online parameter estimation
+algorithm. Several measures have been applied to improve
+the robustness and accuracy of the parameter estimation
+algorithm. The effects or impact of the particular
+measures are summarized in a table.
+
+However, it is almost unclear, how the measueres are
+derived and implemented in the final algorithm. There is
+too much information in the paper, which is not very well
+structured and explanations are incomplete.
+
+Futhermore, the equations are inconsistend, not well
+structured, Figures are not explained at all and parameter
+values are without physical units.
+And the paper is too long (8 pages).
+
+I recommand to reject the paper. It should be completely
+restructured and rerewritten.
 
 
 
 
+
+
+
+Are the above mentioned key paramteres the sensitive
+parameters of the model and thus therefore suitable /
+necessary to be identified online.
+
+Introduction:
+*************
+
+Very interesting and well structured overview of the
+state-of-the-art of SoH monitoring of Li-ion
+batteries. But very long.
+
+Main Contribution:
+*****************
+
+A new procedure (wie auch immer die aussieht) is
+introduced by redesigning a lumped parameter model to have
+a robust and reliable solution for identifying the
+critical / sensitive parameters.
+
+
+Aber wie der Ansatz ist wird hier noch nicht verraten. Ziemlich
+allgemein.
+
+
+Abbreviations:
+- lumped parameter thermal models (LPTM)
+- battery management system (BMS)
+- batteryâ€™s state of health (SoH)
+- simplified refined instrumental variable (SRIVC)
+- Limited Memory Recursive Least Squares
+  Algorithm with Variable Forgetting Factor (VFF-LMRLS)
+- Equivalent Circuit Model (ECM) - to late defined
+- Thermally Coupled Equivalent Circuit Model (TECM)
+
+Maybe a list of the most importand and often used
+abbreviations is helpful.
+
+T_s means T in the Laplace domain
+T_f: ambient Temperature
+T: Sampling Time
+T_v: Sampling Time of the discretized ECM (with Tustin)
 
 To Editors only
+**************
 
-The control design objective is to regulate the server temperature for
-some even scenarios that could happen in real DC center operation,
-while at the same time minimizing the cooling power consumption.
-
-The goal of the control design is to keep the temperature of a
-contained data center (DC) under several disturbances (server load,
-ambient temperature variations) at a desired quasi-constant value. The
-control strategie has to consider power consumption of the cooling
-system and temperature ranges for the devices in the control loop. For
-this a linear time discrete Model Predictive Control (MPC) Strategy is
-proposed.
-
-Simulation studies for various real-world scenarios are presented.
-
-Model is linaer and for the MPC approach in time discrete manner.
-Note, all states are assumed to be measurable!
-Q and R are the tuning variables.
-
-All in all the control performance is quite good and the limits are
-are not violated at any time.
-
-The control strategy is well explained and the paper is clearly
-structured.
-
-The simulation results could be discussed and analyzed a little bit
-more. For example: What happens if the wighting factors Q and R are
-changed.  Why is the reaction of the controlled system in Fig.6 for
-the same disturbance at 5ooo sec and 35ooo sec in steady state mode
-not the same?
-
-It is a solid conference paper and can be accepted.  Some suggestions
-for better readability and to improve the paper a little can be found
-in the section for the authors.
+Redaktionel eher schlecht:
+- too much pages (8 pages / allowed 6)
+- Many sentences starting with direct references [...]
+- 
 
 
+Text in the equation is not properly formated:
+e.g. in (1) - kvl => \mathrm
+     (7): where also in mathrm
+This makes the paper easier to read.  
+
+If the temperature is modelled as Arrhenius type this is
+non-linear. How can convergence be ensured for the LSM?
+However, I didn't find the Arrhenius type anywhere in the
+text.
+
+In (10): unity mismatch: s T_s - T_s(0) !! s is the
+Laplace variable [1/sec], one cannot substract these two
+variables due to a unity mismatch?
+
+
+
+For (11) - (14) use subequations => easier to read. And
+please try to present the equations in a more compact and
+proper way.
+E.g. \Phi^T in (13) has another dimension as in (17) ....
+
+Which is the ECM in the continuous case and in the time
+discrete case? Please take care of a proper describtion to
+understand what is how computed.
+
+Fig. 2 is not a Figure, it is more a Table.
+But the parameters in the table have no units! ?
+
+The equations are numerized, but in the text these
+reference to the equation number are used seldomely. This
+makes the paper very hard to understand or even
+impossible.
+
+Data normilization (Sec. III.D) makes sense and is always
+a good idea to increase robustness in the sense of robust
+stability. => good idea!!
+
+The pseudo code (Algorithm 1) helps a little in
+understanding what is implemented and computed.
+
+Fig. 4 to Fig. 9 are not explained or analyzed at all!
+
+LPTM used for BMS and SoH.
+
+The paper should be overworked completely to improve
+readability and to better analyze what is the benefit of
+this approach. I think the the takeled task is really
+cool, but it is really hard to understand what are the key
+benefits of this approach.
+
+
+For the parameters in the text and in the equations no physical units
+are used at all!!!!
 
 To the author:
 
-In (2) p(t) is considered as a disturbance - right? How does the MPC
-approach takes this disturbance into account? Since p(t) containes the
-room temperature and server power this two elements are easily
-measurable and can be included as known but time variant parameters.
-
-
-In Fig. 3 Ts,umin and Ts,umax is also depicted put not explained nor
-analyzed. 
-
-In Scenario II, the server power P_s changes due to some special
-effects. Is the server power measured and taken into account in the
-model as a time variant parameter? This is not really clear.
-
-Why is the reaction of the temperature in Fig.6 (Scenario II) at 3.000
-sec and at 35.000 sec not in the same direction? At both times the
-system is in steady state at ~52°C and a disturbance of server power
-consum occures but the temperature tends not in the same direction at
-both times.
-
-
-Avoid unclear abbreviations already in the abstract (i.e. CoC and ASHRAE)
+What are key parameters - sensitivity analysis....
 
 
 
