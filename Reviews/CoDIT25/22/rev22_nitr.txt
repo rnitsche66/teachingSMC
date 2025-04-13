@@ -1,0 +1,52 @@
+Assessment of Demographic Disparities and Associated Impacts in
+Dementia Diagnosis
+
+Authors: Raffay Ahmed, Sampson Akwafuo, California State University,
+Fullerton, CA 92831
+
+Short Summary
+
+also economical impact
+
+Key Issues: *******************************************************
+hands on data analysis:
+1) Chi Square method and then (determine whether there is dependency)
+
+2) Cramers V (Kind of correlation): what's the value of the dependency
+/ correlation
+
+This is not a scientific contribution and has nothing to do with
+engineering in a technical sense which is supposed to be the scope of
+CoDIT.
+
+Again: unusual formating
+The caption Figure 1 and Figure 2 should be under the figures, not
+above. For the tables it's ok. For Figure 3 it is ok.
+
+An Error message appears in the text from the type setting system ->
+paper not carefully prepared.
+
+Improvements / Questions ********************************************
+- a lot of abbreciaitons are used before explanation (hard to read) =>
+not really :) contrerily - a lot of abbreviations introduced and never
+used, e.g  VHA,
+and some abbreviations are explained twice, (MCI) ...
+   
+- What is the scientific part of the papaer?
+
+Data (NHIS) preprocessing is hard to understand as it is in Fließtext....
+Not structured some how -> is there a method behind the preprocessing ...
+seems to be taylor-made - again scientific method is not available
+
+use brackets when referring to equations e.g. Equation (1) not Equation 1.
+
+The explanation of the Chi-square method is ok. :)
+
+
+To the Editors: Does this topic really matches to the CoDIT issues?
+It's an application of common and well-known statistical methods on
+(public) data (in the field of dementia diagnosis data).
+
+- Not at all technical - pure medical stuff ! ??
+
+Is this the focus of CoDIT papers.
