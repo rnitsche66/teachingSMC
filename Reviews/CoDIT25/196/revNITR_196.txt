@@ -1,0 +1,112 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+
+
+Integration of Symptom Notions on Failure Causes for
+Diagnostic Process Enhancement
+
+#_196
+
+Authors:
+Mechri / Simon -- Tunesien/France
+
+Content - Abstract:
+
+The paper introduces a probabilistic approach to enhance the
+diagnosis of failure causes using symptom-based analysis.  A
+Bayesian Network (BN) model is employed to improve isolation
+accuracy by continuously updating probabilities based on
+input datasets.  The integration of expert knowledge and
+experience feedback enhances failure isolation efficiency.
+A case study demonstrates the method's effectiveness in
+supporting maintenance decisions and improving system
+availability.
+
+The paper is clearly structured and well written.  The
+approach using experience feedback (gained by a feedback
+from an FMEA (failure modes and effects analysis) in
+combination of an BN is new.
+
+The methodology is clearly explained:
+
+1) Construction of BN for Cause Isolation: Transform a
+deterministic causal digraph from system experts into a BN.
+
+2) Integration of Symptoms: Symptoms are defined as observed
+effects of failures, with relationships to causes
+represented in Conditional Probability Tables (CPT).
+
+3) Estimation of Posterior Probabilities: Experience
+feedback is used to refine probabilities based on observed
+symptoms and identified causes.
+
+4) Proposed Methodology for Failure Cause Isolation: The
+ methodology involves configuring the initial BN,
+ introducing symptom signatures, isolating causes, and
+ updating probabilities based on identified causes.
+
+
+
+Conclusion of the approach:
+
+The proposed BN-based methodology effectively integrates
+various knowledge types to support diagnostic processes.  It
+enhances the accuracy of fault isolation and optimizes
+maintenance decisions.  Future considerations include
+addressing assumptions about cause occurrences and refining
+the integration of potential causes.
+
+The paper is acceptable, however some improvents has to be
+made. This improvements are addressed to the authors in the
+author's feedback section.
+
+
+
+************************************************************
+
+
+Some questions arises during reading of the paper:
+
+Concerning Section II: *************************************
+
+1) What are the requirements for the FMEA, to come up with
+findings which can be successfully used for constructing the
+BN model
+
+2) The construction of the example for the BN is hard to
+follow and needs a bit more explanation
+
+3) In Table 1: what does the sign -| in front of C_121 mean?
+
+Concerning Section III: ************************************
+
+The application case is rather abstract, i.e. what kind of
+application is this. It would be great if the application is
+a bit more explained to furhter illustrate and convince the
+reader for the applicability and performance of this approach.
+
+
+************************************************************
+
+
+Some remarks: Please use brackets while referencing
+eqauations: i.e. see (1) or see eq. (1) or see equation (1).
+Please use capital letters while referencint to tables or
+figures, i.e. see Table 1, Figure 1, Algorithm 1, ...
+
+Typos in Reference [6] and [19].

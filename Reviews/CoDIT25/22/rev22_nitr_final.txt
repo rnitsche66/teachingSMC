@@ -1,0 +1,103 @@
+Assessment of Demographic Disparities and Associated Impacts in
+Dementia Diagnosis
+
+Authors: Raffay Ahmed, Sampson Akwafuo, California State University,
+Fullerton, CA 92831
+
+
+To the editors:
+
+This paper investigates the relationship between demographic
+factors and dementia diagnosis using National Health
+Interview Survey (NHIS) dataset. Key findings include
+significant associations with age groups and educational
+levels, highlighting the need for public health initiatives
+to address ageing populations and educational disparities.
+
+The paper uses Chi-square tests and Cramer's V to examine
+between demographic and social factors and dementia
+diagnosis.
+
+The paper is hard to read, e.g. the preprocessing of the
+NHIS data is hard to understand. Especially this section is
+not well structured and therefore hard to understand.
+
+
+What is the scientific contribution of the paper?
+What is new about this approach?
+
+Some editorial notes:
+
+- abbreviations are introduced and never used or introduced
+  twise (e.g. VHA, MCI, ...)
+  
+- use brackets when referring to equations e.g. Equation (1)
+   not Equation 1.
+
+- Place the caption underneath a figure and overneath a
+  table. This is mixed up in the paper.
+
+- 'Error! Reference source not found' appears in the paper ... ?
+
+
+Finally:
+********
+From the reviewer's point of view, this paper is not
+a scientific contribution and has nothing to do with
+engineering in a technical sense which is supposed to be the
+scope of CoDIT.
+
+
+
+
+
+
+
+
+
+Short Summary
+
+also economical impact
+
+Key Issues: *******************************************************
+hands on data analysis:
+1) Chi Square method and then (determine whether there is dependency)
+
+2) Cramers V (Kind of correlation): what's the value of the dependency
+/ correlation
+
+This is not a scientific contribution and has nothing to do with
+engineering in a technical sense which is supposed to be the scope of
+CoDIT.
+
+Again: unusual formating
+The caption Figure 1 and Figure 2 should be under the figures, not
+above. For the tables it's ok. For Figure 3 it is ok.
+
+An Error message appears in the text from the type setting system ->
+paper not carefully prepared.
+
+Improvements / Questions ********************************************
+- a lot of abbreciaitons are used before explanation (hard to read) =>
+not really :) contrerily - a lot of abbreviations introduced and never
+used, e.g  VHA,
+and some abbreviations are explained twice, (MCI) ...
+   
+- What is the scientific part of the papaer?
+
+Data (NHIS) preprocessing is hard to understand as it is in Fließtext....
+Not structured some how -> is there a method behind the preprocessing ...
+seems to be taylor-made - again scientific method is not available
+
+use brackets when referring to equations e.g. Equation (1) not Equation 1.
+
+The explanation of the Chi-square method is ok. :)
+
+
+To the Editors: Does this topic really matches to the CoDIT issues?
+It's an application of common and well-known statistical methods on
+(public) data (in the field of dementia diagnosis data).
+
+- Not at all technical - pure medical stuff ! ??
+
+Is this the focus of CoDIT papers.
