@@ -1,0 +1,100 @@
+Development of a Wireless Electrogastrography Measurement System
+
+Authors:
+
+Alonso Ochoa 1, Juan Carlos Herrera-Lozada 1, David Cruz-Ortiz 2,
+Member, IEEE Mexico
+
+This paper details the creation of a wireless electrogastrography
+(EGG) system designed to measure the myoelectrical activity of the
+stomach using surface electrodes. The system is structured into five
+main stages, facilitating the collection, processing, and transmission
+of EGG data.
+
+The system was tested on 10 healthy subjects (ages 18-23):
+- Data were analyzed in the frequency domain to validate the EGG
+frequency signature.
+- The study highlights the relevance of EGG in diagnosing gastric
+disorders like gastroparesis and functional dyspepsia.
+
+The developed wireless EGG monitoring device demonstrates effective
+collection and analysis of gastric myoelectrical activity, indicating
+its potential for clinical gastroenterological diagnostics. 
+
+The paper is well written and structured.
+
+It's a solid paper, but lacks a significant scientific contribution.
+
+The challenge lies in processing very weak and noisy signals.  The
+main questions, which should be clarified in the paper: How does the
+EGG looks for a non-healthy person?  Is the proposed system able to
+distinguish between normal and abnormal EGG ?
+ 
+
+
+Questions:
+
+Why not using digital filters after the noisy signals are amplified in
+a first stage. With this one would be much more flexible in
+designing/developing and especially testing the approach/filters.
+
+How does the EGG looks for a non-healthy person. Is the proposed system
+able to distinguish between normal and abnormal EGG ?
+
+Table I and II: physical units of the magnitude, something like (V^2/Hz) ?
+
+
+Short summary:
+*********************************
+
+This paper details the creation of a wireless electrogastrography
+(EGG) system designed to measure the myoelectrical activity of the
+stomach using surface electrodes. The system is structured into five
+main stages, facilitating the collection, processing, and transmission
+of EGG data.
+
+The system was tested on 10 healthy subjects (ages
+18-23), while a frequency domain analysis was conducted to validate
+the EGG frequency signature.
+
+EGG is highlighted as a diagnostic tool for gastric disorders such as
+gastroparesis and functional dyspepsia
+
+The wireless EGG device effectively collects and analyzes gastric
+myoelectrical activity, showing promise for clinical
+gastroenterological diagnostics.
+
+The paper is well written and structured.
+
+It's a solid paper, but lacks a significant scientific contribution.
+
+The challenge lies in processing very weak and noisy signals.  The
+main questions, which should be clarified in the paper: How does the
+EGG looks for a non-healthy person?  Is the proposed system able to
+distinguish between normal and abnormal EGG ?
+ 
+
+
+*********************************
+
+
+
+### Summary of Wireless Electrogastrography (EGG) System
+
+**Introduction:**
+- The paper discusses a wireless EGG system for measuring stomach myoelectrical activity using surface electrodes.
+
+**System Structure:**
+- Comprises five main stages for data collection, processing, and transmission.
+
+**Testing:**
+- Tested on 10 healthy subjects (ages 18-23).
+- Frequency domain analysis was conducted to validate the EGG frequency signature.
+
+**Clinical Relevance:**
+- EGG is highlighted as a diagnostic tool for gastric disorders such as:
+  - Gastroparesis
+  - Functional dyspepsia
+
+**Conclusion:**
+- The wireless EGG device effectively collects and analyzes gastric myoelectrical activity, showing promise for clinical gastroenterological diagnostics.

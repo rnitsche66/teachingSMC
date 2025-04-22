@@ -1,8 +1,0 @@
-Development of a Wireless Electrogastrography Measurement System
-
-Authors:
-
-Alonso Ochoa 1, Juan Carlos Herrera-Lozada 1, David Cruz-Ortiz 2,
-Member, IEEE Mexico
-
-
