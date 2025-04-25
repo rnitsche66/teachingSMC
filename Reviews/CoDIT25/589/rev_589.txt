@@ -1,0 +1,20 @@
+AI-Assistant: Summary Consultant
+
+The text discusses the design and experimental testing of a
+fault-tolerant electromechanical actuator (EMA) for heavy unmanned
+aerial vehicles (UAVs). The architecture features a dual coaxial
+electric motor and a harmonic drive gearbox, which enhances the
+actuator 's resilience and performance under various operating
+conditions. The system operates in three modes: nominal, fail
+operational, and fail safe, ensuring continuous functionality even
+after a failure. The health monitoring system includes multiple
+monitoring units that detect faults and improve diagnostic
+capabilities. The actuator meets stringent requirements for safety and
+reliability, making it suitable for critical aviation applications
+(page 2, page 3, page 5).
+
+
+CODIT25_0589_MS.pdf
+
+
+
