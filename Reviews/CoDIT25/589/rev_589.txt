@@ -4,7 +4,7 @@ The text discusses the design and experimental testing of a
 fault-tolerant electromechanical actuator (EMA) for heavy unmanned
 aerial vehicles (UAVs). The architecture features a dual coaxial
 electric motor and a harmonic drive gearbox, which enhances the
-actuator 's resilience and performance under various operating
+actuator's resilience and performance under various operating
 conditions. The system operates in three modes: nominal, fail
 operational, and fail safe, ensuring continuous functionality even
 after a failure. The health monitoring system includes multiple
@@ -18,3 +18,22 @@ CODIT25_0589_MS.pdf
 
 
 
+Interesting architecture for safety applications with some new
+aspects. The proposed concept can be used in many other application
+fields, especially in the field of cooperative robotics.
+
+Paper is well-written and clearly structured.
+
+This paper is more to show the applicability of the concept for
+fault-tolerant electromechanical actuators.  The focus of this paper
+is the application rather than the scientific approach.
+
+However it is a solid conference paper.
+
+Some questions to be considered:
+
+- How to choose the treshold of the fault latency to assure robust
+- behavior?  In the keynote it is noted that the approach consists a
+- model-based fault detection algorithm. Can you describe the basic
+- ideas of the key algrithms (i.e. controller, fault-detection, ....)
+- to have an idea how those core features are treated.

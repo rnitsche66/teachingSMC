@@ -1,0 +1,89 @@
+On the Advancements of the Forward-Forward Algorithm
+
+Authors: Mauricio Ortiz Torres, Markus Lange, Arne P. Raulf
+
+Affiliation: German Aerospace Center (DLR), Institut for AI-Safety and
+Security, Germany
+
+Abstract
+
+The Forward-Forward (FF) algorithm, introduced by Geoffrey Hinton in
+2022, has been enhanced to tackle complex machine learning tasks,
+notably improving performance on datasets like CIFAR10.
+
+Key improvements include:
+
+- Techniques Used: Convolutional channel grouping, learning rate
+schedules, and independent block structures during training.
+
+- Performance Improvement: Achieved a 20% reduction in test error
+rates.
+
+- Lightweight Models: Developed lighter models with test error rates
+ranging from (21±6)% and trainable parameters between 164,706 and
+754,386.
+
+The proposed Forward-Forward Algorithm can be used with low-power hardware
+- this is an approach which will become more and moter important in
+the near future.
+
+Well-written and clearly structured paper - acceptable as it is.  Some
+minor hints for improving the readability of the paper is given to the
+authors in the text to the author.
+
+
+THIS PAPER IS A SPECIAL SESSION PAPER: but not a WIP paper
+
+************************************************************
+To the author
+
+
+Dataset abbreviaion often used in the text, but not explained or
+referred to at all, i.e. MNIST, CIFAR10, ...
+
+Minor hints:
+It is usual to place the captions for tables above the table.
+
+The parameters and variables used in the formulas and figures are not
+explained or described completely. Please add a table for describing /
+explaining the used parameters / variables to improve the readability
+of the paper.
+
+(page 2) Symba loss function from Thomas Doom is how defined ?
+
+Fig. 2 is not referrenced in the text....
+
+
+
+
++++++++++++++++++++++++++++ GRAMMARLY ********
+
+
+
+
+The Forward-Forward (FF) algorithm, introduced by Geoffrey Hinton in
+2022, has been enhanced to tackle complex machine learning tasks,
+notably improving performance on commonly used datasets like CIFAR10.
+
+Key improvements are:
+
+- Techniques Used: Convolutional channel grouping, learning rate
+  schedules, and independent block structures during training.
+
+- Performance Improvement: Achieved a 20% reduction in test error
+  rates.
+
+- Lightweight Models: Developed lighter models with test error rates
+  ranging from (21±6)% and trainable parameters between 164,706 and
+  754,386.
+
+The proposed Forward-Forward Algorithm can be used with low-power
+hardware
+
+- This is an approach which will become more and more important
+shortly.
+
+This is a well-written and structured paper, acceptable as it is. The
+authors are given some minor hints in the text for improving the
+readability of the paper.
+
