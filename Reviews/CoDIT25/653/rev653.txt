@@ -1,0 +1,65 @@
+Active Fault-Tolerant Control for Nonlinear LPV delayed System
+
+Omayma MANSOURI ,Ali Ben Brahim 1 , Fayc¸al Ben Hmida , and Anis
+Sellam i1 Laboratory of Industrial Systems and Renewable Energy
+Engineering (LISIER) Department of Electrical
+Engineering,ENSIT,University of Tunis,Tunis, Tunisia
+
+
+
+
+
+unstrctured, A lot of equations (more than 50) but not well
+explained. Hastely written, hard to understand
+
+A lot of typos,
+
+Eq. (10) transformation is possible, yes, but what is it good for?
+Why do we neeed this transformation.
+
+name tilde appears in the text, most likely forgotten to add a slash
+in the LaTeX source code. That happened several times.....
+
+Eq. (15) french words: si and sinon....
+
+In Theorem the assumptions 1-3 referenced to not really exist in the
+text. The are some other assumptions H3.1 ... H3.4. Very confusing....
+
+For a lot of information which seems to be important to understand the
+papaer is referred to papers. So it's hard or even impossible to
+follow the idea of the paper.
+
+In the paper is written, that the adaptive sliding-mode observer
+defined by equations (14), but (14) are 'only' the definition of some
+gain matrices. Why is the sliding mode observer adaptive, or what is
+the adaptive part of the SMO?
+
+Eq. (24) is crashed ....
+
+
+For the sliding mode controller the control strategy allows local
+nonlinear models and variable delay. What is the maximal allowed
+delay to ensure stability?
+
+A block diagram would be very helpfull to understand how the proposed
+equations interact with each other....
+
+On page 4 it is referred to an equation (namely (45)), which is
+introdueced several pages later.... ?
+
+Also in page 4: The time derivative of (??)  gives the following
+==> (??)
+
+Eq. (38): what are \mu_i and \mu_j good for - not explained at all in
+the text.
+
+On page 5 several questionmarks appear in the text - no proper
+referrencing.
+
+Section VI: Application of the proposed concept to a diesel engine.
+
+What are the states of the system under consideration ??
+
+Figure 1: which actuator is it? Actuator of the
+Exhaus-Gas-Recirculation, the Variable Turbine Geometry of the turbo
+charger, the inejctioin valve, .....
