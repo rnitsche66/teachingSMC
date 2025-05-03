@@ -1,0 +1,50 @@
+# Summary: Active Fault-Tolerant Control for Nonlinear LPV Delayed System
+
+## Authors:
+- Omayma MANSOURI, Ali Ben Brahim, Faycal Ben Hmida, Anis Sellami
+- Laboratory of Industrial Systems and Renewable Energy Engineering (LISIER), University of Tunis, Tunisia
+
+## Abstract: The paper presents a fault estimation and control
+strategy for nonlinear Linear Parameter Varying (LPV) systems with
+variable delays. It introduces a sliding-mode observer to estimate
+system states and actuator faults robustly, complemented by an
+adaptive sliding-mode controller to dynamically mitigate faults and
+uncertainties. The architecture emphasizes modularity for flexibility
+and scalability, ensuring improved fault detection, robust
+performance, and stability despite challenges such as time-varying
+delays and nonlinearities. Simulation results validate the proposed
+approach's effectiveness compared to existing methods.
+
+## Key Concepts:
+- **Delayed LPV Systems**: These systems face complexities such as actuator degradation and sensor failures, necessitating robust fault-tolerant control (FTC) strategies.
+- **Active Fault-Tolerant Control (AFTC)**: Enhances system adaptability and reliability by dynamically reconfiguring control actions post-fault detection.
+- **Fault Detection and Isolation (FDI)**: Accurate FDI methods are crucial for optimizing FTC performance.
+
+## Main Contributions:
+1. **Sliding-Mode Observer Design**: For robust state and fault estimation under variable delays.
+2. **Adaptive Sliding-Mode Controller**: Adjusts in real-time to uncertainties and nonlinearities.
+3. **Separated Estimation-Compensation Strategy**: Enhances robustness while maintaining computational efficiency.
+
+## Structure of the Paper:
+1. **Introduction**: Discusses challenges in delayed LPV systems and the necessity of FTC.
+2. **Problem Formulation**: Outlines the mathematical representation of the delayed LPV systems.
+3. **Robust Fault Estimation Design**: Details the design of the sliding-mode observer and its structure.
+4. **Actuator Fault Estimation**: Discusses methods for estimating actuator faults using the designed observer.
+5. **Fault-Tolerant Control**: Describes the design of the sliding-mode controller and the separate FTC scheme.
+6. **Application**: Demonstrates the proposed methods on a diesel engine model.
+7. **Conclusion**: Summarizes findings and suggests future research directions.
+
+## Simulation Results:
+- The proposed control strategies showed superior performance in stabilizing the system under actuator faults and variable delays compared to traditional methods.
+- The adaptive sliding-mode control approach effectively maintained system stability and performance despite uncertainties.
+
+## Conclusion: The paper successfully develops a separated
+sliding-mode fault-tolerant control strategy for nonlinear LPV systems
+with variable delays. The proposed methods enhance robustness and
+adaptability, making them suitable for applications in complex
+systems, including aerospace and automotive engineering.
+
+## References:
+- The paper cites various studies on fault detection, control strategies, and applications in LPV systems.
+
+This summary encapsulates the essential aspects of the paper, focusing on its contributions, structure, and findings.
