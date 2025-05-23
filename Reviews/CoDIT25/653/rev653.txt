@@ -6,11 +6,31 @@ Engineering (LISIER) Department of Electrical
 Engineering,ENSIT,University of Tunis,Tunis, Tunisia
 
 
+The paper introduces a separated sliding-mode fault-tolerant control
+strategy for nonlinear LPV systems with variable delays. The proposed
+methods enhance robustness and adaptability, making them suitable for
+applications in complex systems. The concept is applied to a diesel
+engine model to show the performance of proposed method.
 
 
+The paper is unstrctured and a lot of equations (more than 50) are
+introduced but not well explained. The paper is hard to understand and
+containes a lot of typos.
 
-unstrctured, A lot of equations (more than 50) but not well
-explained. Hastely written, hard to understand
+A clear structure how these equations is missing (e.g. a block
+diagramm).
+
+The example application (diesel engine) is poorly explained: What is
+the control task, what are the states, manipulated and controlled
+variables... ?
+
+The method proposed here has essentially already been presented in
+another paper by the authors.
+
+The paper should be rejected.
+
+
+The introduced method is 
 
 A lot of typos,
 
