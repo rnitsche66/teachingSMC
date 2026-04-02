@@ -1,0 +1,85 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+
+
+Comparative Evaluation of PD, Computed-Torque, and Adaptive
+Computed-Torque Control for Trajectory Tracking on a Franka Panda
+Manipulator
+
+#_217
+
+Authors: Elshokry et al
+Palestine and Spain
+
+
+Short summary:
++++++++++++++
+
+This paper presents a reproducible ROS 2 Humble–CoppeliaSim benchmark
+comparing three control strategies—Proportional–Derivative (PD),
+Computed Torque Control (CTC), and Adaptive Computed Torque Control
+(ACTC)—for trajectory tracking on a Franka Panda robotic manipulator
+under partial torque actuation (only joints 1–3 are commanded).
+
+Key Points
+**********
+
+The study executes a two-phase factorial campaign totaling 120 runs
+with multiple repetitions, assessing performance across trajectory
+types, speed regimes, parameter mismatches, and sudden payload
+changes.
+
+Results show that CTC improves tracking accuracy and reduces control
+effort and saturation relative to PD under nominal conditions.
+
+ACTC demonstrates superior robustness compared to CTC under parameter
+mismatches and payload disturbances, achieving substantially lower
+tracking errors and faster recovery times (e.g., median recovery times
+of about 0.7–0.9 seconds after payload steps, compared to longer or
+censored recovery times for CTC).
+
+Torque RMS and saturation ratios are lower for CTC and ACTC compared
+to PD, with ACTC slightly higher during adaptation phases.
+
+The benchmark uses realistic robot parameters and applies rigorous
+statistical analyses, including ANOVA and Kaplan–Meier survival
+analysis for recovery times, ensuring reproducibility and meaningful
+comparison.
+
+The paper discusses practical recommendations, limitations due to
+partial actuation, and plans for future work involving full 7-DOF
+torque control and hardware validation.
+
+Overall, the document provides a thorough, experimentally validated
+comparison of these control methods on a widely used robotic platform,
+highlighting the benefits of adaptive computed torque control in
+realistic scenarios involving modeling uncertainties and disturbances.
+
+
+Remarks:
++++++++
+
+- Mainly a simulation study - clearly structured and valuably compared...
+
+
+
+The paper is well structured and clearly written, some new aspects
+(e.g. singularity free approch, ...) in the area of controlling QUAV are
+preseneted
+
+
