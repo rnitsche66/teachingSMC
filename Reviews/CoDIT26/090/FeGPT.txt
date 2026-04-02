@@ -1,0 +1,86 @@
+Summary (English)
+
+Goal and contribution
+
+The paper proposes a controller for quadrotor unmanned aerial vehicles
+(QUAVs) that guarantees fixed-time convergence in the presence of both
+matched and mismatched disturbances.  The proposed method is
+singularity-free (in particular by using quaternions for attitude
+representation) and avoids discontinuities at the origin, yielding a
+bounded and smooth control output.  The effectiveness of the approach
+is validated through numerical simulations and experiments on a
+low-cost quadrotor platform.
+
+System model and problem statement
+
+The configuration and dynamics of the quadrotor are formulated on the
+configuration manifold SE(3) (translation R3 and rotation SO(3)).
+Translational dynamics: ṗ = v + d1, v̇ = (1/m) 0R f e3 − g e3 + d2 with
+external disturbances d1, d2.  Rotational dynamics: 0Ṙ = 0R S(bω), bω̇
+= M−1 τ + M−1 S(M bω) bω + d3 with disturbance d3.  The control task
+is trajectory tracking in position and attitude under disturbance
+assumptions (boundedness).
+
+Method and controller structure
+
+Position control: design based on a sliding-mode–like fixed-time
+controller with state-dependent exponents and a state-dependent
+sliding variable s(t) = ẋ1 + β(t) τ(x,λ). Smooth approximations (e.g.,
+tanh terms) are used so that no hard discontinuity appears.  Attitude:
+unit quaternions are used to represent orientation, avoiding
+singularities (e.g., gimbal lock). Rotation and angular-velocity
+errors (Re, ωe) are defined and a fixed-time controller for attitude
+is constructed.  Desired-attitude filter: to avoid algebraic loops, a
+filtered desired-attitude signal uf with u̇ = −γ(u − u) is introduced;
+choosing γ large preserves direction while avoiding instantaneous
+algebraic dependence.  Handling matched and mismatched disturbances:
+the design leverages generalized fixed-time stability results (lemmas
+and theorems on fixed-time convergence), using state-dependent
+weighting/exponent functions in the sliding variable. Parameter
+conditions guarantee fixed-time convergence within an upper bound on
+the settling time.
+
+Theoretical results
+
+Conditions (parameter restrictions on λ, θ, k, β, etc.) are provided
+under which the closed-loop system is fixed-time stable.  Upper bounds
+for the maximal settling time T are derived; convergence occurs in a
+finite, predefined upper time bound independent of initial conditions
+(fixed-time).  Regularity of auxiliary functions (e.g.,
+differentiability of τ̇ at ẋ = 0) is ensured by suitable choices so
+required derivatives exist.
+
+Simulations and results
+
+Numerical simulations use realistic quadrotor parameters (m ≈ 4.34 kg,
+inertia M = diag(0.0820,0.0845,0.1377) kg·m2).  Controller parameters
+examples: λ_x1 = 3, λ_s = 3, k = 0.1, K = diag(1.5,1.5,1.5); attitude
+gains λ = 3, k = 15, γ = 15, K_attitude = diag(67.5,45,45).  The
+desired position is a time-varying trajectory (e.g., combinations of
+sinusoidal components and exponential terms).  Disturbances are
+time-varying and non-vanishing (various d terms with trigonometric
+components).  Results indicate trajectory tracking is achieved in less
+than ~3 seconds even with non-vanishing time-varying
+disturbances. Position and velocity errors, and attitude and
+angular-velocity errors are plotted; the attitude subsystem responds
+faster than the position subsystem.
+
+Conclusions
+
+The paper introduces a sliding-mode–based fixed-time control framework
+for QUAVs that provides robust fixed-time convergence properties
+against both matched and mismatched disturbances.  The approach is
+practical (singularity-free, smooth control signals without hard
+switching) and is demonstrated convincingly in simulations.  The
+concept is suitable for demanding robotics and industrial applications
+that require fast, guaranteed convergence times.
+
+Note
+
+This translation and summary are based on the excerpts and metadata
+available in the provided search results. If the full PDF contains
+additional details (full proofs, experimental setup, measurement
+data), those may include further relevant specifics about parameter
+tuning, experimental results, or assumptions. Verify critical
+mathematical details and exact formulations in the original document
+where necessary.

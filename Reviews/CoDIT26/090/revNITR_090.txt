@@ -1,0 +1,139 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+
+
+On the fixed-time control of mismatched perturbations: An application to
+Quadrotor Unmanned Aerial Vehicles
+
+#_090
+
+Authors: Artega et al
+Mexico and France
+
+
+Short summary:
++++++++++++++
+
+The paper introduces a sliding-mode–based fixed-time
+control framework for QUAVs that provides robust
+fixed-time convergence properties against both matched and
+mismatched disturbances.  The approach is practical
+(singularity-free, smooth control signals without hard
+switching) and is demonstrated convincingly in
+simulations.  The concept is suitable for demanding
+robotics and industrial applications that require fast,
+guaranteed convergence times.
+
+
+Remarks:
++++++++
+
+Very good introduction: state of the art and outline
+what's new and what will be presented, e.g. how the paper
+is structured
+
+The preliminaries are very abstract and it's hard to
+understand what are the connections to the system under
+consideration. Motivation, or a relation why one exactly
+consideres this kind of functions is missing.  I mean, in
+the end we want to contral a QUAV, which is a physical
+system - what is the pyhsical meaning or connection of
+this section to an QUAV.
+
+
+Section Controller Design:
+**************************
+
+- Which exactly is the control law ? Is it (39) to (41) ?
+  -> This is not really clear
+
+- Which is the control law in the end ?  I.e. which
+equation represents the control law?
+
+
+Section IV: Simulation Results
+******************************
+
+- What about physical units of the parameters,
+  i.e. lambda_x1, lambda_s, ...
+
+- Where do those parameters appear in the control law,
+which is (39) - (41) -> this is not clear
+
+
+- Which is the control law in the end ?  I.e. which
+equation represents the control law?
+
+- How about the controller actuation activity for this
+  simulation study. This is always a very interesting
+  thing while discussing control performance, especially
+  in terms of a Sliding-Mode-Controller
+
+
+
+Minor hints:
+************
+
+unusual to write 3 [s], write 3 s instead... e.g. text
+under eq.(55)
+
+
+
+
+Section Controller Design:
+**************************
+
+- Which exactly is the control law ? Is it (39) to (41) ?
+-> This is not really clear
+
+- Which is the control law in the end ?  I.e. which
+equation represents the control law?
+
+
+Section IV: Simulation Results
+******************************
+
+- What about physical units of the parameters, i.e. lambda_x1, lambda_s, ...
+
+- Where do those parameters appear in the control law,
+which is most likely (39) - (41) -> this is not clear
+
+
+- Which is the control law in the end ?  I.e. which
+equation represents the control law?
+
+- How about the controller actuation activity for this
+  simulation study. This is always a very interesting
+  thing while discussing control performance, especially
+  in terms of a Sliding-Mode-Controller
+
+
+
+Minor hints:
+************
+
+unusual to write 3 [s], write 3 s instead... e.g. text
+under eq.(55)
+
+
+
+The paper is well structured and clearly written, some new aspects
+(e.g. singularity free approch, ...) in the area of controlling QUAV are
+preseneted
+
+
