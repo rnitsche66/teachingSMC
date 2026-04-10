@@ -30,45 +30,71 @@ Palestine and Spain
 Short summary:
 +++++++++++++
 
-This paper presents a reproducible ROS 2 Humble–CoppeliaSim benchmark
-comparing three control strategies—Proportional–Derivative (PD),
-Computed Torque Control (CTC), and Adaptive Computed Torque Control
-(ACTC)—for trajectory tracking on a Franka Panda robotic manipulator
-under partial torque actuation (only joints 1–3 are commanded).
+This paper presents a reproducible ROS 2
+Humble–CoppeliaSim benchmark comparing three
+control strategies—Proportional–Derivative (PD),
+Computed Torque Control (CTC), and Adaptive
+Computed Torque Control (ACTC)—for trajectory
+tracking on a Franka Panda robotic manipulator
+under partial torque actuation (only joints 1–3
+are commanded).
+
+
+
+However, the paper is based only on simulation. I
+recommend that the authors continue their work by
+performing these analyses with a real robot.
+
+The paper is well structured and clearly
+written. I have added some comments to the authors
+to make the paper more readable and clearer.
+
+
+
+
 
 Key Points
 **********
 
-The study executes a two-phase factorial campaign totaling 120 runs
-with multiple repetitions, assessing performance across trajectory
-types, speed regimes, parameter mismatches, and sudden payload
-changes.
+The study executes a two-phase factorial campaign
+totaling 120 runs with multiple repetitions,
+assessing performance across trajectory types,
+speed regimes, parameter mismatches, and sudden
+payload changes.
 
-Results show that CTC improves tracking accuracy and reduces control
-effort and saturation relative to PD under nominal conditions.
+Results show that CTC improves tracking accuracy
+and reduces control effort and saturation relative
+to PD under nominal conditions.
 
-ACTC demonstrates superior robustness compared to CTC under parameter
-mismatches and payload disturbances, achieving substantially lower
-tracking errors and faster recovery times (e.g., median recovery times
-of about 0.7–0.9 seconds after payload steps, compared to longer or
+ACTC demonstrates superior robustness compared to
+CTC under parameter mismatches and payload
+disturbances, achieving substantially lower
+tracking errors and faster recovery times (e.g.,
+median recovery times of about 0.7–0.9 seconds
+after payload steps, compared to longer or
 censored recovery times for CTC).
 
-Torque RMS and saturation ratios are lower for CTC and ACTC compared
-to PD, with ACTC slightly higher during adaptation phases.
+Torque RMS and saturation ratios are lower for CTC
+and ACTC compared to PD, with ACTC slightly higher
+during adaptation phases.
 
-The benchmark uses realistic robot parameters and applies rigorous
-statistical analyses, including ANOVA and Kaplan–Meier survival
-analysis for recovery times, ensuring reproducibility and meaningful
-comparison.
+The benchmark uses realistic robot parameters and
+applies rigorous statistical analyses, including
+ANOVA and Kaplan–Meier survival analysis for
+recovery times, ensuring reproducibility and
+meaningful comparison.
 
-The paper discusses practical recommendations, limitations due to
-partial actuation, and plans for future work involving full 7-DOF
-torque control and hardware validation.
+The paper discusses practical recommendations,
+limitations due to partial actuation, and plans
+for future work involving full 7-DOF torque
+control and hardware validation.
 
-Overall, the document provides a thorough, experimentally validated
-comparison of these control methods on a widely used robotic platform,
-highlighting the benefits of adaptive computed torque control in
-realistic scenarios involving modeling uncertainties and disturbances.
+Overall, the document provides a thorough,
+experimentally validated comparison of these
+control methods on a widely used robotic platform,
+highlighting the benefits of adaptive computed
+torque control in realistic scenarios involving
+modeling uncertainties and disturbances.
 
 
 Remarks:
@@ -76,6 +102,55 @@ Remarks:
 
 - Mainly a simulation study - clearly structured and valuably compared...
 
+- Phase 1 and Phase 2 are not clearly specified and also a little bit confusing:
+
+   # Phase 1 (PD vs. CTC, nominal; 60 runs)
+
+   # Phase 2 (CTC vs. ACTC, robustness; 60 runs).
+
+and there is also another Phase definition:
+
+# Phase 1: trajectory (2) × controller (2) × speed (3) ⇒ 60 runs.
+# Phase 2: scenario (2) × controller (2) × speed (3)⇒ 60 runs.
+
+this is a bit confusing....
+
+Table I: why do we need these 5 runs, as these are pure simulation
+studies. Aren't the results of all runs the same, as they are
+determistic simulation runs... ?
+
+
+
+Some additional explanations of the ANOVA
+(analysis of variance) method would be helpful,
+since readers need to be familiar with ANOVA to
+follow the discussion (for example, to understand
+the meaning of F(1,48), p, etc.).
+
+
+Robustness Analysis. e.g. Fig. 3 A paylaod step downwards would be
+more practical relevant than upwards, which would mean to loose a load
+during movement.
+
+Guidelines-Section: PD is recomended for slow motions but as no
+friction is considered at all in this study this recomendation is not
+so meaningfull as friction plays a major role in a slow motion
+regimes...
+
+
+
+Conclusions-Section: maybe adapt the physical units in the text for better
+readablity: e.g. in the conclusion section: 0.0052m = 5.2 mm), 
+
+Maybe it's more worth to do future work in doing those really helpful
+analysis for real systems (i.e. experiments) first rather to extend
+those simulation studies. And then in a next step you can do some
+improvements on the simulation analysis and then extend the more
+valuable simulation environment...
+
+Abbreviations to be clarified, at least:
+URDF = ??
+FCI = ??
 
 
 The paper is well structured and clearly written, some new aspects
@@ -83,3 +158,11 @@ The paper is well structured and clearly written, some new aspects
 preseneted
 
 
+-----
+
+Maybe there should be some more words on the plant model used in the
+studies. What about friction modelling? These may play a major role in
+slow robotic movements....
+
+But these limitations are mentioned at the end of the paper.  Good and
+interesting work but not so relevant for real live issues...

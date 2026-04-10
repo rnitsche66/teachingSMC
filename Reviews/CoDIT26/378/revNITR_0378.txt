@@ -1,0 +1,260 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TITLE:
+
+Nonlinear Boost Compensation for PD-Controlled
+Self-Balancing Robot Stabilization
+
+
+#_0378
+
+Authors: Tawfik et al
+
+
+**************************************************
+Short summary:
+**************
+The paper presents a hybrid PD control scheme with
+a bounded nonlinear “boost” augmentation for a
+two-wheeled self‑balancing robot implemented on a
+low‑cost Arduino Nano 33 IoT platform.
+
+
+Key elements are:
+*****************
+- A reduced-order linearized plant model is
+  derived and experimentally validated (open‑loop
+  instability checks and parameter
+  identification). The linear model is used for
+  pole placement and baseline PD design.
+
+- The controller is PD near equilibrium but adds a
+  bounded boost term when the tilt error magnitude
+  exceeds a threshold. The boost is designed to
+  overcome practical actuator non‑idealities
+  (motor dead‑zone, stiction, saturation) while
+  preserving local linear stability.
+
+- Dead‑zone compensation, command saturation, and
+  a complementary filter (fusing accelerometer and
+  gyroscope) are used in the implementation. The
+  control loop runs at ≈38 Hz.
+
+- Stability arguments: local asymptotic stability
+  (linear PD region) and BIBS reasoning when the
+  boost and saturation are active are
+  provided. Root‑locus and second‑order
+  approximations are used to justify gain choices.
+
+- Simulations (MATLAB/Simulink) and experiments on
+  the physical robot show recoverability from a
+  ∼20° push: experimental settling time ≈0.44 s,
+  RMS tilt error ≈3.60°, and 96% time within ±5°
+  stability band. Performance is compared with
+  other literature controllers (LQR, PID, fuzzy
+  PID).
+
+- Practical implementation issues identified: IMU
+  noise and gyroscope drift, complementary‑filter
+  phase lag (~10 ms), motor dead zone (~35 PWM
+  counts), battery voltage sag under peak current,
+  motor/drivetrain inertia and driver
+  delay. Authors propose future work including
+  integral action with anti‑windup, encoder‑based
+  position control, and Kalman filter state
+  estimation.
+
+
+Suggestions for improvement (specific, actionable)
+**************************************************
+
+1. Strengthen the theoretical stability analysis
+************************************************
+
+- Provide a formal proof that includes the
+  nonlinear boost term, e.g., a Lyapunov argument
+  showing forward invariance of a neighborhood and
+  convergence properties, rather than relying
+  primarily on BIBS heuristics. If possible,
+  quantify the enlarged region of attraction.
+
+- Explicitly state assumptions (actuator bounds,
+  sampling, sensor delays) and show robustness
+  margins (gain and phase margins, input
+  disturbance bounds).
+
+2. Improve modeling of implementation non‑idealities
+****************************************************
+
+- Extend the reduced‑order model to include
+  dominant nonidealities impacting performance:
+  motor dynamics (electrical and mechanical time
+  constants), driver delay, drivetrain inertia and
+  friction, battery internal resistance producing
+  voltage sag. Even low‑order augmentations
+  (first‑order motor dynamics and input dead‑zone
+  model) can close the gap between simulation and
+  experiment.
+
+- Calibrate and report parameter identification
+  method and uncertainties (e.g., measured motor
+  time constant, dead‑zone threshold variance).
+
+3. Enhance estimator and sensor treatment
+**************************************************
+
+- Replace or augment the complementary filter with
+  a Kalman filter (or unscented/extended KF if
+  nonlinearities retained) to improve state
+  estimation and to provide covariance‑based
+  uncertainty measures. Show quantitative
+  improvement in angle noise and drift compared to
+  the complementary filter.
+
+- Report sampling jitter, exact sensor sampling
+  timings, and time alignment between IMU and
+  control loop. Consider resampling or
+  timestamping to reduce phase errors.
+
+4. Address integral action and steady‑state offset
+systematically
+**************************************************
+
+- The PD controller produces a steady‑state offset
+  for step disturbances. Implement PI/D with
+  anti‑windup (or conditional integration) and
+  show stability implications with the boost and
+  saturation present. Provide experimental
+  comparisons (RMS, settling time, peak command).
+
+5. Improve experimental evaluation and reproducibility
+**************************************************
+
+- Add more systematic tests: multiple repeated
+  trials with statistical metrics (mean ± standard
+  deviation for s ettling time, RMS error, time in
+  band) and confidence intervals.
+
+- Test across operating conditions: different
+  battery charge levels, payloads, floor friction,
+  and temperature to demonstrate robustness.
+
+- Provide a clearer table of hardware and software
+  configuration (exact IMU firmware settings,
+  sampling rates, filter α, PWM frequency, motor
+  gearbox ratio, wheel radius, battery type and
+  nominal voltage).
+
+6. Compare more fairly with other controllers
+**************************************************
+- When comparing to LQR, PID, fuzzy PID in
+  literature, match experimental conditions where
+  possible or replicate baseline controllers on
+  the same hardware to ensure fair comparison. If
+  not possible, discuss differences in hardware
+  and measurement methods more explicitly.
+
+7. Refine controller design choices and tuning rationale
+**************************************************
+- Explain how boost threshold and amplitude were
+  selected (optimization, grid search, heuristic)
+  and evaluate sensitivity of closed‑loop
+  performance to these parameters. Provide tuning
+  guidelines for practitioners.
+
+- Consider a smooth (continuous) boost transition
+  (with tunable smoothing parameter) to reduce
+  control discontinuity and potential chattering
+  near the threshold; then analyze effects on
+  performance and stability.
+
+8. Improve presentation clarity
+**************************************************
+- Clean up figures and captions: include units on
+  axes, add legends, and ensure simulated vs
+  experimental plots use identical scales for
+  direct visual comparison.
+
+- Present mathematical notation and equations with
+  clear definitions of all symbols and variable
+  units; move lengthy implementation details
+  (e.g., Arduino pinouts) to an appendix or
+  supplementary material.
+
+- Provide a concise summary table listing all
+  controller parameters used in experiments (Kp,
+  Kd, boost threshold, boost amplitude, dead‑zone
+  compensation).
+
+9. Consider more advanced control variants as
+benchmarks
+**************************************************
+- Evaluate a controller with adaptive gain
+  scheduling or a model predictive controller
+  (MPC) (even a simple linear MPC) as a benchmark
+  for performance vs computational cost on
+  low‑cost hardware.
+
+- Investigate use of encoder feedback (as authors
+  propose) and show comparative gains in
+  disturbance rejection and steady‑state accuracy.
+
+10. Safety and real‑world considerations
+**************************************************
+- Discuss safety limits, e.g., maximum recoverable
+  disturbance, actuator heating under sustained
+  high commands, and strategies for safe failure
+  (e.g., soft stop, safe shutdown) when outside
+  region of attraction.
+
+- Provide guidance for field tuning and
+  diagnostics (how to detect dead‑zone drift over
+  time, recommended recalibration intervals).
+
+**********************************************************************
+
+NITR
+
+Units: sometime with units sometimes without units and sometime with wron units
+E.g. VII-A-2) units of a pole s is always 1/s
+Check the pape for proper units !!
+
+block diagramm required with numbers of the equations.
+
+Page 3, Part E:
+No integratl part in the control law but a
+complementary filter for bias correction -> where
+in the control loop ?
+ok is explained later i.e. (21)
+
+V-C: what is LSM6DS3 - a sensor - needs to be explained... 
+
+Table II: Success Rate not explained...
+
+Conclusions section:
+The phase lag or time delay (most likely) of the
+complementary filter of 10ms should be considered
+in the controller design to improve robust
+stablity
+
+
+The paper is well structured and clearly written, some new aspects
+(e.g. singularity free approch, ...) in the area of controlling QUAV are
+preseneted
