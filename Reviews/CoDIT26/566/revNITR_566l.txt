@@ -1,0 +1,201 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TITLE:
+
+Magnetorheological Damper Relative Velocity Estimation using a
+Takagi-Sugeno Fuzzy Observer with Unmeasured Premise Variables
+
+#_0566
+
+Authors: Kicheol Jeong1, Seongjin Kim1, Hyungjeen Choi1 and
+         Hyomin Jin1 - South Korea
+
+
+**************************************************
+Short summary:
+**************
+Summary (3–6 sentences)
+
+The paper proposes a Takagi–Sugeno (T–S) fuzzy
+observer to estimate the relative velocity of a
+magnetorheological (MR) damper in a quarter-car
+suspension, where the premise (fuzzy) variables
+are unmeasurable.
+
+A phenomenological MR damper model and a Bouc–Wen
+hysteresis model are used to derive a sector-based
+T–S fuzzy representation; Lyapunov-based LMI
+conditions are given to guarantee asymptotic
+stability of the observer.
+
+Experimental validation is performed on a
+quarter-car test rig with sprung/unsprung
+accelerometers and an LVDT-derived damper velocity
+under sinusoidal road inputs (2–4 Hz) and
+different current inputs; results show the
+estimator tracks relative velocity robustly, with
+transient error increases when discontinuous
+current inputs occur.
+
+The authors claim the observer enables practical
+MR-damper state estimation using sensors commonly
+available on vehicles and supports model-based
+fault diagnosis and control development.
+
+
+Key elements are:
+*****************
+
+
+
+Suggestions for improvement (specific, actionable)
+**************************************************
+
+Structure and clarity
+
+- Reorganize Section II (models) so each model
+  (phenomenological, Bouc–Wen, T–S derivation) is
+  a clear subsection with a short roadmap at its
+  start; add a compact table of notation to avoid
+  symbol overload and repeated explanations.
+
+- Improve readability of equations and figure
+references: label key equations (e.g., observer
+law, error dynamics, LMIs) and summarize the LMI
+conditions in one concise boxed display with brief
+interpretation (physical meaning of each
+constraint).
+
+Theoretical exposition
+
+- State assumptions explicitly and early (e.g.,
+  bounds / Lipschitz constants, sensor noise
+  assumptions, availability of
+  accelerometers/LVDT) and discuss their physical
+  plausibility for on-vehicle deployment.
+
+-Clarify how unmeasurable premise variables are
+ estimated (method used to compute premise
+ weights) and show sensitivity of stability
+ conditions to errors in premise-variable
+ estimation.
+
+Experiments and evaluation
+
+-Expand experimental scenarios: include a broader
+ set of road profiles (e.g., random/real road
+ data, step inputs, and varying amplitudes) and
+ disturbances (sensor noise, model mismatch) to
+ demonstrate robustness beyond single-frequency
+ sine tests.
+
+-Quantify estimator performance with standardized
+ metrics (RMSE, maximum absolute error,
+ convergence time) and present these across
+ scenarios and current inputs in a concise table;
+ include confidence bounds or repeated-trial
+ statistics.
+
+Comparison and baselines
+
+-Add comparisons with at least one alternative
+estimator (e.g., EKF, sliding-mode observer, or a
+simpler linear observer) on the same experimental
+data to contextualize performance and
+computational cost.
+
+- If possible, include a simulation study that
+isolates model mismatch and sensor noise to
+compare nominal performance and robustness of the
+proposed T–S observer vs. baselines.
+
+Discussion
+
+-Expand the discussion section to interpret
+ experimental error cases (e.g., why discontinuous
+ current causes transient error, how quickly the
+ observer recovers) and discuss practical
+ implications: required sampling rates, sensor
+ bandwidth, and how the method would integrate
+ with MR control algorithms.
+
+-Discuss limitations and potential failure modes
+ (e.g., large model parameter drift, heavy
+ nonstationary excitations) and suggest mitigation
+ (adaptive gains, robustified LMIs, or online
+ model update).
+
+References and reproducibility
+
+- Ensure references are complete and formatted
+ consistently; add recent relevant works on
+ MR-damper observers and state estimation for
+ semi-active suspensions (especially EKF/SMO/T–S
+ observer comparisons) to better situate the
+ contribution.
+
+- Improve reproducibility by summarizing key
+  parameter values (mass, stiffness, Bouc–Wen
+  parameters, observer gains, LMI solver used) in
+  an appendix or supplementary table and (if
+  possible) provide code snippets or pseudocode
+  for the observer implementation.
+
+
+
+
+**********************************************************************
+
+NITR
+
+
+
+
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+recommended.
+
+
+
+************************************************************
+To Editors
+
+sumary
+
+
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+highly recommended.
+
+The paper has little scientific ambition, but is
+quite interesting from a practical point of view.
+
+
+
+
+************************************************************
+To Authors
+
+The paper has little scientific ambition, but is
+quite interesting from a practical point of view.
+
+
+
+

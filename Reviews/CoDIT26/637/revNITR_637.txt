@@ -1,0 +1,172 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TITLE:
+
+Finite-Time Nonsingular Terminal Sliding Mode Control for 3D
+Trajectory Tracking of a Quadrotor UAV under Exogenous Perturbations
+
+#_0637
+
+Authors: Edin Avdukic, Almir Salihbegovic, Emir Sokic and
+         Nedim Osmic Sarajevo
+
+
+**************************************************
+Short summary:
+**************
+
+Summary (3–6 sentences)
+
+The paper proposes a nonsingular terminal sliding
+mode control (NTSMC) scheme for 3D trajectory
+tracking of a quadrotor UAV using the full
+nonlinear six-degree-of-freedom model.
+
+A Lyapunov-based analysis is provided to prove
+finite-time convergence of sliding variables and
+tracking errors under bounded disturbances and
+modeling uncertainty.
+
+A high-gain adaptation (HGA) mechanism is
+incorporated to reduce chattering; three
+simulation scenarios compare NTSMC (with and
+without HGA) to first-order SMC (FOSMC) and
+second-order SMC (SOSMC) under persistent
+disturbances and aggressive maneuvers.
+
+Results show the NTSMC gives a favorable trade-off
+between robustness and transient behavior (more
+consistent closed-loop performance), while HGA
+reduces control switching at the expense of some
+tracking accuracy.
+
+Key elements are:
+*****************
+
+
+
+Suggestions for improvement (specific, actionable)
+**************************************************
+
+Structure and clarity
+
+- Split Section II and III into clearly labeled
+  subsections (model, control design, stability
+  proof, HGA modification) and add a short roadmap
+  at the start of each section so readers can
+  follow the flow from model assumptions to
+  controller synthesis. Include a compact notation
+  table listing all symbols and nominal parameter
+  values.
+
+Theoretical exposition
+
+- State all assumptions explicitly (disturbance
+  bounds, required measurements, initial condition
+  restrictions, and actuator limits). After each
+  Lya­punov/finite-time claim, summarize in plain
+  language what the LMI/gain conditions mean
+  physically and how conservative they are.
+
+Experiments / simulations and evaluation
+
+- Broaden evaluation scenarios: add more
+  realistic/representative disturbances (e.g.,
+  wind gust profiles, random road-like inputs for
+  position tasks), different reference
+  trajectories, and Monte Carlo runs with
+  parameter perturbations and sensor noise. Report
+  quantitative metrics (RMSE, max error, settling
+  time) with basic statistics (mean ± std) in a
+  table.
+
+Baselines and comparisons
+
+- Include at least one additional baseline (e.g.,
+  EKF-based or model-predictive controller, or a
+  tuned linear controller) and compare both
+  tracking performance and control
+  effort/computation time to contextualize
+  advantages and trade-offs.
+
+Discussion and limitations
+
+- Expand the discussion on practical implications:
+  explain why HGA produces transient accuracy loss
+  and how to balance chattering reduction vs
+  robustness; discuss required sampling rate,
+  actuator bandwidth, and how parameter
+  uncertainty or unmodeled dynamics affect
+  guarantees. Add a short subsection on
+  limitations and possible mitigation (adaptive
+  gains, observer augmentation).
+
+References and reproducibility
+
+- Add recent, directly relevant works on SMC
+  variants, HGA methods, and experimental
+  quadrotor studies to strengthen related-work
+  context. Improve reproducibility by providing a
+  table of all simulation parameters, controller
+  gains, solver settings (time step, solver), and
+  — if possible — pseudocode or code snippets for
+  the controller/HGA so reviewers can reproduce
+  key results.
+
+
+
+**********************************************************************
+
+NITR
+
+
+
+
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+recommended.
+
+
+
+************************************************************
+To Editors
+
+sumary
+
+
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+highly recommended.
+
+The paper has little scientific ambition, but is
+quite interesting from a practical point of view.
+
+
+
+
+************************************************************
+To Authors
+
+The paper has little scientific ambition, but is
+quite interesting from a practical point of view.
+
+
+
+

@@ -232,11 +232,13 @@ benchmarks
 
 NITR
 
-Units: sometime with units sometimes without units and sometime with wron units
-E.g. VII-A-2) units of a pole s is always 1/s
-Check the pape for proper units !!
+Units: sometime with units sometimes without units
+and sometime with wron units E.g. VII-A-2) units
+of a pole s is always 1/s Check the pape for
+proper units !!
 
-block diagramm required with numbers of the equations.
+block diagramm required with numbers of the
+equations to have a better overview.
 
 Page 3, Part E:
 No integratl part in the control law but a
@@ -244,7 +246,9 @@ complementary filter for bias correction -> where
 in the control loop ?
 ok is explained later i.e. (21)
 
-V-C: what is LSM6DS3 - a sensor - needs to be explained... 
+V-C: what is LSM6DS3 - an inertial measuerement
+unit sensor - needs to be explained or at least
+properly introduced in the paper
 
 Table II: Success Rate not explained...
 
@@ -255,6 +259,80 @@ in the controller design to improve robust
 stablity
 
 
-The paper is well structured and clearly written, some new aspects
-(e.g. singularity free approch, ...) in the area of controlling QUAV are
-preseneted
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+recommended.
+
+
+
+************************************************************
+To Editors
+
+The paper presents a hybrid PD control scheme with
+a bounded nonlinear “boost” augmentation for a
+two-wheeled self‑balancing robot implemented on a
+low‑cost Arduino Nano 33 IoT platform.
+
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+highly recommended.
+
+The paper has little scientific ambition, but is
+quite interesting from a practical point of view.
+
+
+
+
+************************************************************
+To Authors
+
+The paper has little scientific ambition, but is
+quite interesting from a practical point of view.
+
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+highly recommended:
+
+1)
+A block diagramm would be very helpful to
+understand the overall structure of the control
+loop and where the accoring equations are used and
+for what...
+e.g. how is u related to tau, .... ?
+
+2)
+The proper use of physical units is highly recommended:
+
+Sometimes units are used in the equatons or within
+the text and sometimes without units:
+e.g.
+
+- Secction III-A: Eq. (8) as t is supposed to be
+  the time in seconds, what is (t-1) in this
+  equation
+
+- wrong units Section VII-A-2): units of a pole s
+  is always 1/s
+
+
+-> Check the whole paper for proper units !!
+
+
+3)
+Further issues to be considered:
+
+- Section V-C: The use of the LSM6DS3 - an
+  inertial measuerement unit sensor - needs to be
+  explained or at least properly introduced in the
+  paper
+
+- Table II: Success Rate not explained...
+
+- Conclusions section: The phase lag or time delay
+  (most likely) of the complementary filter of
+  10ms should be considered in the controller
+  design to improve robust stablity
+
+- How robust is this approach against parameter
+  changes, in terms of robust performance and
+  robust stabilty

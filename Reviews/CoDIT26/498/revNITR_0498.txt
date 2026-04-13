@@ -1,0 +1,409 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TITLE:
+
+Parameter Estimation of a Class of Mechanical Systems Using Only
+Position Measurement
+
+#_0498
+
+Authors:Jose Guadalupe Romero (Solo Author !!)
+
+
+Summary
+*******
+Goal: The paper proposes a method to estimate a
+subset of physical parameters of a class of
+Euler–Lagrange mechanical systems using only
+position measurements (no velocity sensors). The
+approach builds a linear regression equation (LRE)
+that is independent of velocities by imposing
+structural conditions on the inertia matrix and
+related model blocks. The LRE is filtered with an
+LTI filter H(s), producing regressors that depend
+only on measured positions. Parameter estimation
+is performed with a recently developed
+least-squares–type estimator (LS+D / LSD) that
+relaxes persistent excitation (PE) to the weaker
+interval excitation (IE) condition. The method is
+illustrated in simulation on a 2D SpiderCrane
+mechanism (3 DoF, two actuated, one underactuated)
+and results show bounded signals and exponential
+convergence of parameter errors under the assumed
+IE/PE conditions.
+
+Key technical ingredients:
+**************************
+
+- A partition of generalized coordinates q =
+col(qa, qu) and a partition of the inertia matrix
+M(q) so that M depends only on the underactuated
+coordinates qu (Assumption 1).
+
+Assumption that certain rows of a sub-block m_au
+are gradient vector fields (Assumption 2),
+enabling construction of a mapping N(q_u)
+satisfying N˙ = m_au(q_u) q˙_u and later forming
+an LRE.
+
+Known/unknown partition: some sub-block parameters
+and gravity-related terms are known while others
+remain constant-but-unknown (Assumption 3).
+
+Application of a second-order LTI filter H(s) to
+the filtered dynamics to produce an LRE of the
+form y = φ⊤(t) θ with φ depending only on position
+via the filter.
+
+Parameter estimation via the LSD
+estimator (LS with dynamic regressor extension and
+forgetting factor) under an Interval Excitation
+(IE) assumption for the regressor.
+
+Strengths
+*********
+
+Addresses a practical and relevant problem:
+reducing sensor requirements by estimating
+parameters from position-only measurements.
+
+Uses a modern estimator (LS+D/LSD) that weakens
+classical PE requirements to IE, making parameter
+identification potentially more realistic in
+practice.
+
+Clear structure of assumptions and derivation of
+the velocity-free LRE; the paper demonstrates the
+method with a representative underactuated example
+(SpiderCrane).
+
+Analytical results that guarantee boundedness and
+convergence of estimation errors under stated
+assumptions.
+
+Weaknesses and limitations (scientific depth)
+*********************************************
+
+- Restrictive assumptions on system structure:
+  Assumptions 1–3 limit applicability to
+  mechanical systems whose inertia sub-blocks have
+  special dependence (M depends only on qu and
+  certain rows are gradients). The paper gives
+  examples (SpiderCrane, overhead crane,
+  pendulum-on-puck), but the generality across
+  common robotic systems (e.g., many manipulators)
+  is not fully demonstrated.
+
+- Heavy reliance on IE / eventual PE: although IE
+  is weaker than PE, it is still an excitation
+  assumption. The paper does not analyze how
+  likely IE is for typical reference trajectories
+  or propose trajectory design strategies to
+  enforce IE in practice.
+
+- Lack of experimental validation: only simulation
+  results are provided. No hardware experiments or
+  noise/uncertainty robustness tests are
+  presented.
+
+- Sensitivity and robustness analysis is limited:
+  the effect of measurement noise, model mismatch
+  (unmodelled dynamics, friction, flexible links),
+  filter tuning, and estimator forgetting factor
+  on convergence and steady-state bias is not
+  thoroughly studied.
+
+- Limited comparison to alternatives: while
+  relevant literature is cited (velocity
+  observers, power-balance LREs, composite
+  adaptation), there is no quantitative comparison
+  (simulations or benchmarks) with competing
+  methods (e.g., observer-based adaptive schemes,
+  power-balance parameterization, composite
+  learning).
+
+- Practical implementation details missing or
+  brief: guidelines on tuning the LTI filter H(s),
+  estimator gains, and conditions to ensure ∆(t) ≥
+  ∆min (IE) are not elaborated; computational cost
+  considerations are not discussed.
+
+Concrete suggestions for improvement
+*************************************
+
+Broaden applicability / clarify scope
+-------------------------------------
+- Explicitly state classes of systems that satisfy
+Assumptions 1–3 and provide more mechanical
+examples (with analytic justification) beyond the
+SpiderCrane. If possible, relax one or more
+structural assumptions or give clear
+criteria/algorithms to test whether a given robot
+model satisfies them.
+
+
+Provide trajectory/experiment design for
+excitation
+-----------------------------------------------
+Analyze how typical task trajectories affect the
+IE condition and propose trajectory design or
+probing signals that guarantee IE with minimal
+disruption to the task. Include theoretical and
+numerical examples showing how IE can be enforced
+or detected online.
+
+
+Robustness analysis
+-------------------
+
+Study estimator sensitivity to measurement noise
+and model mismatch (unmodelled friction, parameter
+drift). Provide bounds on parameter estimation
+error under bounded noise, and include simulations
+with realistic sensor noise and disturbances.
+
+Analyze effect of filter H(s) and estimator
+parameters (forgetting factor, gains) on transient
+and steady-state performance; provide tuning
+recommendations.
+
+Compare with alternative approaches
+-----------------------------------
+
+Include quantitative comparisons (simulations and,
+if possible, experiments) with at least one or two
+established methods: (a) velocity-observer–based
+adaptive estimation, (b) power-balance LRE
+approaches, and (c) classical LS with PE (where
+applicable). Compare convergence speed, accuracy,
+and robustness.
+
+Add experimental validation
+---------------------------
+Implement the estimator on hardware (e.g., a small
+crane testbed or robotic manipulator) to validate
+performance in the presence of measurement noise,
+unmodelled dynamics, sensor delays, and actuator
+limitations. Report practical issues encountered
+and how they were mitigated.
+
+
+Provide implementation guidance
+-------------------------------
+Add a dedicated section with step-by-step
+implementation guidance: how to choose filter pole
+λ, estimator gains (α, β, γ, p, F), initial
+conditions, numerical considerations (avoid
+singularities when computing
+adjugates/determinants), and computational
+complexity.
+
+Include pseudo-code or algorithm box for the full
+estimation loop (filtering, LSD updates, parameter
+extraction).
+
+
+Theoretical extensions
+----------------------
+Investigate convergence to true parameters under
+weaker excitation (e.g., finite-time or
+interval-wise conditions) or propose
+composite/adaptive extensions (e.g., concurrent
+learning, composite learning) to improve
+convergence without stronger excitation.
+
+Explore combining the estimator with adaptive
+control to handle simultaneous trajectory tracking
+and parameter identification, and provide
+stability proofs for the closed-loop adaptation.
+
+Improve clarity and reproducibility
+-----------------------------------
+
+Provide clearer derivations for the critical steps
+transforming dynamics into the LRE, with
+intermediate steps and justification for using the
+filter H(s).
+
+Share simulation parameters and code (or detailed
+numerical recipes) in an appendix to allow
+reproduction of results (note: provide these
+within the paper or as supplementary material, not
+as external links unless requested).
+
+
+Address numerical and algebraic issues
+--------------------------------------
+
+Discuss numerical stability when computing ∆,
+adj{·}, and determinant-based quantities used by
+the LSD algorithm. Suggest regularization
+strategies or alternatives when matrices become
+ill-conditioned.
+
+
+Discuss limitations explicitly in conclusion
+---------------------------------------------
+Add an explicit, concise limitations paragraph
+describing scope, practical constraints, and
+scenarios where the method is not appropriate;
+suggest future research directions accordingly.
+
++++++++++++++++++++++++++++++++++++++++++++++++
+Short prioritized action list (if limited time)
++++++++++++++++++++++++++++++++++++++++++++++++
+
+- Add robustness simulations (noise, friction,
+  model mismatch) and compare to at least one
+  baseline method.
+
+- Provide implementation pseudo-code and concrete
+  tuning examples for H(s) and LSD gains.
+
+- Add discussion and examples on how to ensure or
+  verify IE in practice (trajectory design or
+  online monitoring).
+
+
+
+
+
+
+
+
+
+**************************************************
+Short summary:
+**************
+
+
+
+Key elements are:
+*****************
+
+
+
+Suggestions for improvement (specific, actionable)
+**************************************************
+
+
+**********************************************************************
+
+NITR
+
+Good literature survey on  parameter estimation techniques....
+
+Much literature review and really a lot of
+citations for a 6 side paper...
+:)
+
+
+s = n_q - m -> ??
+S number of parameters to be identified
+
+Physical Units not properly used  throghout the text...
+
+
+Simulation example: what are the control inputs? Fx and Fy =
+which are (29).
+What is the control goal?
+As qu = q1
+ 
+
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+recommended.
+
+
+
+************************************************************
+To Editors
+
+ The paper proposes a method to estimate a
+subset of physical parameters of a class of
+Euler–Lagrange mechanical systems using only
+position measurements (no velocity sensors).
+
+Addresses a practical and relevant problem:
+reducing sensor requirements by estimating
+parameters from position-only measurements.
+
+The paper is well structured and clearly written,
+but some improvements concerning applicability are
+recommended.
+
+
+Summary
+
+
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+highly recommended.
+
+The paper has little scientific ambition, but is
+quite interesting from a practical point of view.
+
+
+
+
+************************************************************
+To Authors
+
+The paper provides a good literature survey on
+parameter estimation techniques and an interesting
+approach on estimating paramters.
+
+The introduced approach addresses a very important
+and challenging issue in the field of model-based
+and adaptive control.
+
+However, the applicability of the proposed
+approach to real-world problems is not clearly
+demonstrated and requires further elaboration and
+discussion.
+
+
+This means for example:
+
+- Add robustness simulations (noise, friction,
+  model mismatch) and compare to at least one
+  baseline method.
+
+- Provide implementation pseudo-code and concrete
+  tuning examples for H(s) and LSD gains.
+
+- Add discussion and examples on how to ensure or
+  verify IE in practice (trajectory design or
+  online monitoring).
+
+
+Minor Remarks:
+--------------
+
+Interpretation of the equation: s := n_q - m
+Does this mean: the number of parameters to be
+estimated is number of states minus number of
+control inputs??
+
+Physical Units not properly used  throghout the text...
+
+Simulation example: what are the control inputs?
+Fx and Fy which are (29).
+What is the control goal of this closed-loop system?
