@@ -177,15 +177,18 @@ recommended.
 ************************************************************
 To Editors
 
-sumary
+The paper proposes a Takagi–Sugeno (T–S) fuzzy
+observer to estimate the relative velocity of a
+magnetorheological (MR) damper in a quarter-car
+suspension, where the premise (fuzzy) variables
+are unmeasurable.
+
+The paper needs to be improved concerning the
+clarity of the observer design. The equations are
+unclear: they include variables and states that
+are not introduced or explained.
 
 
-The paper is well structured and clearly written,
-but some improvements concerning clearity are
-highly recommended.
-
-The paper has little scientific ambition, but is
-quite interesting from a practical point of view.
 
 
 
@@ -193,8 +196,52 @@ quite interesting from a practical point of view.
 ************************************************************
 To Authors
 
-The paper has little scientific ambition, but is
-quite interesting from a practical point of view.
+Recommended editorial and content-related improvements
+
+Caption of Fig. 1 contains a lot of abbreviations
+which are not explained
+
+Section II-B: Concerning eq. (2): which exaclty is
+the matrix A, which x_dot is it?  Are these the
+values as defined in (9) and (10). Furthermore:
+there is no description of the parameters of
+eq. (3)-(5)
+
+Section II-C: Again, neither the states nor the
+parameters are clearly defined in the quarter car
+model (6) - (14).
+
+The experimental set-up is not explained clearly...
+
+Section III Observer design
+***************************
+
+Again: for the observer design a lot of new
+variables are introduced but not explained at
+all. What are they good for, what is the physical
+meaning, units, ....
+
+E.g. equation (30) i=1,...,4 ??
+
+
+There is a nonlinear model in the control and
+observer structure, some words about an
+observability analysis would be helpful.
+
+Section IV Experimental Validation
+**********************************
+
+The experimental set-up shows almost clearly, that
+the observer for the relative velocity works fine.
+
+
+To check the robustness and performance in general
+some simulation studies would have been more
+meaningful, than first using an experimental
+setup, for those tests, where not all interestings
+signals, states or variables are reliably
+available.  Anyway - the results are pretty
+convincing.
 
 
 
