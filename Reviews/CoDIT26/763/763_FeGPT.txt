@@ -1,0 +1,190 @@
+Summary
+
+Motivation:
+
+The paper addresses limitations of conventional rigid-frame multirotor
+UAVs in disturbance rejection and maneuverability. It proposes using
+compliant (flexible) structural elements in the frame to obtain
+enhanced lateral disturbance resistance and richer actuation through
+passive geometric/material compliance rather than additional
+actuators.
+
+Problem statement:
+
+Derive a scalable, first-principles modeling and control framework for
+an octocopter whose arms are flexible rods modeled as chains of
+viscoelastic single-DoF joints. Capture the coupled rigid–flexible
+dynamics, design/implement a baseline controller, and assess stability
+and disturbance rejection in simulation.
+
+Methods:
+
+Mechanical design concept: an octocopter with four arms; each arm is a
+flexible rod composed of n alternating viscoelastic joints (odd joints
+allow torsion; even joints allow bending). Each arm terminates in a
+rotor pair (two rotors per arm) with inward-tilted thrust vectors to
+bias forces toward the center of mass.  Kinematics and dynamics:
+derive full rigid–flexible kinematics and equations of motion using
+the rod-chain approach and Euler–Lagrange formalism. Build mass matrix
+M, Coriolis/centrifugal terms V(q, q̇), gravity G(q), generalized input
+forces Qgen and damping Qdamp. Jacobians for link velocities and
+moments are derived symbolically; elastic and gravitational potential
+energies are defined.  Simulation implementation: custom MATLAB code
+implementing the N-DoF model (6 rigid-body DOF of base + 4n structural
+DOF + 8 rotor DOF treated as internal states). Parameter set and
+simulation scenarios (hover, wind disturbance with a sustained 5 N
+horizontal load) are used.  Control: a PID-based controller acting on
+the rigid-body base states with aggregate feedback from arm
+bending/torsion states; rotor thrusts and torques produce
+forces/moments.  Main results:
+
+The derived analytical framework provides explicit, modular
+expressions for all dynamical quantities for scalable numbers of
+joints per arm.  Hover simulations show the PID controller stabilizes
+the vehicle in ideal hover with minor altitude deviations.  Under a
+simulated sustained 5 N horizontal disturbance, the vehicle exhibits
+significant deviations in altitude and lateral position, indicating
+limited disturbance rejection under the tested baseline controller.
+The paper concludes that the modeling and computational framework is a
+solid foundation for future adaptive/robust control strategies
+tailored to flexible multirotor systems.  Conclusions: The authors
+present a comprehensive first-principles modeling framework for
+flexible-arm octocopters, demonstrate feasibility in simulation, and
+highlight the need for more advanced control (adaptive/robust) and
+experimental validation to fully exploit the potential benefits of
+structural compliance.
+
+Key strengths (5–10)
+
+Clear and relevant motivation: addresses an important
+problem—improving multirotor disturbance rejection and maneuverability
+via structural compliance without added actuation complexity.
+
+First-principles derivation: thorough Euler–Lagrange derivation of
+rigid–flexible dynamics, including Jacobians, mass matrix, and
+potential energies.
+
+Scalable modeling approach: rod-chain formulation with modular
+expressions that scale with n (number of links per arm), facilitating
+parametric studies.
+
+Transparent implementation: custom MATLAB implementation described
+(parameters provided), which supports reproducibility (within limits
+of the manuscript).
+
+Insightful design concept: alternating bending/torsion joints and
+inward-tilted rotor thrust vectors are sensible design choices to
+create richer actuation and center-directed reaction forces.
+
+Identification of limitations: authors honestly report
+disturbance-rejection shortcomings under baseline PID control and
+point toward future adaptive/robust controllers.  Concrete weaknesses
+or gaps (5–10)
+
+Lack of experimental validation: results are purely simulation-based;
+no hardware experiments or bench tests are reported to confirm model
+fidelity.
+
+Limited control design: only a baseline PID on rigid-body states is
+implemented; no advanced controllers (adaptive, robust, or
+model-based) are tested despite the coupled dynamics.  Sparse
+quantitative performance metrics: results are presented qualitatively
+(plots) but lack systematic quantitative evaluation (e.g., RMS
+tracking error, settling time, control effort, frequency response).
+
+Disturbance scenarios limited: only one magnitude/direction of
+sustained horizontal load (5 N) tested; no range of wind profiles,
+gusts, or parameter variations (mass/inertia/elasticity) examined.
+
+Unclear sensitivity to modeling assumptions: reduced-order single-DoF
+joints and viscoelastic parameters are assumed but the effect of these
+simplifications on accuracy is not analyzed.
+
+Controller uses only aggregate flexible-state feedback: control
+architecture seems ad hoc and may not exploit the full
+high-dimensional state for improved performance.  No formal stability
+or robustness analysis: theoretical guarantees (e.g., Lyapunov
+stability, input-to-state stability) for the closed-loop system with
+flexible dynamics are absent.  Presentation/readability issues: some
+algebra and derivations appear dense; figure captions and numerical
+tables could be clearer and better summarized.  Limited comparison to
+prior art: while references are cited, quantitative or structured
+comparison to existing fully-actuated or seesaw designs is missing.
+Parameter justification: choices for elasticity, damping, link mass
+distribution, rotor tilts, and PID gains lack extensive justification
+or tuning methodology.  Practical, prioritized improvement actions
+
+Priority 1 — Strengthen validation and controller design
+
+Add experimental validation (bench or scaled prototype tests). Even
+simple static deflection tests and single-arm actuation experiments
+would help validate the viscoelastic link model and stiffness/damping
+choices.  Implement and compare at least one model-based controller
+that leverages the derived dynamics (e.g., inverse dynamics + feedback
+linearization, nonlinear model predictive control, or adaptive
+control) and compare with the baseline PID.  Perform systematic
+disturbance tests (gusts with varying amplitude and frequency,
+multi-directional loads) and report quantitative metrics (RMS error,
+max deviation, recovery time, control input energy).
+
+Priority 2 — Quantify sensitivity and robustness
+
+Conduct sensitivity analysis on critical parameters: number of links
+n, link stiffness/damping ratios, rotor tilt angle, and mass/inertia
+distribution. Report how tracking and disturbance rejection change.
+Provide robustness margins (gain/phase margins if linearized around
+operating points) or perform Monte Carlo simulations over parameter
+uncertainties.
+
+Priority 3 — Formal analysis and exploitation of flexibility
+
+Attempt a reduced-order modal decomposition (e.g., obtain dominant
+flexible modes) and design a controller that explicitly accounts for
+modal interactions; this can reduce controller dimension while
+capturing essential flexible dynamics.  Provide at least local
+stability analysis (e.g., linearization at hover and eigenvalue
+analysis) to support simulation observations.  Consider hybrid control
+architectures that combine a rigid-body outer loop with inner
+flexible-mode dampers (collocated damping or active vibration
+suppression).
+
+Priority 4 — Improve experiments, comparisons, and metrics
+
+Compare performance against relevant alternatives in literature
+(tilted-rotor designs, rotating seesaw, fully-actuated octocopters)
+using identical simulation conditions to highlight relative
+advantages.  Report standardized metrics and include tables
+summarizing results for clarity (tracking errors, actuator commands,
+computation time).  If hardware is not feasible, provide extensive
+high-fidelity simulation scenarios (CFD-coupled wind loads, stochastic
+gust models).
+
+Priority 5 — Writing and presentation improvements
+
+Reorganize derivations: move very lengthy algebraic expansions to an
+appendix or supplementary material; keep main text focused on physical
+interpretation and key expressions.  Improve figures and captions: add
+labeled schematics showing joint numbering, rotor tilt angles, and
+definitions of reference frames; include clearer time-series plots
+with legends and quantitative annotations.  Clarify parameter choices
+and PID tuning process in a table with units and rationale.  Add a
+short "limitations and future work" section that explicitly lists the
+assumptions and how they will be addressed.
+
+Suggested small edits and clarifications (concise)
+
+Define concisely the configuration vector q and its partitioning
+(base, flexible joints, rotors) early and use consistent notation
+throughout.  When reporting simulation results, always accompany plots
+with numeric summaries (peak error, steady-state error, energy/cost).
+If possible, provide code repository link or pseudocode for the
+simulation pipeline (note: do not add links unless requested).
+
+
+Final note: The manuscript delivers a valuable, carefully derived
+modeling framework and a compelling design concept. Prioritizing
+experimental validation, more sophisticated controllers that exploit
+the derived model, sensitivity/robustness analyses, and clearer
+presentation will significantly strengthen its scientific
+contribution. Cross-verify numeric claims and parameter selections
+when moving to hardware or comparative studies.

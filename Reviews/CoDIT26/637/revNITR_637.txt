@@ -25,7 +25,8 @@ Trajectory Tracking of a Quadrotor UAV under Exogenous Perturbations
 #_0637
 
 Authors: Edin Avdukic, Almir Salihbegovic, Emir Sokic and
-         Nedim Osmic Sarajevo
+         Nedim Osmic
+	 Sarajevo
 
 
 **************************************************
@@ -81,7 +82,7 @@ Theoretical exposition
 - State all assumptions explicitly (disturbance
   bounds, required measurements, initial condition
   restrictions, and actuator limits). After each
-  Lya­punov/finite-time claim, summarize in plain
+  Lyapunov/finite-time claim, summarize in plain
   language what the LMI/gain conditions mean
   physically and how conservative they are.
 
@@ -132,15 +133,19 @@ References and reproducibility
 
 
 
-**********************************************************************
+                                                  **********************************************************************
 
 NITR
 
 
+The paper proposes a nonsingular terminal sliding
+mode control (NTSMC) scheme for 3D trajectory
+tracking of a quadrotor UAV using the full
+nonlinear six-degree-of-freedom model.
 
 
 The paper is well structured and clearly written,
-but some improvements concerning clearity are
+only some minor editorial adaptations are
 recommended.
 
 
@@ -148,15 +153,38 @@ recommended.
 ************************************************************
 To Editors
 
-sumary
-
+The paper proposes a nonsingular terminal sliding
+mode control (NTSMC) scheme for 3D trajectory
+tracking of a quadrotor UAV using the full
+nonlinear six-degree-of-freedom model.
 
 The paper is well structured and clearly written,
-but some improvements concerning clearity are
-highly recommended.
+but some editorial and content improvements are
+recommended to improve clarity and readability.
 
-The paper has little scientific ambition, but is
-quite interesting from a practical point of view.
+
+The equation numbering is incorrect from (37) to
+(40); there should be only two equations.
+
+Please add physical units to the numbers of the
+parameters, e.g. no units in the text for c1 and
+ca yref, zref, d(t), ...
+
+Please add plots of control errors to Section IV
+(Simulation Results) as those plots are more
+reasonable than the trajectories.  Furthermore,
+using thicker lines in the plots are recommended.
+
+Maybe some words about the high-gain adaptation
+(HGA) mechanism should be add. Is it just an
+appropriately tuned low pass filter as mentioned?
+If this is the case, this simple HGA approach
+seems to be very effective.
+
+
+
+
+
 
 
 
@@ -165,8 +193,16 @@ quite interesting from a practical point of view.
 To Authors
 
 The paper has little scientific ambition, but is
-quite interesting from a practical point of view.
+quite interesting from a practical point of view
 
 
+*************************************************
+Abbreviations:
 
+secondorder sliding mode control (SOSMC)
+
+gain adaptation (HGA)
+
+
+FOSMC: first order sliding mode
 

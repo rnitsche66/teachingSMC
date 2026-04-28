@@ -1,0 +1,82 @@
+************************************************************
+I know that "C-u 80 C-x f" sets the fill width 80, and M-q
+adjusts it. How to make it default? I mean, how to make
+width 80 deafault for fill width?
+
+In your .emacs place (setq-default fill-column 80) Or you
+can just use M-x customize-variable on fill-column, and it
+will set it and save it for you using the standard customize
+interface
+
+fill-column is a buffer-local variable, which is why you
+need setq-default, not just setq.
+
+taken from:
+https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill-mode-to-80-with-emacs
+**********************************************************
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+TITLE:
+
+Parameter Estimation of a Class of Mechanical Systems Using Only
+Position Measurement
+
+#_0498
+
+Authors:Jose Guadalupe Romero (Solo Author !!)
+
+
+**************************************************
+Short summary:
+**************
+
+
+
+Key elements are:
+*****************
+
+
+
+Suggestions for improvement (specific, actionable)
+**************************************************
+
+
+**********************************************************************
+
+NITR
+
+
+
+
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+recommended.
+
+
+
+************************************************************
+To Editors
+
+sumary
+
+
+The paper is well structured and clearly written,
+but some improvements concerning clearity are
+highly recommended.
+
+The paper has little scientific ambition, but is
+quite interesting from a practical point of view.
+
+
+
+
+************************************************************
+To Authors
+
+The paper has little scientific ambition, but is
+quite interesting from a practical point of view.
+
+
+
+
