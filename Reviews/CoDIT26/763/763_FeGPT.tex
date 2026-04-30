@@ -25,7 +25,13 @@
 \vspace{6pt}
 
 \section*{Motivation and contribution}
-- The manuscript departs from the conventional rigid-body multirotor paradigm by embedding geometric and material compliance into the vehicle frame. Alternating bending and torsional viscoelastic joints along each arm, plus inward-tilted rotor thrust vectors, aim to improve lateral disturbance rejection and provide richer actuation without adding actuators.\\
+- The manuscript departs from the conventional rigid-body multirotor
+paradigm by embedding geometric and material compliance into the
+vehicle frame. Alternating bending and torsional viscoelastic joints
+along each arm, plus inward-tilted rotor thrust vectors, aim to
+improve lateral disturbance rejection and provide richer actuation
+without adding actuators.
+\\
 - Main technical contribution: a first-principles, scalable
 Euler--Lagrange modeling framework for an octocopter with four
 flexible arms. The model assembles Jacobians, mass matrix,
@@ -34,12 +40,18 @@ generalized rotor inputs for a system with 6 rigid-body DOF + 4n
 structural DOF + rotor DOF.
 
 \section*{Modeling and methods}
-- Mechanical concept: each arm is modeled as a chain of $n$ single-DoF viscoelastic joints (odd joints: torsion; even joints: bending); each arm ends with two rotors whose thrusts are biased toward the center of mass.\\
+- Mechanical concept: each arm is modeled as a chain of $n$ single-DoF
+viscoelastic joints (odd joints: torsion; even joints: bending); each
+arm ends with two rotors whose thrusts are biased toward the center of
+mass.
+\\
 - Kinematics and dynamics: detailed derivation of velocity and
 rotation Jacobians, Euler--Lagrange derivation yielding
 $M(q)\ddot q + V(q,\dot q) + G(q) = Q_{\mathrm{gen}}(q) -
-Q_{\mathrm{damp}}(\dot q)$.
-Elastic potential and viscous damping are included per joint; rotor thrusts and torques map into generalized forces via link Jacobians.\\
+Q_{\mathrm{damp}}(\dot q)$.  Elastic potential and viscous damping are
+included per joint; rotor thrusts and torques map into generalized
+forces via link Jacobians.
+\\
 - Implementation: modular MATLAB implementation able to scale with
 $n$. A baseline PID controller acts on rigid-body base states;
 flexible states are included as aggregate feedback terms.

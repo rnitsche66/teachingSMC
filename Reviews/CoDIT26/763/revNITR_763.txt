@@ -19,12 +19,12 @@ https://stackoverflow.com/questions/3566727/how-to-set-the-default-width-of-fill
 
 TITLE:
 
-Parameter Estimation of a Class of Mechanical Systems Using Only
-Position Measurement
+Dynamics and Control of an Octocopter with
+Flexible Structure
 
-#_0498
+#_0763
 
-Authors:Jose Guadalupe Romero (Solo Author !!)
+Authors:Danniel Stoller et al ISRAEL
 
 
 **************************************************
@@ -61,22 +61,74 @@ To Editors
 sumary
 
 
-The paper is well structured and clearly written,
-but some improvements concerning clearity are
-highly recommended.
+The paper departs from the conventional
+rigid-body multirotor paradigm by embedding
+geometric and material compliance into the vehicle
+frame. Alternating bending and torsional
+viscoelastic joints along each arm, plus
+inward-tilted rotor thrust vectors, aim to improve
+lateral disturbance rejection and provide richer
+actuation without adding actuators.
 
-The paper has little scientific ambition, but is
-quite interesting from a practical point of view.
+- hard to follow since the structure is not clear,
+  too many equations - not well introduced -
+  again, hard to follow
 
+- Simulation results not very well discussed
 
 
 
 ************************************************************
 To Authors
 
-The paper has little scientific ambition, but is
-quite interesting from a practical point of view.
+The paper departs from the conventional
+rigid-body multirotor paradigm by embedding
+geometric and material compliance into the vehicle
+frame. Alternating bending and torsional
+viscoelastic joints along each arm, plus
+inward-tilted rotor thrust vectors, aim to improve
+lateral disturbance rejection and provide richer
+actuation without adding actuators.
+
+A lot of equations with numbers are introduced in
+the text but almost never referenced. This is a
+sign that this paper is not clearly explaining the
+task in the sense that it is hard to follow.
+
+Pictures are somewhat tiny and not very meaningful
+Lack of a deep discussion of the simulation
+results, e.g.:
+
+- Quantify performance with standardized metrics
+
+- Report numeric metrics for each scenario: RMS
+tracking error, peak deviation, settling time,
+actuator effort (integrated thrust/torque), and
+disturbance-rejection gain.
+
+- Summarize comparisons in concise tables.
 
 
 
+Improve clarity and documentation
+---------------------------------
 
+- Move lengthy algebraic expansions to appendices
+or supplementary material; keep the main text
+focused on interpretation and key expressions.
+
+- Add a nomenclature table, define the
+configuration vector q early, and state units for
+all parameters.
+
+- Make figures self-contained with labeled joint
+indices, rotor offsets, and coordinate frames.
+
+
+Editorial Improvements:
+------------------------
+
+p.3:
+- equation 7 -> equation (7) or (7)
+
+Line space changed -> too narrow
