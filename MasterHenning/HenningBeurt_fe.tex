@@ -1,0 +1,111 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+
+\begin{document}
+
+  \section*{Zusammenfassung (halbe Seite)} Die vorliegende
+  Masterarbeit von Henning Brands (Abgabedatum: 30.06.2026) behandelt
+  die Entwicklung eines Softwaremoduls namens TEaMVision für
+  kamerabasierte visuelle Prüfungen im industriellen Umfeld. Ziel war
+  die Integration einer leicht konfigurierbaren, wiederverwendbaren
+  und in das bestehende Test-Ökosystem (TestStand / TEaM-Framework)
+  einbindbaren Computer-Vision-Bibliothek, die Live-Preview-Dialoge,
+  wiederverwendbare Erkennungsbausteine (z.,B. FindShapes,
+  TemplateMatching, DmtxDetection) sowie stabile Speicher- und
+  Ressourcenverwaltung bereitstellt. Die Arbeit beschreibt
+  Anforderungsanalyse, Entwurf (Bedienkonzept, Softwarearchitektur),
+  gewählte Technologien, Implementierungsdetails und mehrere
+  Pilotanwendungen (z.,B. Prüfapplikation für VTUX-Montage,
+  DataMatrix-Erkennung). Funktionalität, Performance und Bedienbarkeit
+  wurden in realen Pilotprojekten validiert; die wichtigsten
+  nichtfunktionalen Aspekte (Performance, Stabilität, Erweiterbarkeit)
+  wurden adressiert. Als konkrete Ergebnisse zeigt die Arbeit
+  erfolgreiche Integrationen in Prüfabläufe, positive
+  Anwender-Rückmeldungen und identifiziert Bereiche mit weiterem
+  Verbesserungsbedarf (z.,B. Robustheit bei Text-/OCR-Erkennung,
+  Speicherfragmentierung).
+
+  \section*{Kernpunkte der Arbeit}
+  \begin{itemize}
+
+  \item Ziel: Entwicklung eines modularen, in TestStand/TEaM
+    integrierbaren Vision-Softwaremoduls (TEaMVision).
+
+  \item Architektur: zentrale TEaMVision-Klasse,
+    Camera-Factory/Multiton-Pattern, ImageHandle für
+    Speicherverwaltung, klare Zuständigkeiten bei Bildübergabe.
+
+  \item Erkennungsbausteine: FindShapes (Form-/Konturerkennung),
+    TemplateMatching, DmtxDetection (DataMatrix-Decoder).
+
+  \item Bedienkonzept: Live-Preview-Dialoge zur interaktiven
+    Parametrierung und schnelleren Inbetriebnahme durch Anwender ohne
+    tiefes CV-Fachwissen.
+
+  \item Integration: nahtlose Einbindung in TestStand/TEaM-Framework,
+    Anzeige/Reporting via TEaMView.
+
+  \item Validierung: mehrere Pilotapplikationen in der Produktion
+    (z.,B. Fixdrosseln, VTUX-Ventilinsel) mit Anwenderfeedback und
+    Bewertung anhand definierter Anforderungen (Erkennungen,
+    Applikation, Bedienung, Nichtfunktionale Anforderungen).
+
+  \item Nichtfunktionale Fokusse: Performance, Stabilität,
+    Speicherverwaltung und Erweiterbarkeit (Plugins / neue
+    Kameratypen).
+
+  \end{itemize}
+
+  \section*{Schwachstellen}
+  \begin{itemize}
+  \item Speicherfragmentierung: Im 32-Bit-Adressraum zeigte sich
+    Fragmentierung bei längeren Sessions; häufiges
+    Allokieren/Freigeben großer OpenCV-Mat-Puffer ist problematisch.
+  \item Teilweise unvollständige Erkennungsfälle: Insbesondere
+    zuverlässige Erkennung von Textblöcken (OCR) ist noch nicht
+    vollständig zufriedenstellend umgesetzt.
+  \item Abhängigkeit von externer Barcode/Decoder-Library: Wechsel von
+    LibDmtx zu proprietärer Dynamsoft-Library kann Lizenz-,
+    Performance- oder Portabilitätsfragen aufwerfen.
+  \item Generalisierbarkeit: Validierung erfolgte an ausgewählten
+    Pilotapplikationen; übertragbarkeit auf deutlich andere Bauteile
+    oder stark variierende Licht-/Umgebungsbedingungen ist nicht
+    vollständig belegt.
+  \item Ressourcenverbrauch: Verarbeitung vieler großer Bilder
+    erfordert sorgfältige Optimierung; Echtzeit-Anforderungen könnten
+    bei komplexeren Anwendungen an Grenzen stoßen.
+  \end{itemize}
+
+  \section*{Verbesserungsvorschläge}
+  \begin{itemize}
+  \item Speicher- und Ressourcenmanagement verbessern: Einführung von
+    Memory-Pools oder Wiederverwendungsstrategien für Mat-Puffer, um
+    Fragmentierung zu vermeiden; gezielte Tests im 32-Bit-Umfeld.
+  \item OCR- und Text-Erkennung stärken: Integration oder Training
+    robuster OCR-Module (z.,B. angepasste Preprocessing-Pipelines,
+    lernbasierte Ansätze) sowie umfassendere Tests mit variierenden
+    Kontrasten und Schriftarten.
+  \item Modularität und Austauschbarkeit der Decoder-Bausteine:
+    Abstrakte Schnittstelle für Barcode-/OCR-Plugins, sodass
+    Bibliothekswechsel ohne tiefgreifende Änderungen möglich ist.
+  \item Erweiterte Robustheitstests: Automatisierte Test-Suites mit
+    variierenden Licht-, Fokus- und Distraktorbedingungen sowie
+    größere Feldtests auf unterschiedlichen Produktfamilien.
+  \item Performance-Optimierung: Profiling-kampagnen zur
+    Identifikation heißer Pfade, Einsatz approximativer oder
+    hardwarebeschleunigter Verarbeitung (GPU/FPGA) für zeitkritische
+    Pfade.
+  \item Bedienbarkeit weiter verbessern: Zusätzliche Hilfsfunktionen
+    in Live-Preview (z.,B. automatische Vorschläge für
+    voreinstellungen basierend auf Bildstatistiken) und dokumentierte
+    Best-Practices für Anlagenintegration.
+  \item Langfristige Wartung: Dokumentation der
+    Speicherverantwortlichkeiten, Coding-Guidelines zur Vermeidung
+    neuer Fragmentierungsquellen und CI/Testing zur frühen Erkennung
+    regressiver Fehler.
+  \end{itemize}
+
+\end{document}

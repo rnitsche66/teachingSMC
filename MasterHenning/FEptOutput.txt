@@ -1,0 +1,39 @@
+Kurzfassung: Die Masterarbeit "Entwicklung eines Softwaremoduls für
+kamerabasierte visuelle Prüfungen im Industrieumfeld" (Henning Brands,
+2026) beschreibt die Konzeption, Implementierung und Evaluierung eines
+TEaM-Moduls zur Integration einfacher kamerabasierter Prüfungen in die
+bei Festo eingesetzte Test-Infrastruktur (TestStand &
+TEaM-Framework). Nach Analyse bestehender kommerzieller Vision-Systeme
+und frei verfügbarer Bibliotheken werden grundlegende
+Bildverarbeitungsprinzipien (z. B. Quantisierung/Grenzwerte,
+morphologische Operatoren, Kantenerkennung, Konturen, Farben; KI/ML
+wird abgegrenzt) erläutert. Auf dieser Basis erfolgt der Entwurf einer
+modularen Softwarearchitektur, die mittels C#, WPF, OpenCV,
+Tesseract/Dynamsoft u. a. umgesetzt wird. Schlüsselkomponenten,
+Integrationsaspekte, Performanz und Erweiterbarkeit werden erläutert;
+eine Pilotanwendung (z. B. FindShapes, DataMatrix-Erkennung) dient zur
+Evaluation. Ergebnisse zeigen, dass eine Inhouse-Lösung für viele
+einfache Anwendungsfälle praktikabel ist, Nutzerfeedback positiv
+ausfällt, aber allgemein gültige Lösungen für alle Fälle schwer
+realisierbar sind. Die Arbeit diskutiert Limitierungen,
+Erweiterungspotenzial und gibt Ausblick auf weitere Entwicklungen.
+
+Hinweis zur inhaltlichen Verbesserung:
+
+Präzisiere die Validierungsergebnisse quantitativer: Ergänze
+systematische Metriken (z. B. Erkennungsrate,
+Falsch-Positiv-/Negativraten, Laufzeit pro Bild unter definierten
+Hardwarebedingungen) über mehrere, repräsentative Prüffälle und
+dokumentiere Versuchsaufbau sowie Datensätze detailliert. Dadurch
+werden die Aussagen zur Leistungsfähigkeit, Robustheit und
+Vergleichbarkeit gegenüber kommerziellen Systemen belastbarer.
+
+Hinweis zur strukturellen Verbesserung:
+
+Stärke die Trennung von Konzept, Implementierung und Evaluation in
+klar abgegrenzten Kapiteln und füge zu Beginn jedes Kapitels eine
+kurze Zielsetzung hinzu. Tabellarische Übersichten (z. B. verwendete
+Bibliotheken mit Versionen und Lizenz, getestete Prüffälle mit
+Parametern) und ein zusammenfassendes Kapitel "Lessons learned /
+Empfehlungen für den Praxiseinsatz" würden Lesbarkeit und Nutzwert für
+Entwickler und Anwender deutlich erhöhen.
